@@ -54,7 +54,8 @@ REDDIT_SUBS = ["artificial", "MachineLearning", "LocalLLaMA"]
 BRAND_NAME = "XinyMao"
 SITE_TITLE = "XinyMao AI Intelligence Hub"
 SITE_DESCRIPTION = "Daily AI Intelligence for Developers, Researchers and Builders."
-SITE_URL = os.environ.get("SITE_URL", "https://xinymao.com/ai")
+SITE_URL = os.environ.get("SITE_URL", "https://vincefeng0709-bot.github.io/AI-Intelligence-Hub")
+BASE_PATH = os.environ.get("BASE_PATH", "/AI-Intelligence-Hub")
 
 # GitHub
 GITHUB_REPO = os.environ.get("GITHUB_REPOSITORY", "")

@@ -2,13 +2,13 @@
 <rss version="2.0">
 <channel>
   <title>XinyMao AI Intelligence Hub</title>
-  <link>https://xinymao.com/ai</link>
+  <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub</link>
   <description>Daily AI Intelligence for Developers, Researchers and Builders.</description>
   <language>zh-CN</language>
   
   <item>
     <title>2026-06-22</title>
-    <link>https://xinymao.com/ai/daily/2026-06-22.html</link>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-06-22.html</link>
     <description><![CDATA[# AI Intelligence Daily — 2026年06月22日
 
 > XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度
@@ -74,7 +74,7 @@
 - **[claude-pulse](https://github.com/nikitadoudikov/claude-pulse)** — 手机端审批 Claude Code 工具调用的 Dashboard，34 星
 - **[system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks)** — 泄露了 Claude F]]></description>
     <pubDate>2026-06-22</pubDate>
-    <guid>https://xinymao.com/ai/daily/2026-06-22.html</guid>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-06-22.html</guid>
   </item>
 </channel>
 </rss>

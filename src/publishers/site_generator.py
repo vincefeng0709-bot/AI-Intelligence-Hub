@@ -7,7 +7,7 @@ from zoneinfo import ZoneInfo
 import markdown
 from config.settings import (
     PUBLIC_DIR, REPORTS_DIR, TRACKERS_DIR, TEMPLATES_DIR,
-    SITE_TITLE, SITE_DESCRIPTION, SITE_URL, BRAND_NAME, BEIJING_TZ
+    SITE_TITLE, SITE_DESCRIPTION, SITE_URL, BRAND_NAME, BEIJING_TZ, BASE_PATH
 )
 
 logger = logging.getLogger(__name__)
@@ -218,17 +218,17 @@ footer {{
 <nav>
   <div class="nav-brand">{brand}<span>.</span></div>
   <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/daily/">Daily</a>
-    <a href="/weekly/">Weekly</a>
-    <a href="/monthly/">Monthly</a>
-    <a href="/research/">Research</a>
-    <a href="/trackers/">Trackers</a>
+    <a href="{base}/">Home</a>
+    <a href="{base}/daily/">Daily</a>
+    <a href="{base}/weekly/">Weekly</a>
+    <a href="{base}/monthly/">Monthly</a>
+    <a href="{base}/research/">Research</a>
+    <a href="{base}/trackers/">Trackers</a>
   </div>
 </nav>
 {body}
 <footer>
-  <p>© 2025 {site_title} · Built with Claude · <a href="/feed.xml">RSS</a></p>
+  <p>© 2025 {site_title} · Built with Claude · <a href="{base}/feed.xml">RSS</a></p>
   <p style="margin-top: 0.5rem;">Daily AI Intelligence for Developers, Researchers and Builders.</p>
 </footer>
 </body>
@@ -242,6 +242,7 @@ def _render_page(title: str, description: str, body: str, url: str = "") -> str:
         url=url or SITE_URL,
         site_title=SITE_TITLE,
         brand=BRAND_NAME,
+        base=BASE_PATH,
         body=body,
     )
 
@@ -259,7 +260,7 @@ def _generate_index_page(daily_reports: list[Path], weekly_reports: list[Path]) 
   <div class="article-content" style="color: var(--text2);">
     {_md_to_html(preview)}...
   </div>
-  <p style="margin-top: 1rem;"><a href="/daily/{latest_daily.stem}.html">Read full report →</a></p>
+  <p style="margin-top: 1rem;"><a href="{BASE_PATH}/daily/{latest_daily.stem}.html">Read full report →</a></p>
 </div>
 """
 
@@ -269,7 +270,7 @@ def _generate_index_page(daily_reports: list[Path], weekly_reports: list[Path]) 
         if stem.endswith("-research"):
             continue
         recent_daily_cards += f"""
-<a href="/daily/{stem}.html" style="text-decoration:none;">
+<a href="{BASE_PATH}/daily/{stem}.html" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Daily Intelligence</div>
   <h3>{stem}</h3>
@@ -291,7 +292,7 @@ def _generate_index_page(daily_reports: list[Path], weekly_reports: list[Path]) 
     {recent_daily_cards}
   </div>
   <p style="margin-top: 1.5rem; text-align: center;">
-    <a href="/daily/">View all daily reports →</a>
+    <a href="{BASE_PATH}/daily/">View all daily reports →</a>
   </p>
 </div>
 """
@@ -305,7 +306,7 @@ def _generate_list_page(reports: list[Path], section_title: str, section_path: s
         items_html += f"""
 <div class="report-item">
   <span class="report-item-date">{stem[:10]}</span>
-  <a href="/{section_path}/{stem}.html" class="report-item-title">{stem}</a>
+  <a href="{BASE_PATH}/{section_path}/{stem}.html" class="report-item-title">{stem}</a>
 </div>"""
 
     body = f"""
@@ -320,6 +321,10 @@ def _generate_list_page(reports: list[Path], section_title: str, section_path: s
   </div>
 </div>"""
     return _render_page(section_title, SITE_DESCRIPTION, body)
+
+
+def _list_item_href(section_path: str, stem: str) -> str:
+    return f"{BASE_PATH}/{section_path}/{stem}.html"
 
 
 def _generate_article_page(md_path: Path, section_path: str) -> str:
@@ -495,7 +500,7 @@ def _build_trackers_pages(trackers_pub_dir: Path, all_page_urls: list) -> None:
 
         latest = reports[0].stem if reports else "No data yet"
         tracker_cards += f"""
-<a href="/trackers/{name}/" style="text-decoration:none;">
+<a href="{BASE_PATH}/trackers/{name}/" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Tracker</div>
   <h3>{name.title()} Tracker</h3>

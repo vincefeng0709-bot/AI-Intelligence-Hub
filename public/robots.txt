@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://xinymao.com/ai/sitemap.xml
+Sitemap: https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/sitemap.xml
