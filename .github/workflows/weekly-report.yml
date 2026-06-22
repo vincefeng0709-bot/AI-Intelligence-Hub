@@ -1,0 +1,50 @@
+name: Weekly AI Intelligence Review
+
+on:
+  schedule:
+    # Every Sunday Beijing 08:00 = Saturday UTC 00:00
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Target date (YYYY-MM-DD)"
+        required: false
+        default: ""
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run weekly report
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://xinymao.github.io/ai-intelligence-hub' }}
+        run: |
+          DATE_ARG=""
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            DATE_ARG="--date ${{ github.event.inputs.date }}"
+          fi
+          python run_weekly.py $DATE_ARG
+
+      - name: Commit and push
+        run: |
+          git config user.name "XinyMao Bot"
+          git config user.email "bot@xinymao.com"
+          git add reports/ public/
+          git diff --staged --quiet || git commit -m "chore: weekly report $(date -u '+%G-W%V') [skip ci]"
+          git push

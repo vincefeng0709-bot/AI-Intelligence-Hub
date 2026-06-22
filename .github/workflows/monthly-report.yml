@@ -1,0 +1,51 @@
+name: Monthly AI Intelligence Trends
+
+on:
+  schedule:
+    # 1st of every month Beijing 08:00 = previous day UTC 00:00
+    # UTC 00:00 on the 1st covers Beijing 08:00 on the 1st
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Target date (YYYY-MM-DD)"
+        required: false
+        default: ""
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run monthly report
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://xinymao.github.io/ai-intelligence-hub' }}
+        run: |
+          DATE_ARG=""
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            DATE_ARG="--date ${{ github.event.inputs.date }}"
+          fi
+          python run_monthly.py $DATE_ARG
+
+      - name: Commit and push
+        run: |
+          git config user.name "XinyMao Bot"
+          git config user.email "bot@xinymao.com"
+          git add reports/ public/
+          git diff --staged --quiet || git commit -m "chore: monthly report $(date -u '+%Y-%m') [skip ci]"
+          git push

@@ -1,0 +1,54 @@
+name: Daily AI Intelligence Report
+
+on:
+  schedule:
+    # Beijing 08:00 = UTC 00:00
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Target date (YYYY-MM-DD, leave empty for today)"
+        required: false
+        default: ""
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily report
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://xinymao.github.io/ai-intelligence-hub' }}
+          GITHUB_PAGES_URL: ${{ vars.SITE_URL || 'https://xinymao.github.io/ai-intelligence-hub' }}
+        run: |
+          DATE_ARG=""
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            DATE_ARG="--date ${{ github.event.inputs.date }}"
+          fi
+          python run_daily.py $DATE_ARG
+
+      - name: Commit and push reports
+        run: |
+          git config user.name "XinyMao Bot"
+          git config user.email "bot@xinymao.com"
+          git add reports/ trackers/ public/
+          git diff --staged --quiet || git commit -m "chore: daily report $(date -u '+%Y-%m-%d') [skip ci]"
+          git push
