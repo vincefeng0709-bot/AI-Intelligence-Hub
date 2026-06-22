@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:title" content="XinyMao AI Intelligence Hub">
+<meta property="og:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:url" content="https://xinymao.com/ai">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="XinyMao AI Intelligence Hub">
+<meta name="twitter:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<title>XinyMao AI Intelligence Hub | XinyMao AI Intelligence Hub</title>
+<link rel="alternate" type="application/rss+xml" title="XinyMao AI Intelligence Hub RSS" href="/feed.xml">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --bg2: #111111;
+  --bg3: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --text2: #888;
+  --accent: #6366f1;
+  --accent2: #818cf8;
+  --green: #34d399;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; color: var(--accent); }
+
+/* Nav */
+nav {
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(12px);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.nav-brand {
+  font-size: 0.95rem; font-weight: 600; color: var(--text);
+  letter-spacing: -0.02em;
+}
+.nav-brand span { color: var(--accent2); }
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+  color: var(--text2); font-size: 0.875rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+
+/* Main layout */
+.container {
+  max-width: 900px; margin: 0 auto; padding: 3rem 2rem;
+}
+.hero {
+  text-align: center; padding: 5rem 2rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700; letter-spacing: -0.04em;
+  line-height: 1.1; margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text2) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p {
+  color: var(--text2); font-size: 1.125rem; max-width: 600px; margin: 0 auto 2rem;
+}
+.badge {
+  display: inline-block; padding: 0.25rem 0.75rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 999px; font-size: 0.75rem; color: var(--text2);
+  font-family: var(--mono);
+}
+
+/* Cards */
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 2rem 0;
+}
+.card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--accent); transform: translateY(-2px);
+}
+.card-label {
+  font-size: 0.7rem; font-family: var(--mono); color: var(--accent2);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;
+}
+.card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--text); }
+.card p { font-size: 0.875rem; color: var(--text2); line-height: 1.5; }
+.card-date { font-size: 0.75rem; color: var(--text2); margin-top: 1rem; font-family: var(--mono); }
+
+/* Article content */
+.article-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.article-header h1 { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; }
+.article-meta { color: var(--text2); font-size: 0.875rem; margin-top: 1rem; font-family: var(--mono); }
+.article-content h2 {
+  font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text);
+  border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;
+}
+.article-content h3 { font-size: 1.125rem; margin: 2rem 0 0.75rem; color: var(--accent2); }
+.article-content p { margin-bottom: 1.25rem; }
+.article-content ul, .article-content ol { margin: 1rem 0 1rem 1.5rem; }
+.article-content li { margin-bottom: 0.5rem; }
+.article-content blockquote {
+  border-left: 3px solid var(--accent); padding-left: 1.5rem;
+  color: var(--text2); margin: 1.5rem 0; font-style: italic;
+}
+.article-content code {
+  background: var(--bg3); padding: 0.2em 0.4em; border-radius: 4px;
+  font-family: var(--mono); font-size: 0.875em; color: var(--accent2);
+}
+.article-content pre {
+  background: var(--bg3); padding: 1.5rem; border-radius: 8px;
+  overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--border);
+}
+.article-content pre code { background: none; padding: 0; color: var(--text); }
+.article-content hr {
+  border: none; border-top: 1px solid var(--border); margin: 2rem 0;
+}
+.article-content strong { color: var(--text); }
+.article-content table {
+  width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+}
+.article-content th {
+  background: var(--bg3); padding: 0.75rem 1rem; text-align: left;
+  border: 1px solid var(--border); font-size: 0.875rem;
+}
+.article-content td {
+  padding: 0.75rem 1rem; border: 1px solid var(--border); font-size: 0.875rem;
+}
+
+/* List page */
+.report-list { margin: 2rem 0; }
+.report-item {
+  display: flex; align-items: baseline; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--border);
+}
+.report-item:last-child { border-bottom: none; }
+.report-item-date {
+  font-size: 0.8rem; color: var(--text2); font-family: var(--mono);
+  min-width: 100px; flex-shrink: 0;
+}
+.report-item-title { font-size: 0.95rem; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border); padding: 2rem;
+  text-align: center; color: var(--text2); font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav { padding: 0 1rem; }
+  .nav-links { gap: 1rem; }
+  .container { padding: 2rem 1rem; }
+  .hero { padding: 3rem 1rem 2rem; }
+}
+
+/* Status indicator */
+.status-ok { color: var(--green); }
+.status-warn { color: #f59e0b; }
+.tag {
+  display: inline-block; padding: 0.2rem 0.6rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; font-size: 0.7rem; font-family: var(--mono);
+  color: var(--text2); margin-right: 0.3rem;
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-brand">XinyMao<span>.</span></div>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/daily/">Daily</a>
+    <a href="/weekly/">Weekly</a>
+    <a href="/monthly/">Monthly</a>
+    <a href="/research/">Research</a>
+    <a href="/trackers/">Trackers</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="badge">LIVE · Daily AI Intelligence</div>
+  <h1>XinyMao AI<br>Intelligence Hub</h1>
+  <p>Daily AI Intelligence for Developers, Researchers and Builders.</p>
+</div>
+
+<div class="container" style="padding-top: 2rem; padding-bottom: 0;">
+  <div class="card-label">Latest Daily Report</div>
+  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-06-22</h2>
+  <div class="article-content" style="color: var(--text2);">
+    <h1 id="ai-intelligence-daily-20260622">AI Intelligence Daily — 2026年06月22日</h1>
+<blockquote>
+<p>XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度</p>
+</blockquote>
+<hr />
+<h2 id="3">今日最重要的3件事</h2>
+<h3 id="1-claude">1. Claude 推出身份验证功能，引发大规模社区讨论</h3>
+<p><strong>发生了什么</strong>：Hacker News 上「Identity verification on Claude」获得 617 分、544 条评论，是今日 AI 话题中讨论度最高的帖子。Anthropic 开始在 Claude 平台引入身份验证机制。</p>
+<p><strong>为什么重要</strong>：这是 Anthropic 向"有责任感的 AI 使用"迈出的重要一步。身份验证意味着 Claude 将开始区分用户身份，可能影响内容策略、合规要求和企业部署方式。</p>
+<p><strong>对开发者影响</strong>：使用 Claude API 的开发者需关注后续是否有 KYC 要求，企业用户需提前评估合规成本。</p>
+<p><strong>对科研影响</strong>：匿名研究场景可能受到限制，但学术机构账号认证后可能获得更高权限。</p>
+<p><strong>对创业影响</strong>：基于 Claude 构建产品的创业公司需重新评估用户管理流程，身份验证可能成为行业标配。</p>
+<p><strong>我的判断</strong>：这是 AI 平台走向「实名化」的信号。短期内会引发用户抵触，但长期来看是监管压力下的必然选择。预计 OpenAI、Google 会跟进类似机制。</p>
+<hr />
+<h3 id="2-openai-ai">2. OpenAI × 三星：史上最大规模企业 AI 部署之一</h3>
+<p><strong>发生了什么</strong>：三星电子在全球范围内为员工部署 ChatGPT Enterprise 和 Codex，这是 OpenAI 迄今最大规模的企业级 AI 落地案例之一。</p>
+<p><strong>为什么重要</strong>：三星是全球最大的科技制造商之一，此次部署意味着 AI 助手正式进入传统硬件巨头的核心工作流。这不是 pilot，是全员推</p>...
+  </div>
+  <p style="margin-top: 1rem;"><a href="/daily/2026-06-22.html">Read full report →</a></p>
+</div>
+
+<div class="container">
+  <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
+  <div class="card-grid">
+    
+<a href="/daily/2026-06-22.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-06-22</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-06-22</div>
+</div>
+</a>
+  </div>
+  <p style="margin-top: 1.5rem; text-align: center;">
+    <a href="/daily/">View all daily reports →</a>
+  </p>
+</div>
+
+<footer>
+  <p>© 2025 XinyMao AI Intelligence Hub · Built with Claude · <a href="/feed.xml">RSS</a></p>
+  <p style="margin-top: 0.5rem;">Daily AI Intelligence for Developers, Researchers and Builders.</p>
+</footer>
+</body>
+</html>

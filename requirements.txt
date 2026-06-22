@@ -5,3 +5,4 @@ beautifulsoup4>=4.12.3
 markdown>=3.6
 lxml>=5.2.2
 python-dateutil>=2.9.0
+tzdata>=2024.1

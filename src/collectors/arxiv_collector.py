@@ -33,7 +33,9 @@ def collect_papers(max_per_category: int = 15) -> list[Paper]:
 
     for category, feed_url in ARXIV_FEEDS.items():
         try:
-            feed = feedparser.parse(feed_url)
+            import httpx
+            resp = httpx.get(feed_url, timeout=30, follow_redirects=True)
+            feed = feedparser.parse(resp.text)
             count = 0
             for entry in feed.entries:
                 if count >= max_per_category:
