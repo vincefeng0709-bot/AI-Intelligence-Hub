@@ -7,6 +7,61 @@
   <language>zh-CN</language>
   
   <item>
+    <title>2026-06-25</title>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-06-25.html</link>
+    <description><![CDATA[# AI Intelligence Daily — 2026年06月25日
+
+> XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度
+
+---
+
+## 今日最重要的3件事
+
+### 1. OpenAI × Broadcom 发布「Jalapeño」自研推理芯片，AI 算力格局迎来拐点
+
+**发生了什么**：OpenAI 与 Broadcom 联合发布 **Jalapeño**，这是 OpenAI 的第一款自研 AI 芯片，专为 LLM 推理优化（HN **708分，398评论**，今日最热帖）。OpenAI 官网同步发布白皮书，TechCrunch 详细报道技术细节。
+
+**为什么重要**：这是 AI 行业 2026 年最重要的硬件事件之一。OpenAI 长期依赖 NVIDIA GPU，自研芯片意味着：① 推理成本将大幅下降；② 对 NVIDIA 的依赖降低；③ OpenAI 从「AI 软件公司」向「全栈 AI 公司」迈进。对标 Google TPU、Amazon Trainium，OpenAI 补上了最后一块拼图。
+
+**对开发者影响**：推理芯片效率提升将直接传导到 API 价格，长期来看 OpenAI API 成本有望进一步下降。短期内感受不到变化，但这是 12-18 个月后会显著影响定价的战略布局。
+
+**对科研影响**：专用推理芯片意味着更高的 token/秒吞吐量，大规模推理实验成本将降低，有利于需要大量 API 调用的研究场景。
+
+**对创业影响**：OpenAI 成本结构改善将增强其在企业市场的价格竞争力。同时验证了「推理效率」赛道的价值——从芯片层到软件层，这个方向的投资将持续增加。
+
+**我的判断**：Jalapeño 是战略信号，不只是产品。结合近期三星大单、Daybreak 安全工具、Appia Foundation 标准建设，OpenAI 正在构建极难被单点突破的综合护城河。
+
+---
+
+### 2. Anthropic 指控阿里巴巴非法提取 Claude 模型能力
+
+**发生了什么**：Anthropic 正式向 Reuters 披露，阿里巴巴通过非法手段提取了 Claude AI 模型的能力（HN **434分，760评论**，今日评论数第一）。另一条相关消息：NSA 因 Anthropic 与某方的纠纷而失去了对「Mythos」工具的访问权限（HN 247分，263评论）。
+
+**为什么重要**：这是 AI 行业首次有大型实验室公开指控另一家科技巨头「非法」提取模型能力。不是普通商业纠纷，而是模型知识产权、国际技术竞争、AI 治理边界的集中体现。760 条评论说明社区极为关注。
+
+**对开发者影响**：API 安全和模型保护将成为更受关注的议题。未来 AI API 可能引入更严格的使用检测，「提取模型能力」的技术手段将被更严密地防范。
+
+**对科研影响**：模型蒸馏、知识提取的学术研究边界将面临更严格的法律审视。「合法」与「非法」知识提取之间的界限正在被迫明确。
+
+**对创业影响**：在中美 AI 竞争背景下，依赖跨境 AI 服务的创业公司需要更仔细地评估合规风险。这个事件将加速「AI 技术国家化」趋势。
+
+**我的判断**：这件事的影响远超商业层面。结合 NSA 失去 Anthropic 工具访问权，背后可能涉及复杂的地缘政治博弈。如果进入法律程序，将成为 AI 行业的里程碑案件，影响程度堪比当年 Oracle vs Google 的 Java API 案。
+
+---
+
+### 3. Gemini 3.5 Flash 支持 Computer Use，Agentic AI 能力全面商品化
+
+**发生了什么**：Google 发布 **Gemini 3.5 Flash Computer Use**（HN 220分，140评论），在快速低价模型上实现 AI 操作电脑屏幕的能力。同日，GLM-5.2 被社区认为是「open agent 的里程碑式进步」（244分，141评论）。
+
+**为什么重要**：Computer Use 此前是 Claude 的标志性能力，Google 将其带入自家低成本模型，意味着 Agentic AI 能力正在快速商品化。**Flash（快速低价）版本支持 Computer Use**，直接打开了大规模自动化应用的成本可行性。
+
+**对开发者影响**：构建 Agentic 应用的成本将显著下降。Gemini Flash 的低延迟 + Computer Use，是构建桌面自动化、RPA 替代、Web 爬取 Agent 的理想组合。
+
+**对科研影响**：Computer Use 能力普及将催生大量关于「AI-人机界面」的新研究，GUI Age]]></description>
+    <pubDate>2026-06-25</pubDate>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-06-25.html</guid>
+  </item>
+  <item>
     <title>2026-06-24</title>
     <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-06-24.html</link>
     <description><![CDATA[# AI Intelligence Daily — 2026年06月24日

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:title" content="2026-06-25">
+<meta property="og:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:url" content="https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-06-25.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2026-06-25">
+<meta name="twitter:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<title>2026-06-25 | XinyMao AI Intelligence Hub</title>
+<link rel="alternate" type="application/rss+xml" title="XinyMao AI Intelligence Hub RSS" href="/feed.xml">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --bg2: #111111;
+  --bg3: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --text2: #888;
+  --accent: #6366f1;
+  --accent2: #818cf8;
+  --green: #34d399;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; color: var(--accent); }
+
+/* Nav */
+nav {
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(12px);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.nav-brand {
+  font-size: 0.95rem; font-weight: 600; color: var(--text);
+  letter-spacing: -0.02em;
+}
+.nav-brand span { color: var(--accent2); }
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+  color: var(--text2); font-size: 0.875rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+
+/* Main layout */
+.container {
+  max-width: 900px; margin: 0 auto; padding: 3rem 2rem;
+}
+.hero {
+  text-align: center; padding: 5rem 2rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700; letter-spacing: -0.04em;
+  line-height: 1.1; margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text2) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p {
+  color: var(--text2); font-size: 1.125rem; max-width: 600px; margin: 0 auto 2rem;
+}
+.badge {
+  display: inline-block; padding: 0.25rem 0.75rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 999px; font-size: 0.75rem; color: var(--text2);
+  font-family: var(--mono);
+}
+
+/* Cards */
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 2rem 0;
+}
+.card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--accent); transform: translateY(-2px);
+}
+.card-label {
+  font-size: 0.7rem; font-family: var(--mono); color: var(--accent2);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;
+}
+.card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--text); }
+.card p { font-size: 0.875rem; color: var(--text2); line-height: 1.5; }
+.card-date { font-size: 0.75rem; color: var(--text2); margin-top: 1rem; font-family: var(--mono); }
+
+/* Article content */
+.article-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.article-header h1 { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; }
+.article-meta { color: var(--text2); font-size: 0.875rem; margin-top: 1rem; font-family: var(--mono); }
+.article-content h2 {
+  font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text);
+  border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;
+}
+.article-content h3 { font-size: 1.125rem; margin: 2rem 0 0.75rem; color: var(--accent2); }
+.article-content p { margin-bottom: 1.25rem; }
+.article-content ul, .article-content ol { margin: 1rem 0 1rem 1.5rem; }
+.article-content li { margin-bottom: 0.5rem; }
+.article-content blockquote {
+  border-left: 3px solid var(--accent); padding-left: 1.5rem;
+  color: var(--text2); margin: 1.5rem 0; font-style: italic;
+}
+.article-content code {
+  background: var(--bg3); padding: 0.2em 0.4em; border-radius: 4px;
+  font-family: var(--mono); font-size: 0.875em; color: var(--accent2);
+}
+.article-content pre {
+  background: var(--bg3); padding: 1.5rem; border-radius: 8px;
+  overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--border);
+}
+.article-content pre code { background: none; padding: 0; color: var(--text); }
+.article-content hr {
+  border: none; border-top: 1px solid var(--border); margin: 2rem 0;
+}
+.article-content strong { color: var(--text); }
+.article-content table {
+  width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+}
+.article-content th {
+  background: var(--bg3); padding: 0.75rem 1rem; text-align: left;
+  border: 1px solid var(--border); font-size: 0.875rem;
+}
+.article-content td {
+  padding: 0.75rem 1rem; border: 1px solid var(--border); font-size: 0.875rem;
+}
+
+/* List page */
+.report-list { margin: 2rem 0; }
+.report-item {
+  display: flex; align-items: baseline; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--border);
+}
+.report-item:last-child { border-bottom: none; }
+.report-item-date {
+  font-size: 0.8rem; color: var(--text2); font-family: var(--mono);
+  min-width: 100px; flex-shrink: 0;
+}
+.report-item-title { font-size: 0.95rem; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border); padding: 2rem;
+  text-align: center; color: var(--text2); font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav { padding: 0 1rem; }
+  .nav-links { gap: 1rem; }
+  .container { padding: 2rem 1rem; }
+  .hero { padding: 3rem 1rem 2rem; }
+}
+
+/* Status indicator */
+.status-ok { color: var(--green); }
+.status-warn { color: #f59e0b; }
+.tag {
+  display: inline-block; padding: 0.2rem 0.6rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; font-size: 0.7rem; font-family: var(--mono);
+  color: var(--text2); margin-right: 0.3rem;
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-brand">XinyMao<span>.</span></div>
+  <div class="nav-links">
+    <a href="/AI-Intelligence-Hub/">Home</a>
+    <a href="/AI-Intelligence-Hub/daily/">Daily</a>
+    <a href="/AI-Intelligence-Hub/weekly/">Weekly</a>
+    <a href="/AI-Intelligence-Hub/monthly/">Monthly</a>
+    <a href="/AI-Intelligence-Hub/research/">Research</a>
+    <a href="/AI-Intelligence-Hub/trackers/">Trackers</a>
+  </div>
+</nav>
+
+<div class="container">
+  <article>
+    <div class="article-header">
+      <div class="card-label">DAILY</div>
+      <p class="article-meta">2026-06-25</p>
+    </div>
+    <div class="article-content">
+      <h1 id="ai-intelligence-daily-20260625">AI Intelligence Daily — 2026年06月25日</h1>
+<blockquote>
+<p>XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度</p>
+</blockquote>
+<hr />
+<h2 id="3">今日最重要的3件事</h2>
+<h3 id="1-openai-broadcom-jalapenoai">1. OpenAI × Broadcom 发布「Jalapeño」自研推理芯片，AI 算力格局迎来拐点</h3>
+<p><strong>发生了什么</strong>：OpenAI 与 Broadcom 联合发布 <strong>Jalapeño</strong>，这是 OpenAI 的第一款自研 AI 芯片，专为 LLM 推理优化（HN <strong>708分，398评论</strong>，今日最热帖）。OpenAI 官网同步发布白皮书，TechCrunch 详细报道技术细节。</p>
+<p><strong>为什么重要</strong>：这是 AI 行业 2026 年最重要的硬件事件之一。OpenAI 长期依赖 NVIDIA GPU，自研芯片意味着：① 推理成本将大幅下降；② 对 NVIDIA 的依赖降低；③ OpenAI 从「AI 软件公司」向「全栈 AI 公司」迈进。对标 Google TPU、Amazon Trainium，OpenAI 补上了最后一块拼图。</p>
+<p><strong>对开发者影响</strong>：推理芯片效率提升将直接传导到 API 价格，长期来看 OpenAI API 成本有望进一步下降。短期内感受不到变化，但这是 12-18 个月后会显著影响定价的战略布局。</p>
+<p><strong>对科研影响</strong>：专用推理芯片意味着更高的 token/秒吞吐量，大规模推理实验成本将降低，有利于需要大量 API 调用的研究场景。</p>
+<p><strong>对创业影响</strong>：OpenAI 成本结构改善将增强其在企业市场的价格竞争力。同时验证了「推理效率」赛道的价值——从芯片层到软件层，这个方向的投资将持续增加。</p>
+<p><strong>我的判断</strong>：Jalapeño 是战略信号，不只是产品。结合近期三星大单、Daybreak 安全工具、Appia Foundation 标准建设，OpenAI 正在构建极难被单点突破的综合护城河。</p>
+<hr />
+<h3 id="2-anthropic-claude">2. Anthropic 指控阿里巴巴非法提取 Claude 模型能力</h3>
+<p><strong>发生了什么</strong>：Anthropic 正式向 Reuters 披露，阿里巴巴通过非法手段提取了 Claude AI 模型的能力（HN <strong>434分，760评论</strong>，今日评论数第一）。另一条相关消息：NSA 因 Anthropic 与某方的纠纷而失去了对「Mythos」工具的访问权限（HN 247分，263评论）。</p>
+<p><strong>为什么重要</strong>：这是 AI 行业首次有大型实验室公开指控另一家科技巨头「非法」提取模型能力。不是普通商业纠纷，而是模型知识产权、国际技术竞争、AI 治理边界的集中体现。760 条评论说明社区极为关注。</p>
+<p><strong>对开发者影响</strong>：API 安全和模型保护将成为更受关注的议题。未来 AI API 可能引入更严格的使用检测，「提取模型能力」的技术手段将被更严密地防范。</p>
+<p><strong>对科研影响</strong>：模型蒸馏、知识提取的学术研究边界将面临更严格的法律审视。「合法」与「非法」知识提取之间的界限正在被迫明确。</p>
+<p><strong>对创业影响</strong>：在中美 AI 竞争背景下，依赖跨境 AI 服务的创业公司需要更仔细地评估合规风险。这个事件将加速「AI 技术国家化」趋势。</p>
+<p><strong>我的判断</strong>：这件事的影响远超商业层面。结合 NSA 失去 Anthropic 工具访问权，背后可能涉及复杂的地缘政治博弈。如果进入法律程序，将成为 AI 行业的里程碑案件，影响程度堪比当年 Oracle vs Google 的 Java API 案。</p>
+<hr />
+<h3 id="3-gemini-35-flash-computer-useagentic-ai">3. Gemini 3.5 Flash 支持 Computer Use，Agentic AI 能力全面商品化</h3>
+<p><strong>发生了什么</strong>：Google 发布 <strong>Gemini 3.5 Flash Computer Use</strong>（HN 220分，140评论），在快速低价模型上实现 AI 操作电脑屏幕的能力。同日，GLM-5.2 被社区认为是「open agent 的里程碑式进步」（244分，141评论）。</p>
+<p><strong>为什么重要</strong>：Computer Use 此前是 Claude 的标志性能力，Google 将其带入自家低成本模型，意味着 Agentic AI 能力正在快速商品化。<strong>Flash（快速低价）版本支持 Computer Use</strong>，直接打开了大规模自动化应用的成本可行性。</p>
+<p><strong>对开发者影响</strong>：构建 Agentic 应用的成本将显著下降。Gemini Flash 的低延迟 + Computer Use，是构建桌面自动化、RPA 替代、Web 爬取 Agent 的理想组合。</p>
+<p><strong>对科研影响</strong>：Computer Use 能力普及将催生大量关于「AI-人机界面」的新研究，GUI Agent 将成为下一个热点方向。</p>
+<p><strong>对创业影响</strong>：传统 RPA 工具（UIPath、Automation Anywhere）的核心壁垒正在被 AI Computer Use 绕过，这是一个巨大的颠覆机会。</p>
+<p><strong>我的判断</strong>：Computer Use 的商品化是一个被低估的趋势。当 Flash 级别模型都能做 Computer Use，离「AI 员工」大规模落地不远了。未来 6 个月，这个方向将涌现大量创业公司。</p>
+<hr />
+<h2 id="claude">Claude 生态</h2>
+<ul>
+<li><strong>重磅负面</strong>：Anthropic 指控阿里巴巴非法提取 Claude 模型能力（见今日头条）</li>
+<li><strong>重磅负面 2</strong>：NSA 因 Anthropic 纠纷失去「Mythos」工具访问权（247分，263评论）</li>
+<li><strong>本周 Anthropic 总结</strong>：身份验证争议 → 系统故障 → Claude Tag 发布 → 阿里巴巴提取事件 → NSA 工具断供，五件大事集中一周，舆论场极为复杂</li>
+</ul>
+<hr />
+<h2 id="openai">OpenAI 生态</h2>
+<ul>
+<li><strong>Jalapeño 自研推理芯片</strong>：与 Broadcom 联合发布（见今日头条）</li>
+<li><strong>AI Agent 改变工作方式</strong>：新研究论文展示 Agent 在复杂任务中的生产力提升数据</li>
+<li><strong>Daybreak / GPT-5.5-Cyber</strong> 持续发酵</li>
+<li><strong>GPT-5 解决免疫学谜题</strong> 故事继续广泛传播</li>
+</ul>
+<hr />
+<h2 id="google">Google 生态</h2>
+<ul>
+<li><strong>Gemini 3.5 Flash Computer Use 发布</strong>（见今日头条）</li>
+<li><strong><a href="https://github.com/google-labs-code/design.md">google-labs-code/design.md</a></strong>：为 AI Coding Agent 提供设计系统规范格式，让 Agent 持久理解项目视觉标准</li>
+</ul>
+<hr />
+<h2 id="meta">Meta 生态</h2>
+<p>键盘记录丑闻余波持续。今日无新发布。</p>
+<hr />
+<h2 id="xai">xAI 生态</h2>
+<p>今日暂无动态。</p>
+<hr />
+<h2 id="_1">开源项目动态</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>描述</th>
+<th>今日星标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/calesthio/OpenMontage">OpenMontage</a></td>
+<td>开源 Agentic 视频生产系统</td>
+<td>连续4日第一</td>
+</tr>
+<tr>
+<td><a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></td>
+<td>The agent that grows with you</td>
+<td>202k 总星 +1178</td>
+</tr>
+<tr>
+<td><a href="https://github.com/apple/container">apple/container</a></td>
+<td>Apple 开源 macOS 轻量容器工具（Swift 编写）</td>
+<td>新上榜</td>
+</tr>
+<tr>
+<td><a href="https://github.com/google-labs-code/design.md">google-labs-code/design.md</a></td>
+<td>为 AI Agent 描述设计系统的规范格式</td>
+<td>新上榜</td>
+</tr>
+<tr>
+<td><a href="https://github.com/stablyai/orca">stablyai/orca</a></td>
+<td>并行 Agent 舰队管理 ADE</td>
+<td>新上榜</td>
+</tr>
+<tr>
+<td><a href="https://github.com/interviewstreet/hiring-agent">interviewstreet/hiring-agent</a></td>
+<td>AI Agent 简历评估打分系统</td>
+<td>+203</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">最新论文精选</h2>
+<h3 id="the-hitchhikers-guide-to-agentic-ai-agent">The Hitchhiker's Guide to Agentic AI：全栈 Agent 实践指南</h3>
+<p><strong>arXiv</strong>: https://arxiv.org/abs/2606.24937 | cs.AI<br />
+<strong>核心内容</strong>：覆盖从第一原理到生产部署的完整 Agentic AI 技术栈综述<br />
+<strong>工程价值</strong>：极高<br />
+<strong>我的评价</strong>：这种时间节点出现的综述性论文标志着 Agentic AI 进入「工程实践」阶段，每个 Agent 工程师必读</p>
+<h3 id="trustmemllm-agent">TRUSTMEM：LLM Agent 可信长期记忆整合</h3>
+<p><strong>arXiv</strong>: https://arxiv.org/abs/2606.25161 | cs.AI<br />
+<strong>核心创新</strong>：为 LLM Agent 的长期记忆建立信任机制，解决记忆写入/修改/删除的可靠性问题<br />
+<strong>复现难度</strong>：⭐⭐⭐ | <strong>科研价值</strong>：高 | <strong>工程价值</strong>：高<br />
+<strong>我的评价</strong>：Agent 记忆管理是最被忽视的工程问题之一，记忆写错比没有记忆更危险</p>
+<h3 id="qwen-agentworld-agent-hn-196">Qwen-AgentWorld：通用 Agent 语言世界模型（HN 196分）</h3>
+<p><strong>arXiv</strong>: https://arxiv.org/abs/2606.24597 | cs.AI<br />
+<strong>核心创新</strong>：语言世界模型为通用 Agent 提供环境理解和规划能力<br />
+<strong>复现难度</strong>：⭐⭐⭐⭐ | <strong>科研价值</strong>：高 | <strong>工程价值</strong>：高<br />
+<strong>我的评价</strong>：GLM-5.2 和 Qwen-AgentWorld 同日获得高关注，开源 Agent 模型竞争白热化</p>
+<h3 id="perfect-detection-failed-control">Perfect Detection, Failed Control：知道在哪 ≠ 能控制</h3>
+<p><strong>arXiv</strong>: https://arxiv.org/abs/2606.24952 | cs.CL<br />
+<strong>核心创新</strong>：揭示可解释性研究的核心隐患：检测行为方向 ≠ 可以用它控制行为<br />
+<strong>复现难度</strong>：⭐⭐⭐ | <strong>科研价值</strong>：极高 | <strong>工程价值</strong>：中高<br />
+<strong>我的评价</strong>：AI 安全领域的基础性洞见，对机械可解释性研究的重要纠偏</p>
+<h3 id="small-edits-large-modelswikipedia-llm">Small edits, large models：Wikipedia 编辑塑造 LLM 价值观</h3>
+<p><strong>arXiv</strong>: https://arxiv.org/abs/2606.24890 | cs.CL<br />
+<strong>核心创新</strong>：证明少量 Wikipedia 志愿者编辑可以影响主流 LLM 对特定话题的立场<br />
+<strong>复现难度</strong>：⭐⭐ | <strong>科研价值</strong>：极高 | <strong>工程价值</strong>：中<br />
+<strong>我的评价</strong>：今日最让人不安的论文。LLM「价值观」可以被少数人通过 Wikipedia 编辑悄悄塑造，是严重的治理漏洞</p>
+<hr />
+<h2 id="_3">社区热点</h2>
+<ol>
+<li><strong>OpenAI 自研芯片 Jalapeño</strong>（708分 398评论）— 今日最热，AI 硬件独立里程碑</li>
+<li><strong>Anthropic vs 阿里巴巴</strong>（434分 760评论）— 今日评论最多，AI 知识产权大战开幕</li>
+<li><strong>GLM-5.2 是 open agent 的里程碑</strong>（244分 141评论）— 中国开源 Agent 模型再获认可</li>
+<li><strong>Gemini 3.5 Flash Computer Use</strong>（220分 140评论）— Agentic 能力全面商品化信号</li>
+<li><strong>「大多数世界，开源 AI 是唯一出路」</strong>（214分 138评论）— 全球化视角的开源 AI 必要性</li>
+<li><strong>Krea 2：SOTA 开源 12B 图像模型</strong>（383分 42评论）— 开源图像生成追赶闭源的最新力证</li>
+</ol>
+<hr />
+<h2 id="ai">AI 投资融资</h2>
+<ul>
+<li>OpenAI × Broadcom Jalapeño 芯片：战略合作，具体投入规模未披露，但意义极重大</li>
+<li>Google DeepMind $1000 万多智能体安全研究资助持续进行中</li>
+</ul>
+<hr />
+<h2 id="_4">我的总结</h2>
+<p><strong>今日主题词：全栈竞争与地缘博弈</strong></p>
+<p>今天是本周信息密度最高的一天，三条主线同时爆发。</p>
+<p><strong>主线一：硬件自主化</strong>。OpenAI Jalapeño 芯片发布，标志着头部 AI 实验室全面进入「算力自主」时代。Google 有 TPU，Amazon 有 Trainium，现在 OpenAI 有 Jalapeño。NVIDIA 的护城河在被逐步侵蚀，但这是一个 3-5 年的结构性转变，不是一夜之间。</p>
+<p><strong>主线二：知识产权战</strong>。Anthropic vs 阿里巴巴的模型能力提取指控，是 AI 行业第一场公开的「知识产权主权」对抗。判决结果将为整个行业设定先例，影响深远。</p>
+<p><strong>主线三：Agentic 能力商品化</strong>。Gemini 3.5 Flash Computer Use、Qwen-AgentWorld、GLM-5.2……Agent 能力正在以肉眼可见的速度扩散到更多模型和工具中，这个速度比大多数人预料的快。</p>
+<p><strong>今日最被低估的信号</strong>：「Small edits, large models」论文证明 Wikipedia 编辑能影响 LLM 价值观。这是一个严肃的治理漏洞，需要被认真对待。</p>
+<p><strong>值得关注的机会</strong>：<br />
+1. <strong>AI Computer Use 应用层</strong>：Gemini Flash Computer Use 大幅降低桌面/Web 自动化 Agent 构建成本，是 6-12 个月内最确定的创业机会之一<br />
+2. <strong>AI 知识产权合规工具</strong>：Anthropic vs 阿里巴巴事件将推动企业客户寻求「模型使用合规审计」服务<br />
+3. <strong>开源 Agent 框架</strong>：GLM-5.2 和 Qwen-AgentWorld 证明开源 Agent 能力正在追赶闭源，基于开源构建垂直应用的窗口正在打开</p>
+<p><strong>潜在风险</strong>：<br />
+1. Anthropic vs 阿里巴巴若进入长期法律拉锯，将进一步加剧中美 AI 技术脱钩<br />
+2. OpenAI 自研芯片叠加企业锁定策略，若成功将形成比 NVIDIA 更难打破的垂直整合壁垒<br />
+3. Wikipedia 编辑影响 LLM 价值观的漏洞，若被有组织地利用，将对公共信息生态造成系统性污染</p>
+<p><strong>未来 6 个月预判</strong>：Jalapeño 芯片将成为 OpenAI 成本优势的核心来源，12 个月后 API 定价战将再次激化；Anthropic vs 阿里巴巴将成为 AI 知识产权领域的标志性案件；Computer Use 能力将在 6 个月内进入所有主流 AI 平台，桌面自动化创业迎来最佳窗口期。</p>
+<hr />
+<p><em>报告生成时间：2026-06-25 | XinyMao AI Intelligence Hub</em></p>
+    </div>
+  </article>
+</div>
+<footer>
+  <p>© 2025 XinyMao AI Intelligence Hub · Built with Claude · <a href="/AI-Intelligence-Hub/feed.xml">RSS</a></p>
+  <p style="margin-top: 0.5rem;">Daily AI Intelligence for Developers, Researchers and Builders.</p>
+</footer>
+</body>
+</html>
