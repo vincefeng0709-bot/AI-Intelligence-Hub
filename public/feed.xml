@@ -7,6 +7,62 @@
   <language>zh-CN</language>
   
   <item>
+    <title>2026-07-01</title>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-01.html</link>
+    <description><![CDATA[# AI Intelligence Daily — 2026年07月01日
+
+> XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度
+
+---
+
+## 今日最重要的3件事
+
+### 1. Claude Code 被发现在请求中嵌入隐写术标记——本周 HN 分数最高的 AI 新闻
+
+**发生了什么**：一位安全研究员发表文章，声称 **Claude Code 正在其 API 请求中嵌入隐写术（steganography）标记**——即在 prompt 或响应中以人类不可见但机器可识别的方式编码额外信息（HN **1655分，478评论**，本周所有 AI 新闻分数第一）。文章从网络流量分析角度详细记录了这一发现，Twitter 上也出现了「Anthropic 在 Claude Code 中嵌入了间谍软件式代码」的相关帖子（50分/11评论，措辞更激进的版本）。
+
+**技术背景**：隐写术在 AI 系统中有几个潜在的合理用途：
+- **水印**：追踪 AI 生成内容的来源，防止滥用
+- **指纹识别**：在调试中追溯请求的工具来源
+- **安全审计**：识别哪些请求来自 Claude Code 工具链
+
+**争议焦点**：即使目的是合理的（内容水印/安全审计），**在没有明确披露的情况下对用户请求进行隐式修改**，也触碰了开发者社区对「工具透明度」的核心底线。1655 分的分数说明开发者群体对此高度警觉。
+
+**Anthropic 的立场**（截至发稿）：Anthropic 官方尚未就此事发表声明，评论区正在进行激烈的技术讨论——有人认为这是正常的 prompt 注入追踪机制，有人认为这已经超出了工具供应商的权限边界。
+
+**我的判断**：这个故事的影响将取决于 Anthropic 如何回应。如果 Anthropic 能在 48 小时内给出清晰的技术解释和政策说明，这将成为一个「透明度成功案例」；如果保持沉默，它将成为 AI 工具信任危机的标志性事件。对于使用 Claude Code 处理敏感代码库的开发者（尤其是金融、医疗、国防领域），这是一个需要立即评估的安全议题。
+
+---
+
+### 2. Claude Sonnet 5 正式发布——上半年最强模型换代节点
+
+**发生了什么**：Anthropic 今日正式发布 **Claude Sonnet 5**（HN **1025分，590评论**，今日评论数第一）。根据 Anthropic 官方页面，Sonnet 5 是目前性价比最高的旗舰级模型，在编码、推理和多步骤 Agent 任务上全面超越 Sonnet 4.x，同时保持与 Sonnet 系列一贯的速度和成本优势。
+
+**核心升级方向**（基于社区早期测评）：
+- **Agent 任务完成率**：在 SWE-bench 等基准上有显著提升，多步骤代码任务成功率大幅跳跃
+- **指令遵循**：复杂格式要求（JSON schema、长文档结构）的准确性提升
+- **推理深度**：数学和逻辑推理任务的表现接近 Opus 级别，但价格维持在 Sonnet 水平
+- **上下文窗口**：维持或扩展现有的大上下文能力
+
+**对开发者的直接影响**：使用 Anthropic API 的所有应用从今日起应该将 `claude-sonnet-4-x` 切换为 `claude-sonnet-5` 进行 A/B 测试——特别是 Agent 应用、代码生成和长文档处理场景，提升幅度可能非常显著。
+
+**对整体 AI 市场的影响**：Sonnet 5 的发布与出口管制解除（见第3条）同日进行，说明 Anthropic 正在进行一次协调一致的战略推进：一方面扩大全球市场准入，另一方面用新模型确保技术领先地位。
+
+**我的判断**：本日报自上线以来一直使用 `claude-sonnet-4-6` 作为 AI 分析引擎。Sonnet 5 的发布是一个明确的升级信号——Agent 类应用的开发者应将其列为本周首要测试任务。
+
+---
+
+### 3. 美国商务部解除 Claude Fable 5 和 Mythos 5 的出口管制
+
+**发生了什么**：美国商务部今日宣布**解除对 Claude Fable 5 和 Mythos 5 的出口管制**（HN **519分，265评论**，Anthropic 官方 Twitter 确认）。这是对上周持续发酵的「Anthropic vs 阿里巴巴」争议、奥地利游说欧盟接收 Anthropic、GLM-5.2 开源逆袭等一系列事件的直接政策回应。
+
+**为什么这个时机极其关键**：
+- 解除时间：距离上周 Mythos 出口管制争议引爆 HN（809分，1304评论）仅一周
+- 同日：Cl]]></description>
+    <pubDate>2026-07-01</pubDate>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-01.html</guid>
+  </item>
+  <item>
     <title>2026-06-30</title>
     <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-06-30.html</link>
     <description><![CDATA[# AI Intelligence Daily — 2026年06月30日
