@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:title" content="2026-07-03">
+<meta property="og:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:url" content="https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-03.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2026-07-03">
+<meta name="twitter:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<title>2026-07-03 | XinyMao AI Intelligence Hub</title>
+<link rel="alternate" type="application/rss+xml" title="XinyMao AI Intelligence Hub RSS" href="/feed.xml">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --bg2: #111111;
+  --bg3: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --text2: #888;
+  --accent: #6366f1;
+  --accent2: #818cf8;
+  --green: #34d399;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; color: var(--accent); }
+
+/* Nav */
+nav {
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(12px);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.nav-brand {
+  font-size: 0.95rem; font-weight: 600; color: var(--text);
+  letter-spacing: -0.02em;
+}
+.nav-brand span { color: var(--accent2); }
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+  color: var(--text2); font-size: 0.875rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+
+/* Main layout */
+.container {
+  max-width: 900px; margin: 0 auto; padding: 3rem 2rem;
+}
+.hero {
+  text-align: center; padding: 5rem 2rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700; letter-spacing: -0.04em;
+  line-height: 1.1; margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text2) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p {
+  color: var(--text2); font-size: 1.125rem; max-width: 600px; margin: 0 auto 2rem;
+}
+.badge {
+  display: inline-block; padding: 0.25rem 0.75rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 999px; font-size: 0.75rem; color: var(--text2);
+  font-family: var(--mono);
+}
+
+/* Cards */
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 2rem 0;
+}
+.card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--accent); transform: translateY(-2px);
+}
+.card-label {
+  font-size: 0.7rem; font-family: var(--mono); color: var(--accent2);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;
+}
+.card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--text); }
+.card p { font-size: 0.875rem; color: var(--text2); line-height: 1.5; }
+.card-date { font-size: 0.75rem; color: var(--text2); margin-top: 1rem; font-family: var(--mono); }
+
+/* Article content */
+.article-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.article-header h1 { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; }
+.article-meta { color: var(--text2); font-size: 0.875rem; margin-top: 1rem; font-family: var(--mono); }
+.article-content h2 {
+  font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text);
+  border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;
+}
+.article-content h3 { font-size: 1.125rem; margin: 2rem 0 0.75rem; color: var(--accent2); }
+.article-content p { margin-bottom: 1.25rem; }
+.article-content ul, .article-content ol { margin: 1rem 0 1rem 1.5rem; }
+.article-content li { margin-bottom: 0.5rem; }
+.article-content blockquote {
+  border-left: 3px solid var(--accent); padding-left: 1.5rem;
+  color: var(--text2); margin: 1.5rem 0; font-style: italic;
+}
+.article-content code {
+  background: var(--bg3); padding: 0.2em 0.4em; border-radius: 4px;
+  font-family: var(--mono); font-size: 0.875em; color: var(--accent2);
+}
+.article-content pre {
+  background: var(--bg3); padding: 1.5rem; border-radius: 8px;
+  overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--border);
+}
+.article-content pre code { background: none; padding: 0; color: var(--text); }
+.article-content hr {
+  border: none; border-top: 1px solid var(--border); margin: 2rem 0;
+}
+.article-content strong { color: var(--text); }
+.article-content table {
+  width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+}
+.article-content th {
+  background: var(--bg3); padding: 0.75rem 1rem; text-align: left;
+  border: 1px solid var(--border); font-size: 0.875rem;
+}
+.article-content td {
+  padding: 0.75rem 1rem; border: 1px solid var(--border); font-size: 0.875rem;
+}
+
+/* List page */
+.report-list { margin: 2rem 0; }
+.report-item {
+  display: flex; align-items: baseline; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--border);
+}
+.report-item:last-child { border-bottom: none; }
+.report-item-date {
+  font-size: 0.8rem; color: var(--text2); font-family: var(--mono);
+  min-width: 100px; flex-shrink: 0;
+}
+.report-item-title { font-size: 0.95rem; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border); padding: 2rem;
+  text-align: center; color: var(--text2); font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav { padding: 0 1rem; }
+  .nav-links { gap: 1rem; }
+  .container { padding: 2rem 1rem; }
+  .hero { padding: 3rem 1rem 2rem; }
+}
+
+/* Status indicator */
+.status-ok { color: var(--green); }
+.status-warn { color: #f59e0b; }
+.tag {
+  display: inline-block; padding: 0.2rem 0.6rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; font-size: 0.7rem; font-family: var(--mono);
+  color: var(--text2); margin-right: 0.3rem;
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-brand">XinyMao<span>.</span></div>
+  <div class="nav-links">
+    <a href="/AI-Intelligence-Hub/">Home</a>
+    <a href="/AI-Intelligence-Hub/daily/">Daily</a>
+    <a href="/AI-Intelligence-Hub/weekly/">Weekly</a>
+    <a href="/AI-Intelligence-Hub/monthly/">Monthly</a>
+    <a href="/AI-Intelligence-Hub/research/">Research</a>
+    <a href="/AI-Intelligence-Hub/trackers/">Trackers</a>
+  </div>
+</nav>
+
+<div class="container">
+  <article>
+    <div class="article-header">
+      <div class="card-label">DAILY</div>
+      <p class="article-meta">2026-07-03</p>
+    </div>
+    <div class="article-content">
+      <h1 id="ai-intelligence-daily-20260703">AI Intelligence Daily — 2026年07月03日</h1>
+<blockquote>
+<p>XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度</p>
+</blockquote>
+<hr />
+<h2 id="3">今日最重要的3件事</h2>
+<h3 id="1-palantir-ai">1. 西班牙封禁 Palantir——欧洲 AI 数据主权战争正式打响</h3>
+<p><strong>发生了什么</strong>：西班牙政府下令将 Palantir 列入黑名单，禁止公共和私人企业使用其服务（HN <strong>586分，197评论</strong>）。这是欧洲国家首次在国家层面对美国 AI/数据公司实施全面封禁，而非仅限于监管要求或罚款。Palantir 是美国最大的政府数据分析公司，与 CIA、NSA、国防部等美国情报机构深度合作。</p>
+<p><strong>为什么这一刻的时机格外关键</strong>：本周恰好是美国商务部解除 Anthropic 出口管制的同一周。一方面美国放开 AI 出口，另一方面欧洲开始主动封禁美国 AI 数据基础设施——这两个方向同时发生，清晰地描绘出 2026 年 AI 地缘政治的双重结构：美国想扩大 AI 软实力，欧洲想保住数字主权。</p>
+<p><strong>西班牙的具体理由</strong>（根据报道）：<br />
+- Palantir 的数据处理方式与 GDPR 存在根本性冲突<br />
+- 对公共部门数据流入美国情报体系的安全担忧<br />
+- 更广泛的「数字主权」框架——欧洲不应将核心数据分析外包给受美国法律管辖的公司</p>
+<p><strong>对 AI 行业的影响</strong>：<br />
+- 所有向欧洲政府和企业提供服务的美国 AI 公司（AWS、Azure AI、OpenAI、Anthropic）都需要关注西班牙模式是否会被德国、法国、意大利跟进<br />
+- 「欧洲 AI 本地化」需求将大幅增加，对 Mistral AI 等欧洲本土 AI 公司是直接利好<br />
+- B2G（政府企业）AI 市场的地缘政治风险溢价显著上升</p>
+<p><strong>我的判断</strong>：西班牙封禁 Palantir 是「AI 数据主权」从监管讨论变为实际执法的分水岭。这不是对 Palantir 算法能力的否定，而是对「谁拥有数据分析权力」这个政治问题的回答。接下来 3-6 个月内，欧洲其他国家的跟进速度将决定这是孤立事件还是趋势起点。</p>
+<hr />
+<h3 id="2-openai-5-ai">2. OpenAI 洽谈向美国政府出让 5% 股权——AI 与国家的关系正在被重新定义</h3>
+<p><strong>发生了什么</strong>：《卫报》报道，OpenAI 正在与美国政府进行早期谈判，<strong>拟向政府出让约 5% 的股权</strong>（HN <strong>126分，135评论</strong>，评论密度极高）。这是 AI 公司与政府关系史上前所未有的结构——一家私营 AI 公司将政府作为股东而非监管者。</p>
+<p><strong>为什么这是历史性的</strong>：自工业革命以来，政府与科技公司的关系通常是「监管者与被监管者」，偶尔有政府采购合同。但「政府作为股权持有人」意味着政府在利润分配、公司治理、战略决策上都有法律地位。这在 AI 领域将产生深远影响：<br />
+- 政府对 OpenAI 决策（如模型发布、安全标准）将有更直接的介入权<br />
+- 其他 AI 公司将面临「是否也应该给政府股权」的压力<br />
+- 「AI 国有化」的讨论将从理论进入现实政策议程</p>
+<p><strong>谈判背景</strong>：OpenAI 正在进行从非营利到营利结构的历史性转型，此次政府股权谈判可能是转型条件的一部分——换取政府在转型过程中的支持和监管豁免。</p>
+<p><strong>与本周其他新闻的联系</strong>：<br />
+- 美国商务部解除 Anthropic 出口管制（周三）<br />
+- OpenAI 向政府出让股权（本周谈判曝光）<br />
+- 西班牙封禁 Palantir（今日）</p>
+<p>这三条消息合在一起描绘了一幅图景：美国政府正在以前所未有的深度介入 AI 行业，同时欧洲在反向构建防火墙。</p>
+<p><strong>我的判断</strong>：如果谈判成功，5% 的政府股权将是 AI 历史上最重要的治理事件之一——不是因为比例，而是因为它确立了一个先例：政府可以以股东身份而非监管者身份参与 AI 公司治理。这个先例一旦建立，AI 的「公共性」将以一种全新的方式被制度化。</p>
+<hr />
+<h3 id="3-ai-llm">3. 日本最高法院：AI 不能列为专利发明人 + 「依赖项中禁用 LLM 代码」运动兴起</h3>
+<p><strong>发生了什么</strong>：今日两条新闻共同构成「AI 代码/创作归属」这一本周持续升温的主题的最新章节：</p>
+<p>其一：<strong>日本最高法院裁定 AI 不能列为专利申请的发明人</strong>（HN <strong>360分，189评论</strong>）。这是日本在 AI 知识产权问题上的最高司法判例，与欧洲、美国的裁定方向一致——全球主要司法体系正在形成共识：AI 不具备法律意义上的「发明人」资格。</p>
+<p>其二：<strong>「依赖项中禁用 LLM 代码」运动</strong>（HN <strong>114分，97评论</strong>）：继 Godot 宣布拒绝 AI 代码贡献后，开源开发者 Joey Hess 发表文章，进一步提出：不仅直接贡献的代码，连所依赖的第三方库中也应该拒绝 LLM 生成的代码——因为你无法审计依赖链中的 AI 代码质量。</p>
+<p><strong>为什么「依赖项」这个角度特别重要</strong>：现代软件几乎都依赖数百个开源库。如果这些库中有未经充分理解的 AI 生成代码，维护者在几年后遇到 bug 时将无从修复，因为代码的「理解层」缺失了。这是比 Godot PR 政策更激进也更系统性的主张。</p>
+<p><strong>本周「AI 代码归属」议题的演化路径</strong>：<br />
+- 周二：HackerRank ATS 同一简历三个分数（AI 评估随机性）<br />
+- 周三：Godot 拒绝 AI PR 贡献（直接创作政策）<br />
+- 今日：日本专利判决 + 「No LLM in Dependencies」（向上游延伸）</p>
+<p>这是一条清晰的升级路径：从「评估」到「创作」到「归属」，AI 代码的法律和工程责任体系正在本周密集构建。</p>
+<p><strong>我的判断</strong>：「AI 代码归属」将在 2026 年下半年成为开源社区和法律界最重要的议题。当 AI 生成代码渗透到软件供应链的每一层时，「谁对这段代码负责」这个问题的答案将决定整个软件行业的法律责任结构。</p>
+<hr />
+<h2 id="claude-anthropic">Claude / Anthropic 生态</h2>
+<h3 id="claude-code-anthropic">Claude Code 隐写术事件：第三天，Anthropic 仍在沉默</h3>
+<ul>
+<li>HN 分数：<strong>2411分，733评论</strong>（本月第一，连续三天居 HN 最高位）</li>
+<li>距发现报告发布已超过 <strong>60 小时</strong>，Anthropic 无任何官方声明</li>
+<li>评论区今日新焦点：开始有人整理「如何从 API 请求中检测隐写术标记」的技术教程</li>
+<li>「Claude's AskUserQuestion 60 秒无响应」bug（HN 54分/59评论）同日出现，说明 Claude Code 今日面临来自多个方向的工具信任质疑</li>
+</ul>
+<p><strong>这件事现在的实际影响</strong>：多家企业安全博客已发文建议「临时审计或暂停 Claude Code 在敏感环境中的使用，直到 Anthropic 给出说明」。这种建议在商业上的影响将在未来几周内体现在 Anthropic 的企业合同续签上。</p>
+<h3 id="kimi-k27-github-copilotclaude">Kimi K2.7 进入 GitHub Copilot——Claude 代码助手竞争加剧</h3>
+<ul>
+<li>HN <strong>401分，165评论</strong></li>
+<li>Moonshot AI 的 Kimi K2.7 代码模型今日起正式在 GitHub Copilot 中可用，成为继 Claude 和 GPT 之后第三个进入 Copilot 的非 Microsoft 旗下 AI 模型</li>
+<li>对 Anthropic 的影响：GitHub Copilot 是 Claude Code 的主要竞争对手，Kimi K2.7 的加入意味着开发者现在有了一个在 Copilot 内直接对标 Claude 代码能力的中国模型选项</li>
+</ul>
+<h3 id="fable-ai">「用短绳子驯服 Fable 的 AI 编码方法」</h3>
+<ul>
+<li>HN 63分/62评论（今日新发布）</li>
+<li>一篇关于如何用「短任务分解」方法控制 AI 编码 Agent（特别是 Fable 5）的实践文章——评论区讨论热烈，说明开发者对如何有效使用最新一代超强模型仍在摸索中</li>
+</ul>
+<hr />
+<h2 id="openai">OpenAI 生态</h2>
+<ul>
+<li><strong>5% 股权谈判</strong>：如上第2条所述，OpenAI 与美国政府的股权谈判是本周 OpenAI 最重大的商业事件</li>
+<li>前日 GeneBench-Pro 正式上线，今日继续在科学 AI 社区发酵</li>
+</ul>
+<hr />
+<h2 id="ai-github">开源 AI 工具 GitHub 今日</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>描述</th>
+<th>今日新增 ★</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/msitarzewski/agency-agents">msitarzewski/agency-agents</a></td>
+<td>完整 AI Agency 工具箱</td>
+<td><strong>+3,032</strong> ★ 今日最高</td>
+</tr>
+<tr>
+<td><a href="https://github.com/usestrix/strix">usestrix/strix</a></td>
+<td>开源 AI 渗透测试工具</td>
+<td><strong>+2,137</strong></td>
+</tr>
+<tr>
+<td><a href="https://github.com/JuliusBrussee/caveman">JuliusBrussee/caveman</a></td>
+<td>Claude Code 技能：穴居人语言压缩 65% token</td>
+<td><strong>+926</strong> 新亮点</td>
+</tr>
+<tr>
+<td><a href="https://github.com/HKUDS/Vibe-Trading">HKUDS/Vibe-Trading</a></td>
+<td>AI 个人量化交易 Agent</td>
+<td>+939</td>
+</tr>
+<tr>
+<td><a href="https://github.com/obra/superpowers">obra/superpowers</a></td>
+<td>Agentic 技能框架 &amp; 软件开发方法论</td>
+<td>+897（总 244k）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hasaneyldrm/exercises-dataset">hasaneyldrm/exercises-dataset</a></td>
+<td>健身动作完整数据集</td>
+<td>+938</td>
+</tr>
+<tr>
+<td><a href="https://github.com/browser-use/video-use">browser-use/video-use</a></td>
+<td>Coding Agent 视频剪辑</td>
+<td>+554</td>
+</tr>
+<tr>
+<td><a href="https://github.com/affaan-m/ECC">affaan-m/ECC</a></td>
+<td>Agent 性能优化框架，适配 Claude Code/Codex/Cursor</td>
+<td>+486（总 225k）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/santifer/career-ops">santifer/career-ops</a></td>
+<td>Claude Code 驱动的 AI 求职系统，14 种技能</td>
+<td>+372（总 57k）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/openai/codex-plugin-cc">openai/codex-plugin-cc</a></td>
+<td>在 Claude Code 内使用 OpenAI Codex</td>
+<td>+352（总 22k）</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a></td>
+<td>Chrome 官方 DevTools MCP</td>
+<td>+104（总 45k）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>今日最值得关注</strong>：<br />
+- <code>JuliusBrussee/caveman</code>（81k stars，+926）：Claude Code 的 token 压缩技能，声称节省 65% token——在 Meta token 支出失控的背景下，token 效率工具正在成为热门需求<br />
+- <code>openai/codex-plugin-cc</code>：OpenAI 官方发布「在 Claude Code 内使用 Codex」插件——两大 AI 巨头的工具开始互相兼容，「Claude Code + Codex」的混合工作流正在出现</p>
+<hr />
+<h2 id="hn">本周 HN 分数总榜（截至今日）</h2>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>故事</th>
+<th>分数</th>
+<th>评论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Claude Code 隐写术</strong></td>
+<td><strong>2,411</strong></td>
+<td>733</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Claude Sonnet 5</td>
+<td>1,253</td>
+<td>778</td>
+</tr>
+<tr>
+<td>3</td>
+<td>出口管制解除</td>
+<td>963</td>
+<td>682</td>
+</tr>
+<tr>
+<td>4</td>
+<td>.self 自托管域名</td>
+<td>671</td>
+<td>379</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sony 删除用户电影</td>
+<td>610</td>
+<td>285</td>
+</tr>
+<tr>
+<td>6</td>
+<td>西班牙封禁 Palantir</td>
+<td>586</td>
+<td>197</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Nintendo 加薪 10%</td>
+<td>553</td>
+<td>347</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Claude Science</td>
+<td>555</td>
+<td>171</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Kimi K2.7 进入 Copilot</td>
+<td>401</td>
+<td>165</td>
+</tr>
+<tr>
+<td>10</td>
+<td>日本 AI 专利判决</td>
+<td>360</td>
+<td>189</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">我的总结</h2>
+<p><strong>今日主题词：谁有权力？</strong></p>
+<p>今天所有重要新闻都指向同一个问题：在 AI 时代，谁对什么有权力？西班牙说「我们对境内数据分析有主权」；日本说「发明人的法律资格不属于 AI」；「No LLM in Dependencies」运动说「开发者对代码质量有责任」；OpenAI 的 5% 股权谈判说「政府对 AI 公司的治理有介入权」。</p>
+<p><strong>这周是 2026 年上半年的分水岭</strong>：<br />
+- 技术层面：Claude Sonnet 5 发布，Kimi K2.7 进入 Copilot，AI 能力代际跃升<br />
+- 政策层面：出口管制解除，政府股权谈判，西班牙封禁，日本专利判决——规则框架在快速定型<br />
+- 信任层面：Claude Code 隐写术争议，HackerRank ATS 随机性，Godot AI 代码政策——工具信任体系在重建</p>
+<p><strong>最值得关注的悬而未决</strong>：Anthropic 的 Claude Code 响应。已经 60 小时了。技术社区的耐心正在耗尽，商业决策正在开始发生。无论 Anthropic 接下来说什么，这次沉默本身已经成为 AI 工具透明度历史的一部分。</p>
+<hr />
+<p><em>报告生成时间：2026-07-03 | XinyMao AI Intelligence Hub</em></p>
+    </div>
+  </article>
+</div>
+<footer>
+  <p>© 2025 XinyMao AI Intelligence Hub · Built with Claude · <a href="/AI-Intelligence-Hub/feed.xml">RSS</a></p>
+  <p style="margin-top: 0.5rem;">Daily AI Intelligence for Developers, Researchers and Builders.</p>
+</footer>
+</body>
+</html>
