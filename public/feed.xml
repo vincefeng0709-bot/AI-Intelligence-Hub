@@ -7,6 +7,112 @@
   <language>zh-CN</language>
   
   <item>
+    <title>2026-07-08</title>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-08.html</link>
+    <description><![CDATA[# AI Intelligence Daily — 2026年07月08日
+
+> XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度
+
+---
+
+## 今日最重要的3件事
+
+### 1. GitHub 今日最热：AI 驱动求职框架爆炸式增长——Claude Code 正在变成「职场 Agent」
+
+**发生了什么**：今日 GitHub Trending 第一名是 `MadsLorentzen/ai-job-search`（今日 **+2,514 星**，总 11k），这是一个**完全基于 Claude Code 构建的 AI 求职框架**。用户 fork 仓库、填入个人简历和求职目标，Claude Code Agent 自动完成：评估职位匹配度、定制 CV（针对每个职位调整）、撰写求职信、准备面试问题——整个求职流程变成了一个 agentic 工作流。
+
+**为什么这个项目今日增速第一**：
+- **场景颠覆性**：这不是「用 AI 帮写简历」（已经是老需求），而是「用 Claude Code Agent 自动执行整个求职战略」——包括职位筛选、材料定制化、面试准备的完整闭环
+- **门槛极低**：Fork + 填简历 = 得到专属 AI 求职 Agent，复制成本近乎零
+- **时机精准**：全球 AI 就业市场正在重构，AI 工具大规模替代白领工作的叙事下，「用 AI 找 AI 时代的工作」具有极强的共鸣性
+
+**Claude Code 作为「生活 Agent」平台的趋势**：
+- 6月底：Claude Code 作为「编程助手」
+- 7月初：Claude Code 技能生态爆发（337 个技能）
+- **7月8日**：Claude Code 开始进入「职场 Agent」场景
+
+这是 Claude Code 使用场景的重要拓展——从「帮工程师写代码」扩展到「帮任何人管理职业发展」。Anthropic 设计 Claude Code 的初衷是编程工具，但社区正在把它变成通用 agentic 工作台。
+
+**系统提示词泄露加速**：`asgeirtj/system_prompts_leaks`（今日 **+1,691 星，总 53k**）继续以惊人速度增长——两天内从 49k 涨到 53k。Claude Code 的完整系统提示词现在已经公开可查，与此同时 `addyosmani/agent-skills`（今日 **+1,317 星，总 72k**）展示了社区正在将这些提示词知识系统化地转化为生产级 Agent 工程实践。
+
+**我的判断**：`ai-job-search` 是「Claude Code 场景破圈」的标志性时刻。当 Claude Code 开始被用于求职、营销、财务分析等非编程场景时，它就不再只是竞争对手 GitHub Copilot 的对手，而是开始挑战更广泛的「AI 助手 + 工作流自动化」市场。
+
+---
+
+### 2. SwarmResearch 论文——多 Agent 编程研究的新范式
+
+**发生了什么**：今日 arXiv 发布论文 **SwarmResearch: Orchestrating Coding Agents for Open-Ended Discovery**，提出了一个多 Agent 编程研究框架，在开放式优化任务上超越了当前最先进的 LLM 引导进化和多 Agent 技术。
+
+**核心设计**：SwarmResearch 使用「牧羊人-搜索者」（Shepherd-Search）架构：
+- **Shepherd Agent**（协调者）：持有全局上下文，监控所有搜索方向，根据整体进展调整策略
+- **Search Agents**（执行者）：多个 Agent 并行工作，每个 Agent 在独立的 git branch 上运行，只持有本地上下文
+- 关键洞察：**避免单一 Agent 的上下文积累问题**——长时间运行的单 Agent 容易收敛到一个高层级方法，然后只做低层级微调，错过更优的整体方案
+
+**实验结果**：在 15 个开放式优化任务中，SwarmResearch 在 13/15 个任务上发现了比现有最优方案更好或相当的解——核心原因是「更高层级的探索多样性」。
+
+**为什么这篇论文值得关注**：
+- 直接解决了当前 Claude Code、Codex CLI 等 agentic 工具的核心痛点：长任务容易「路径依赖」，一旦选错高层架构就很难纠正
+- git branch 作为 Agent 隔离单元是个优雅的工程设计——与「The Log is the Agent」（本周早些时候的论文）形成呼应
+- 「协调者持有全局上下文、执行者持有本地]]></description>
+    <pubDate>2026-07-08</pubDate>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-08.html</guid>
+  </item>
+  <item>
+    <title>2026-07-07</title>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-07.html</link>
+    <description><![CDATA[# AI Intelligence Daily — 2026年07月07日
+
+> XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度
+
+---
+
+## 今日最重要的3件事
+
+### 1. OpenAI 同日宣布两个重量级企业落地——澳大利亚支付基础设施 + 日本最大银行
+
+**发生了什么**：OpenAI 今日同步发布两个企业级 AI 落地案例，展示了其在「关键基础设施 + 金融」双赛道的深度渗透：
+
+**澳大利亚支付基础设施 AP+（Australian Payments Plus）**：澳大利亚最大的支付基础设施公司（运营 NPP 实时支付系统，覆盖澳大利亚所有银行间支付）在全公司部署 ChatGPT Enterprise + Codex，核心目标是「在支付合规复杂性中提速」。AP+ 的 NPP 处理澳大利亚每年数万亿澳元的即时支付——这是 OpenAI 进入国家级金融基础设施的又一里程碑。
+
+**三菱 UFJ 银行 MUFG**：日本最大的银行集团（总资产超 3 万亿美元，全球前五大银行之一），宣布使用 ChatGPT Enterprise 构建「AI 原生组织」，计划在客户服务、信贷分析、合规审查、交易监控等核心业务流程全面引入 AI。MUFG 对 OpenAI 的定位不是「工具」而是「组织转型合作伙伴」。
+
+**为什么两个案例放在一起格外重要**：AP+ 是基础设施层（支付），MUFG 是机构层（银行）——OpenAI 在同一天触达了金融系统的两个不同层级。这不是巧合，而是 OpenAI 有意识的「金融垂直场景收割」策略：
+- 支付基础设施使用 Codex 加速合规代码开发
+- 银行使用 ChatGPT Enterprise 重构组织工作流
+- 两者都是对 AI 安全和可靠性要求极高的场景——OpenAI 用落地案例而非技术白皮书来建立信任
+
+**与 Anthropic 当前处境的对比**：
+- Anthropic：Claude Code 隐写术争议持续发酵（已第 7 天无官方声明）、阿里巴巴封禁
+- OpenAI：两个国家级金融机构落地案例，安静地扩大企业市场份额
+
+这种对比在今天看来尤为明显。Anthropic 在 B2B 企业市场上的空缺，正在被 OpenAI 填补。
+
+**我的判断**：OpenAI 的金融行业渗透将在 2026 年下半年加速。金融机构对 AI 供应商的选择具有极强的锁定效应——一旦合规体系和工作流与某个 AI 服务商绑定，迁移成本极高。OpenAI 今天拿下的 AP+ 和 MUFG，很可能在接下来几年内成为不可撼动的客户。
+
+---
+
+### 2. HuggingFace 同日三个基础设施合作——微软、AWS、SkyPilot 全面布局云计算层
+
+**发生了什么**：HuggingFace 今日连续发布三个重要的基础设施合作公告，集中展示其「模型托管 + 云计算」战略：
+
+**微软 Foundry 托管计算**：HuggingFace 模型现可在微软 Azure Foundry 的托管计算环境中直接部署——这意味着 Azure 企业客户可以在 Microsoft 的托管基础设施上一键部署 HuggingFace 上的任意开源模型，无需自建推理集群。
+
+**HuggingFace + SkyPilot 零出口费用存储**：HuggingFace 与 SkyPilot 合作，推出跨云 AI 训练工作负载与 HuggingFace 零出口费用存储的集成——开发者可以在任意云平台（AWS、GCP、Azure）运行训练，数据存储在 HuggingFace Hub，不产生出口费用。这直接击中了多云 AI 开发的最大痛点之一。
+
+**Amazon SageMaker Studio 一键集成**：HuggingFace 模型现可从 Hub 一键部署到 Amazon SageMaker Studio，大幅降低 AWS 生态用户使用开源模型的摩擦。
+
+**HuggingFace 的战略意图**：三个合作同日发布，清晰地展示了 HuggingFace 的定位演变——从「模型社区」到「开源 AI 基础设施层」。它不与云厂商竞争，而是成为所有云厂商都需要的「开源模型接入层」：
+- Azure 用户 → HuggingFace on Foundry
+- AWS 用户 → HuggingFace on SageMaker
+- 多云用户 → HuggingFace Storage + SkyPilot
+
+这是 HuggingFace 版本的「赢得云战争的方式是成为所有云都需要的那一层」。
+
+**与 LeRobot v0.6.0 的呼应**：同日，HuggingFace 发布了 LeRob]]></description>
+    <pubDate>2026-07-07</pubDate>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-07.html</guid>
+  </item>
+  <item>
     <title>2026-07-06</title>
     <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-06.html</link>
     <description><![CDATA[# AI Intelligence Daily — 2026年07月06日
