@@ -7,6 +7,51 @@
   <language>zh-CN</language>
   
   <item>
+    <title>2026-07-11</title>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-11.html</link>
+    <description><![CDATA[# AI Intelligence Daily — 2026年07月11日
+
+> XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度
+
+---
+
+## 今日最重要的3件事
+
+### 1. Apple 起诉 OpenAI——AI 行业最大知识产权战争正式开打
+
+**发生了什么**：今日 HN 最高分新闻（**732分，368评论**）：Apple 对 OpenAI 提起诉讼，指控数名前苹果员工在跳槽至 OpenAI 后，将 Apple 的核心技术机密带入了 OpenAI。据报道，涉密内容涵盖 Apple Silicon 神经引擎的底层架构设计、Apple 内部 AI 训练数据处理流程，以及 Apple Intelligence 的核心推理优化方案。
+
+**案件性质**：这不是 Apple vs OpenAI 的「公司对公司」诉讼，而是苹果起诉**离职员工**，并将 OpenAI 列为共同被告——意味着苹果认为 OpenAI 明知或应知这些员工携带了受保护的商业机密。这个法律框架在技术产业有先例（最著名的是 Waymo vs Uber 自动驾驶芯片案，最终以 Uber 支付 2.45 亿美元股权结案）。
+
+**为什么这个案件影响深远**：
+- **Apple Silicon 是 Apple 最核心的竞争壁垒**。M 系列芯片的神经引擎架构如果流入 OpenAI，可能直接影响 OpenAI 的自研芯片战略
+- **OpenAI 的自研芯片计划**：OpenAI 一直在推进减少对 NVIDIA 依赖的自研 AI 芯片项目——如果该项目的部分设计思路来自前 Apple 工程师，诉讼将对项目进度造成严重影响
+- **人才流动的连锁反应**：Apple → OpenAI 是近年来 AI 人才流动最频繁的路径之一。这次诉讼将对这条路径上的所有人发出明确的法律风险信号
+
+**时间点的战略意味**：Apple 选择在 GPT-5.6 发布（7月9日）后两天、OpenAI 企业扩张势头最强劲时提起诉讼——这不一定是巧合。从 Apple 的战略角度看，此时出手可以在 OpenAI 最高调的时刻制造最大的舆论冲击。
+
+**对比：Waymo vs Uber 案的结局**：Waymo 的诉讼最终以 Uber 支付股权和技术转让协议结案。Apple 的诉讼目标可能不只是赔偿，而是通过法律程序获得对 OpenAI 芯片项目的发现权（Discovery），从而了解 OpenAI 自研芯片的实际进展——这对 Apple 的竞争情报价值巨大。
+
+**我的判断**：Apple vs OpenAI 是 2026 年 AI 行业最重要的法律事件，其影响将持续数年。短期：OpenAI 面临法律压力和舆论负面；中期：自研芯片项目进度受影响；长期：将重新定义 AI 行业「人才流动的知识产权边界」。
+
+---
+
+### 2. GPT-5.6 昨日 HN 1521分 + Sol 版本今日证明数学猜想——一个模型两个历史时刻
+
+**发生了什么**：GPT-5.6 昨日（7月10日）在 HN 获得 **1521分，1081评论**——这是 HN 历史上 AI 相关帖子的最高分记录之一，也是本月迄今任何新闻的最高分。而就在今日，GPT-5.6 的研究版本 **Sol Ultra** 又产出了一项数学突破（HN **391分，305评论**）：正式发布了对「**循环双覆盖猜想（Cycle Double Cover Conjecture）**」的证明。
+
+**循环双覆盖猜想是什么**：这是图论领域一个悬而未决近 50 年的重大猜想，由 Szekeres 和 Seymour 在 1970 年代独立提出，简要表述为「任何无桥图都可以被若干个圈的集合双覆盖」。数十年来众多顶级数学家未能解决。如果 GPT-5.6 Sol Ultra 的证明经过同行评审验证，这将是：
+- **AI 独立解决重大数学猜想的第一个真实案例**（此前 AlphaProof 解决了 IMO 级别的题目，但这是开放猜想）
+- 标志着 AI 从「辅助数学家」进化到「独立数学发现者」
+
+**今日 HN 上的模型对比**（**139分，80评论**）：有人同时让 GPT-5.6、Grok 4.5、Claude 和 Muse Spark 构建了 4 个相同的应用，并发布了详细对比报告。这是 GPT-5.6 发布后最早的一批非 benchmark、真实任务的横向对比——社区正在快速检验 GPT-5.6 的实际优劣。
+
+**GPT-5.6 昨日的 HN 热度解析**：1521分 + 1081评论是一个异常值。对比：
+- Claude Code 隐写术（7月1日）：HN 分数峰值约 2,431分（有意跟踪]]></description>
+    <pubDate>2026-07-11</pubDate>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-11.html</guid>
+  </item>
+  <item>
     <title>2026-07-10</title>
     <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-10.html</link>
     <description><![CDATA[# AI Intelligence Daily — 2026年07月10日
