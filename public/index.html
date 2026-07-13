@@ -206,29 +206,47 @@ footer {
 
 <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
   <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-07-11</h2>
+  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-07-13</h2>
   <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-intelligence-daily-20260711">AI Intelligence Daily — 2026年07月11日</h1>
+    <h1 id="ai-intelligence-daily-20260713">AI Intelligence Daily — 2026年07月13日</h1>
 <blockquote>
 <p>XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度</p>
 </blockquote>
 <hr />
 <h2 id="3">今日最重要的3件事</h2>
-<h3 id="1-apple-openaiai">1. Apple 起诉 OpenAI——AI 行业最大知识产权战争正式开打</h3>
-<p><strong>发生了什么</strong>：今日 HN 最高分新闻（<strong>732分，368评论</strong>）：Apple 对 OpenAI 提起诉讼，指控数名前苹果员工在跳槽至 OpenAI 后，将 Apple 的核心技术机密带入了 OpenAI。据报道，涉密内容涵盖 Apple Silicon 神经引擎的底层架构设计、Apple 内部 AI 训练数据处理流程，以及 Apple Intelligence 的核心推理优化方案。</p>
-<p><strong>案件性质</strong>：这不是 Apple vs OpenAI 的「公司对公司」诉讼，而是苹果起诉<strong>离职员工</strong>，并将 OpenAI 列为共同被告——意味着苹果认为 OpenAI 明知或应知这些员工携带了受保护的商业机密。这个法律框架在技术产业有先例（最著名的是 Waymo vs Uber 自动驾驶芯片案，最终以 Uber 支付 2.45 亿美元股权结案）。</p>
-<p><strong>为什么这个案件影响深远</strong>：<br />
-- <strong>Apple Silicon 是 Apple 最核心的竞争壁垒</strong>。M 系列芯片的神经引擎架构如果流入 OpenAI，可能直接影响 OpenAI 的自研芯片战略<br />
-- <strong>OpenAI 的自研芯片计划</strong>：OpenAI 一直在推进减少对 NVIDIA 依赖的自研 AI 芯片项目——如果该项目的部分设计思路来自前 Apple 工程师，诉讼将对项目进度造成严重影响<br />
-- <strong>人才流动的连锁反应</strong>：Apple → OpenAI 是近年来 AI 人才流动最频繁的路径之一。这次诉讼将对这条路径上的所有人发出明确的</p>...
+<h3 id="1-claude-code-prompt-33k-token">1. Claude Code 在读取你的 Prompt 之前先发送了 33k 个 Token——效率之争正式打响</h3>
+<p><strong>发生了什么</strong>：今日 HN 最高分 AI 话题（<strong>552分，313评论</strong>）：systima.ai 发布了一份 Claude Code 与 OpenCode 的 Token 开销对比分析——结论是 <strong>Claude Code 在用户 Prompt 实际被处理之前，就已经发送了约 33,000 个 Token 的初始化内容</strong>（系统提示、工具定义、上下文注入等），而开源替代品 OpenCode 在相同场景下的初始 Token 消耗仅为 <strong>7,000 个</strong>，差距接近 5 倍。</p>
+<p><strong>33k Token 的构成（根据分析）</strong>：<br />
+- Claude Code 的系统提示极长：包含详尽的工具调用规范、安全约束说明、格式化指令、角色定义<br />
+- 工具定义（Tool Definitions）：Claude Code 内置了大量工具，每个工具的 schema 都以 Token 计入<br />
+- 上下文注入：git status、当前目录结构、环境变量等在会话初始化时全量注入</p>
+<p><strong>OpenCode 的 7k 为何更低</strong>：OpenCode（基于 Go 构建的开源 Claude Code 替代品）采取了「按需注入」策略——仅在用户明确需要时才注入工具定义和上下文，而非在会话开始时全部预加载。</p>
+<p><strong>这意味着什么（成本和性能两个维度）</strong>：<br />
+- <strong>成本</strong>：Claude API 按 Token 计费。33k 的初始化开销意味着即使是一句「Hello」，实际消耗也是数</p>...
   </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-07-11.html">Read full report →</a></p>
+  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-07-13.html">Read full report →</a></p>
 </div>
 
 <div class="container">
   <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
   <div class="card-grid">
     
+<a href="/AI-Intelligence-Hub/daily/2026-07-13.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-07-13</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-07-13</div>
+</div>
+</a>
+<a href="/AI-Intelligence-Hub/daily/2026-07-12.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-07-12</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-07-12</div>
+</div>
+</a>
 <a href="/AI-Intelligence-Hub/daily/2026-07-11.html" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Daily Intelligence</div>
@@ -259,22 +277,6 @@ footer {
   <h3>2026-07-08</h3>
   <p>AI Intelligence Daily Report</p>
   <div class="card-date">2026-07-08</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-07-07.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-07-07</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-07-07</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-07-06.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-07-06</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-07-06</div>
 </div>
 </a>
   </div>

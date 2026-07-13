@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:title" content="2026-07-13">
+<meta property="og:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:url" content="https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-13.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2026-07-13">
+<meta name="twitter:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<title>2026-07-13 | XinyMao AI Intelligence Hub</title>
+<link rel="alternate" type="application/rss+xml" title="XinyMao AI Intelligence Hub RSS" href="/feed.xml">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --bg2: #111111;
+  --bg3: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --text2: #888;
+  --accent: #6366f1;
+  --accent2: #818cf8;
+  --green: #34d399;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; color: var(--accent); }
+
+/* Nav */
+nav {
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(12px);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.nav-brand {
+  font-size: 0.95rem; font-weight: 600; color: var(--text);
+  letter-spacing: -0.02em;
+}
+.nav-brand span { color: var(--accent2); }
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+  color: var(--text2); font-size: 0.875rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+
+/* Main layout */
+.container {
+  max-width: 900px; margin: 0 auto; padding: 3rem 2rem;
+}
+.hero {
+  text-align: center; padding: 5rem 2rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700; letter-spacing: -0.04em;
+  line-height: 1.1; margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text2) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p {
+  color: var(--text2); font-size: 1.125rem; max-width: 600px; margin: 0 auto 2rem;
+}
+.badge {
+  display: inline-block; padding: 0.25rem 0.75rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 999px; font-size: 0.75rem; color: var(--text2);
+  font-family: var(--mono);
+}
+
+/* Cards */
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 2rem 0;
+}
+.card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--accent); transform: translateY(-2px);
+}
+.card-label {
+  font-size: 0.7rem; font-family: var(--mono); color: var(--accent2);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;
+}
+.card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--text); }
+.card p { font-size: 0.875rem; color: var(--text2); line-height: 1.5; }
+.card-date { font-size: 0.75rem; color: var(--text2); margin-top: 1rem; font-family: var(--mono); }
+
+/* Article content */
+.article-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.article-header h1 { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; }
+.article-meta { color: var(--text2); font-size: 0.875rem; margin-top: 1rem; font-family: var(--mono); }
+.article-content h2 {
+  font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text);
+  border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;
+}
+.article-content h3 { font-size: 1.125rem; margin: 2rem 0 0.75rem; color: var(--accent2); }
+.article-content p { margin-bottom: 1.25rem; }
+.article-content ul, .article-content ol { margin: 1rem 0 1rem 1.5rem; }
+.article-content li { margin-bottom: 0.5rem; }
+.article-content blockquote {
+  border-left: 3px solid var(--accent); padding-left: 1.5rem;
+  color: var(--text2); margin: 1.5rem 0; font-style: italic;
+}
+.article-content code {
+  background: var(--bg3); padding: 0.2em 0.4em; border-radius: 4px;
+  font-family: var(--mono); font-size: 0.875em; color: var(--accent2);
+}
+.article-content pre {
+  background: var(--bg3); padding: 1.5rem; border-radius: 8px;
+  overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--border);
+}
+.article-content pre code { background: none; padding: 0; color: var(--text); }
+.article-content hr {
+  border: none; border-top: 1px solid var(--border); margin: 2rem 0;
+}
+.article-content strong { color: var(--text); }
+.article-content table {
+  width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+}
+.article-content th {
+  background: var(--bg3); padding: 0.75rem 1rem; text-align: left;
+  border: 1px solid var(--border); font-size: 0.875rem;
+}
+.article-content td {
+  padding: 0.75rem 1rem; border: 1px solid var(--border); font-size: 0.875rem;
+}
+
+/* List page */
+.report-list { margin: 2rem 0; }
+.report-item {
+  display: flex; align-items: baseline; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--border);
+}
+.report-item:last-child { border-bottom: none; }
+.report-item-date {
+  font-size: 0.8rem; color: var(--text2); font-family: var(--mono);
+  min-width: 100px; flex-shrink: 0;
+}
+.report-item-title { font-size: 0.95rem; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border); padding: 2rem;
+  text-align: center; color: var(--text2); font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav { padding: 0 1rem; }
+  .nav-links { gap: 1rem; }
+  .container { padding: 2rem 1rem; }
+  .hero { padding: 3rem 1rem 2rem; }
+}
+
+/* Status indicator */
+.status-ok { color: var(--green); }
+.status-warn { color: #f59e0b; }
+.tag {
+  display: inline-block; padding: 0.2rem 0.6rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; font-size: 0.7rem; font-family: var(--mono);
+  color: var(--text2); margin-right: 0.3rem;
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-brand">XinyMao<span>.</span></div>
+  <div class="nav-links">
+    <a href="/AI-Intelligence-Hub/">Home</a>
+    <a href="/AI-Intelligence-Hub/daily/">Daily</a>
+    <a href="/AI-Intelligence-Hub/weekly/">Weekly</a>
+    <a href="/AI-Intelligence-Hub/monthly/">Monthly</a>
+    <a href="/AI-Intelligence-Hub/research/">Research</a>
+    <a href="/AI-Intelligence-Hub/trackers/">Trackers</a>
+  </div>
+</nav>
+
+<div class="container">
+  <article>
+    <div class="article-header">
+      <div class="card-label">DAILY</div>
+      <p class="article-meta">2026-07-13</p>
+    </div>
+    <div class="article-content">
+      <h1 id="ai-intelligence-daily-20260713">AI Intelligence Daily — 2026年07月13日</h1>
+<blockquote>
+<p>XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度</p>
+</blockquote>
+<hr />
+<h2 id="3">今日最重要的3件事</h2>
+<h3 id="1-claude-code-prompt-33k-token">1. Claude Code 在读取你的 Prompt 之前先发送了 33k 个 Token——效率之争正式打响</h3>
+<p><strong>发生了什么</strong>：今日 HN 最高分 AI 话题（<strong>552分，313评论</strong>）：systima.ai 发布了一份 Claude Code 与 OpenCode 的 Token 开销对比分析——结论是 <strong>Claude Code 在用户 Prompt 实际被处理之前，就已经发送了约 33,000 个 Token 的初始化内容</strong>（系统提示、工具定义、上下文注入等），而开源替代品 OpenCode 在相同场景下的初始 Token 消耗仅为 <strong>7,000 个</strong>，差距接近 5 倍。</p>
+<p><strong>33k Token 的构成（根据分析）</strong>：<br />
+- Claude Code 的系统提示极长：包含详尽的工具调用规范、安全约束说明、格式化指令、角色定义<br />
+- 工具定义（Tool Definitions）：Claude Code 内置了大量工具，每个工具的 schema 都以 Token 计入<br />
+- 上下文注入：git status、当前目录结构、环境变量等在会话初始化时全量注入</p>
+<p><strong>OpenCode 的 7k 为何更低</strong>：OpenCode（基于 Go 构建的开源 Claude Code 替代品）采取了「按需注入」策略——仅在用户明确需要时才注入工具定义和上下文，而非在会话开始时全部预加载。</p>
+<p><strong>这意味着什么（成本和性能两个维度）</strong>：<br />
+- <strong>成本</strong>：Claude API 按 Token 计费。33k 的初始化开销意味着即使是一句「Hello」，实际消耗也是数万 Token<br />
+- <strong>性能</strong>：首次响应延迟与初始 Token 数正相关——33k vs 7k 意味着 Claude Code 的「冷启动」时间更长<br />
+- <strong>模型能力的反向影响</strong>：更长的上下文能帮助模型更好地理解任务，但对于简单任务来说，这是过度工程</p>
+<p><strong>Anthropic 的设计哲学 vs 工程师的效率诉求</strong>：这份分析触及了一个深层矛盾——Anthropic 将 Claude Code 设计为「尽可能安全、全面」的 Agent（因此需要详尽的系统提示），而工程师社区希望工具「尽可能高效、便宜」。两者并非不可调和，但 Claude Code 目前的默认配置明显偏向「安全全面」而非「轻量高效」。</p>
+<p><strong>HN 评论区的核心讨论</strong>：313 条评论（相当高的密度）聚焦在：这 33k Token 的内容是否值得？有工程师指出，Claude Code 的系统提示质量极高，正是这些精心设计的工具定义让 Claude Code 的 Agent 行为比竞品更可靠；也有工程师认为 Anthropic 应该提供「精简模式」。</p>
+<p><strong>对竞品的影响</strong>：这份对比让「OpenCode」获得了意外的品牌曝光——虽然它的功能不如 Claude Code 完整，但 5 倍的 Token 效率优势在成本敏感场景下是真实的竞争力。</p>
+<p><strong>我的判断</strong>：Claude Code 的 33k Token 开销本质上是「功能完整性 vs 运行成本」的权衡，不是 Bug，是设计选择。但在 GPT-5.6「更强性能，更低成本」的叙事背景下，Anthropic 应该认真考虑提供可配置的精简模式——否则这份分析会持续成为「Claude Code 太贵」叙事的核心弹药。</p>
+<hr />
+<h3 id="2-geohot-llmcommaai">2. Geohot：「我爱 LLM，我厌倦炒作」——Comma.ai 创始人的清醒宣言</h3>
+<p><strong>发生了什么</strong>：今日 HN <strong>405分，250评论</strong>：George Hotz（geohot，Comma.ai 创始人，首个独立破解 iPhone 和 PlayStation 3 的黑客）在个人博客发表「I love LLMs, I hate hype」，这是过去几年 AI 炒作周期中最有分量的「清醒声音」之一。</p>
+<p><strong>Geohot 的核心论点</strong>（基于 HN 讨论和文章摘要）：<br />
+- <strong>LLM 本身是真实的技术进步</strong>：他明确表示 LLM 是 genuine engineering achievement，能做到以前不可能的事情<br />
+- <strong>炒作的核心问题是「时间线谎言」</strong>：AI 公司和媒体在「AI 什么时候能做什么」上系统性地夸大和提前预期，导致用户形成不切实际的期望<br />
+- <strong>「AGI 正在到来」的叙事伤害了真实的 AI 应用</strong>：当每次发布都被包装成「AGI 的前夜」，真实场景中的有用应用反而被忽视<br />
+- <strong>他自己在用的 LLM 方式</strong>：在 Comma.ai 的实际工程中，LLM 用于代码审查辅助、文档生成、调试建议——是工具，不是奇迹</p>
+<p><strong>为什么 Geohot 的声音在此刻特别有分量</strong>：<br />
+- 他是工程师社区最受尊重的黑客之一，没有 AI 公司背景，不靠 AI 炒作吃饭<br />
+- Comma.ai 实际在汽车自动驾驶中使用 AI，他的评估来自「真实世界工程」而非 benchmark<br />
+- 250 条评论说明这触动了大量工程师的真实想法——很多人私下有同样感受但缺少这么有权威性的公开声明</p>
+<p><strong>与本周其他「反思 AI」内容的共鸣</strong>：<br />
+- 7月12日 HN：「别再让我去问 LLM 了」（198分）<br />
+- 7月13日 HN：「Ask HN: 为 AI 生成内容添加标识」（517分）<br />
+- 7月13日 Geohot：「我爱 LLM，我厌倦炒作」（405分）</p>
+<p>三篇文章在同一周出现，构成了一个清晰的信号：<strong>AI 行业正在经历「炒作峰值」之后的「清醒期」</strong>——不是反对 AI，而是要求更诚实、更准确地描述 AI 能做什么。</p>
+<p><strong>我的判断</strong>：Geohot 这篇文章将成为 2026 年「AI 理性反思」文献中被引用次数最多的文章之一。它不会影响 OpenAI 的发布节奏，也不会改变 GPT-5.6 的市场表现，但它代表了技术社区中「最聪明的那批人」开始主动为 AI 炒作降温——这在长期会影响工程师对 AI 工具的评估标准。</p>
+<hr />
+<h3 id="3-ask-hn-ai-517">3. Ask HN：请给 AI 生成文章加标识——517分背后的内容真实性危机</h3>
+<p><strong>发生了什么</strong>：今日 HN 热度最高的非技术 AI 话题（<strong>517分，258评论</strong>）：有人在 HN 发起 Ask HN，呼吁对 AI 生成的文章添加明确标识，并引发了关于「AI 内容正在淹没互联网」的大规模讨论。</p>
+<p><strong>517分的背后是什么样的焦虑</strong>：258 条评论的质量极高（多为高分 HN 用户参与），核心焦虑包括：<br />
+- <strong>SEO 垃圾内容</strong>：大量 AI 生成的低质量内容通过 SEO 优化占据搜索排名，稀释了真实内容的可见度<br />
+- <strong>新闻行业的结构性危机</strong>：多家媒体已裁撤记者，用 AI 生成新闻摘要——读者在不知情的情况下消费 AI 输出<br />
+- <strong>「我不知道我在读什么」</strong>：当 AI 内容质量足够高时，读者无法判断这是人类写的还是机器生成的，这让信任关系崩塌</p>
+<p><strong>当前的技术和政策现状</strong>：<br />
+- <strong>C2PA 标准</strong>：Coalition for Content Provenance and Authenticity 正在推动 AI 内容的加密溯源标准，已获 Adobe、Microsoft、OpenAI 支持<br />
+- <strong>Anthropic 的 AI 生成声明政策</strong>：Claude 在被问及时会声明自己是 AI，但主动在输出内容中嵌入「此内容由 AI 生成」的标识尚不是默认行为<br />
+- <strong>法律层面</strong>：欧盟 AI Act 要求 AI 生成的内容（尤其是 deepfake）必须明确标注，但对文章的要求尚不明确</p>
+<p><strong>今日 arXiv 的相关印证</strong>：今日发布的「Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents」论文正在从学术角度探讨同一个问题——如何让 AI 生成内容「可审计、可溯源」。从 HN 用户的直觉抗议到学术界的系统性方案，「AI 内容透明度」已成为横跨技术社区和学术界的共识需求。</p>
+<p><strong>我的判断</strong>：「AI 内容标识」这个话题目前在 HN 获得高分，但距离成为主流平台的默认实践还需要 1-2 年。核心阻力是「平台无激励」——Google、Meta、X 等平台的广告收入与内容生成量正相关，强制标注 AI 内容会降低内容生成量。监管（欧盟 AI Act 的落地执法）才是真正的推动力。</p>
+<hr />
+<h2 id="hn">今日 HN 其他亮点</h2>
+<p><strong>AI 提升研究生产力但缩窄思想多样性</strong>（HN <strong>143分，103评论</strong>）：IEEE Spectrum 报道一项研究，发现使用 AI 工具的科研人员发表论文速度更快、引用量更高，但研究方向高度趋同——AI 倾向于推荐「成功概率更高」的研究路径，导致整个学术界在 AI 辅助下向「热门方向」集中。这是 AI 提升效率但压缩多样性的教科书案例。</p>
+<p><strong>迁移生产 AI Agent 到 GPT-5.6：速度提升 2.2 倍，成本降低 27%</strong>（HN <strong>195分，80评论</strong>）：ploy.ai 工程师发布详细的 GPT-5.5 → GPT-5.6 迁移报告。关键数据：2.2x 速度提升在复杂推理任务上最显著；27% 成本降低来自 OpenAI 的 Token 重新定价；延迟在「常规问答」场景提升有限（约 20%），但在「长链推理」场景提升明显（&gt;50%）。这是目前公开最详细的 GPT-5.6 生产迁移实测数据。</p>
+<p><strong>「Mechanistic Interpretability 研究者将因果理论应用到 LLM」</strong>（HN <strong>95分，68评论</strong>）：ACM 报道了一批研究者用 Judea Pearl 的因果推断框架（因果层级、干预实验）来理解 LLM 内部推理过程。这是「可解释 AI」从相关性分析向因果分析演进的重要节点——不再只问「模型在 attention 上关注什么」，而是问「为什么这个 attention 模式导致了这个输出」。</p>
+<hr />
+<h2 id="arxiv-713">今日 arXiv 精选（7月13日新论文）</h2>
+<p><strong>Agent 能力边界测试</strong>：<br />
+- <strong>Long-Horizon-Terminal-Bench</strong>（arXiv 2607.08964）：46 个长时程终端任务基准，测试 15 个前沿模型，最强模型仅达 15.2% pass@1（完美阈值）；平均每任务消耗 990 万 Token、231 次操作、85 分钟——清醒地展示了当前 Agent 在真实长任务上的实际能力上限。<br />
+- <strong>GATS：图增强树搜索</strong>（arXiv 2607.08894）：在规划任务中实现 100% 成功率（vs LATS 88.9%，ReAct 23.9%），且推理阶段零 LLM 调用——关键创新是「用学习到的世界模型替代 LLM 的实时规划调用」，解决了 Agent 规划的确定性和成本问题。</p>
+<p><strong>推理效率突破</strong>：<br />
+- <strong>KV-PRM</strong>（arXiv 2607.09153）：通过复用 KV Cache 进行过程奖励建模，将评分计算从 O(L²) 降至 O(L)，实测 5000 倍 FLOPs 降低、37 倍延迟降低——多智能体测试时推理加速的关键工具。</p>
+<p><strong>AI 安全研究</strong>：<br />
+- <strong>「涌现式错位」没有想象中健壮</strong>（arXiv 2607.09053）：系统研究发现，被反复引用的 Emergent Misalignment 现象对「表面数据集特征」极度敏感（如回答长度差异），控制这些变量后大部分 EM 信号消失——提醒社区警惕 AI 安全领域的虚假研究结论。</p>
+<p><strong>AI × 数学形式化</strong>：<br />
+- <strong>AI 辅助 Lean 4 形式化 Vlasov 方程</strong>（arXiv 2607.08986）：数学家主导方向、AI Agent 执行形式化——完整证明 Vlasov 方程适定性。核心结论是这是「策略游戏」：人类负责「定义范围、引导分解、识别库空缺」，AI 负责「写 Lean 证明」——与 GPT-5.6 Sol 的 Cycle Double Cover 证明形成有趣的人机协作对照。</p>
+<hr />
+<h2 id="rss">今日重要 RSS 摘要</h2>
+<p><strong>HuggingFace（近期）</strong>：<br />
+- <strong>LeRobot v0.6.0「Imagine, Evaluate, Improve」</strong>：HuggingFace 机器人学习框架大更新，加入仿真评估和策略改进的闭环——机器人学习的「数据飞轮」正在工具层面走向成熟。<br />
+- <strong>Native-speed vLLM transformers 后端</strong>：vLLM 直接使用 HuggingFace transformers 作为建模后端，实现原生速度——降低开源 LLM 部署的工程复杂度。</p>
+<p><strong>Google DeepMind（近期）</strong>：<br />
+- <strong>DeepMind × A24 研究合作</strong>：Google DeepMind 与独立电影公司 A24（《瞬息全宇宙》出品方）宣布首个 AI × 电影的正式研究合作——AI 进入创意产业的方式正在从「工具提供商」演变为「研究合作伙伴」。</p>
+<hr />
+<h2 id="_1">我的总结</h2>
+<p><strong>今日主题词：清醒</strong></p>
+<p>今天 AI 行业最响亮的声音来自批评者，而非鼓吹者：</p>
+<ul>
+<li><strong>geohot 的清醒</strong>：LLM 是真实的进步，但行业的叙事方式系统性地扭曲了公众的预期</li>
+<li><strong>Claude Code 的 Token 账单</strong>：552分的讨论背后是「我们在为什么付钱？值得吗？」的理性追问</li>
+<li><strong>AI 内容标识的呼声</strong>：517分说明技术社区开始认真要求 AI 内容的透明度</li>
+</ul>
+<p>三个不同维度的「清醒」在同一天出现，不是巧合——这是 AI 行业进入「第二阶段」的信号：炒作期之后，严肃讨论期开始。不再只有「AI 能做什么」，而是「AI 在做什么、为什么这么做、代价是什么」。</p>
+<p>这对 AI 行业是健康的信号，不是衰退的信号。当一个技术从「炒作驱动」转向「理性驱动」，才真正开始了实质性的大规模采用。</p>
+<p><strong>本周核心叙事总结</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>核心事件</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7月9日</td>
+<td>GPT-5.6 + ChatGPT Work 发布</td>
+<td>定义下一代 AI</td>
+</tr>
+<tr>
+<td>7月10日</td>
+<td>GPT-5.6 HN 1551分历史记录</td>
+<td>市场热度顶峰</td>
+</tr>
+<tr>
+<td>7月11日</td>
+<td>Apple 起诉 OpenAI / AI 证明数学猜想</td>
+<td>法律+能力边界</td>
+</tr>
+<tr>
+<td>7月12日</td>
+<td>Grok CLI 隐私审计 / 陶哲轩谈 AI 编程</td>
+<td>信任审计开始</td>
+</tr>
+<tr>
+<td><strong>7月13日</strong></td>
+<td><strong>Claude Code 33k Token / geohot 清醒宣言</strong></td>
+<td><strong>理性讨论期到来</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>值得关注的下一步</strong>：<br />
+1. Anthropic 是否会回应 Claude Code Token 开销的讨论？提供「精简模式」可能是双赢选择<br />
+2. AI 内容标识的监管进展——欧盟 AI Act 执法细则将在下半年陆续落地<br />
+3. Long-Horizon-Terminal-Bench 的 15.2% 成功率是否会推动 Agent 能力评估方法的重新设计？</p>
+<hr />
+<p><em>报告生成时间：2026-07-13 | XinyMao AI Intelligence Hub</em></p>
+    </div>
+  </article>
+</div>
+<footer>
+  <p>© 2025 XinyMao AI Intelligence Hub · Built with Claude · <a href="/AI-Intelligence-Hub/feed.xml">RSS</a></p>
+  <p style="margin-top: 0.5rem;">Daily AI Intelligence for Developers, Researchers and Builders.</p>
+</footer>
+</body>
+</html>
