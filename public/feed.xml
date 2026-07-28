@@ -7,6 +7,49 @@
   <language>zh-CN</language>
   
   <item>
+    <title>2026-07-28</title>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-28.html</link>
+    <description><![CDATA[# AI 情报日报 · 2026-07-28
+
+**发生了什么**：AI 公司为获取训练数据正在销毁珍稀古籍，HN 739 分引爆伦理争议；Anthropic 正式发表开源权重模型立场声明（460 分/637 评论），态度审慎但不反对；微软推出 MAI-Cyber-1-Flash 网络安全 AI；Claude Opus 5 上线第二天即遭遇重大服务故障；AI 公司华盛顿游说支出创历史新高。
+
+---
+
+## 今日要闻
+
+### 1. AI 公司正在销毁珍稀古籍来获取训练数据
+
+HN 评分 **739 分 / 468 条评论**，来源：Twitter/X（7 月 27-28 日）。曝光内容显示，部分 AI 公司或其数据供应商为获取扫描内容，在扫描珍稀书籍后将实体书籍丢弃甚至销毁，且未遵守图书馆借阅协议中的保护条款。涉及的书籍包括孤本文献和绝版历史资料。
+
+**编辑点评**：739 分、468 条评论，这是今天 HN 评分最高的非技术故事，也是近期 AI 伦理争议中最具冲击性的报道之一。"销毁书籍"在文化语境上承载了极强的象征意义——焚书是文明退化的经典隐喻，AI 公司以"数字化保存"之名行物理销毁之实，触碰了公众最敏感的神经。从法律角度看，如果书籍是通过图书馆或机构合法借用，销毁可能已构成合同违约和财产损失；从伦理角度看，它揭示了 AI 训练数据采集在"效率第一"逻辑下对文化遗产的漠视。这件事如果得到进一步证实，可能对 AI 公司的数据获取实践产生监管层面的直接压力。
+
+---
+
+### 2. Anthropic 正式表明开源权重模型立场
+
+HN 评分 **460 分 / 637 条评论**，来源：Anthropic 官方博客（7 月 28 日）。Anthropic 发布正式立场声明，就开源权重 AI 模型的发布策略、潜在风险与监管边界表态。核心观点：Anthropic 支持负责任的开源，但认为最高能力级别的模型（"前沿模型"）发布开源权重需要更审慎的安全评估；他们不反对开源本身，但反对将"开源"本身视为自动具有正当性的立场。
+
+**编辑点评**：637 条评论是今天 HN 讨论最激烈的帖子，也理应如此——这是 Anthropic 第一次就开源权重问题发出清晰的机构声音，时机选在 Nvidia/微软/Meta 联合反对监管、创业者联署请愿后的关键政策窗口期。Anthropic 的立场可以被解读为：**"我们不是开源的敌人，但我们也不会假装所有模型发布开源权重都是无风险的。"** 这与 Llama/DeepSeek 的开源激进派形成了鲜明对立，也让 Anthropic 在"安全优先"叙事上保持一贯性——毕竟他们的核心商业定位从来都是"最安全的前沿模型"。问题在于：这份立场声明会不会在监管讨论中被用来支持对中国开源模型的限制？Anthropic 可能需要更清晰地区分"技术安全边界"和"地缘政治封锁"这两个不同的问题。
+
+---
+
+### 3. Claude Opus 5 上线第二天：两次重大服务故障
+
+HN 评分合计 **148 分 / 94 条评论**（两个 status 链接），来源：status.claude.com（7 月 28 日）。Claude Opus 5 在正式发布后第二天遭遇两次独立的服务异常，用户反映 API 请求错误率显著升高，部分时段完全无法调用。Anthropic 状态页面确认了两次事件。
+
+**编辑点评**：发布后 48 小时内出现重大服务故障，对于一个刚刚宣称"迄今最强"的旗舰模型来说，是非常不利的首周体验。这个事件揭示了 Claude Opus 5 背后的推理计算压力——更强的模型需要更多算力，首发期间用户涌入可能超出了基础设施的实时扩容能力。对于企业客户来说，SLA 稳定性永远比最高分数更重要；对于竞争态势来说，GPT-5 尚未发布的情况下，Anthropic 需要用这段独占期尽快完善服务稳定性，否则首发优势会被可靠性问题抵消。
+
+---
+
+### 4. 微软推出 MAI-Cyber-1-Flash：网络安全专用 AI
+
+HN 评分 **218 分 / 108 条评论**，来源：microsoft.ai（7 月 28 日）。微软正式发布 MAI-Cyber-1-Flash，一款专为网络安全场景优化的 AI 模型，集成在微软 MDASH（Microsoft Defender AI Security Hub）安全平台中，支持威胁检测、漏洞分析、安全事件响应自动化等场景。
+
+**编辑点评**：这是本周第二个专注网络安全的 AI 产品——Google 上周推出了 Gemini 3.5 Flash Cyber，微软今天推出 MAI-Cyber-1-Flash。两家同时发力同一细分领域，说明"AI + 网络安全]]></description>
+    <pubDate>2026-07-28</pubDate>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-28.html</guid>
+  </item>
+  <item>
     <title>2026-07-27</title>
     <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-27.html</link>
     <description><![CDATA[# AI 情报日报 · 2026-07-27
@@ -945,57 +988,6 @@ HN 评分 **143 分 / 149 条评论**。"**$100 AI Music Video: Claude Fable 5 v
 **两个]]></description>
     <pubDate>2026-07-09</pubDate>
     <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-09.html</guid>
-  </item>
-  <item>
-    <title>2026-07-08</title>
-    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-08.html</link>
-    <description><![CDATA[# AI Intelligence Daily — 2026年07月08日
-
-> XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度
-
----
-
-## 今日最重要的3件事
-
-### 1. GitHub 今日最热：AI 驱动求职框架爆炸式增长——Claude Code 正在变成「职场 Agent」
-
-**发生了什么**：今日 GitHub Trending 第一名是 `MadsLorentzen/ai-job-search`（今日 **+2,514 星**，总 11k），这是一个**完全基于 Claude Code 构建的 AI 求职框架**。用户 fork 仓库、填入个人简历和求职目标，Claude Code Agent 自动完成：评估职位匹配度、定制 CV（针对每个职位调整）、撰写求职信、准备面试问题——整个求职流程变成了一个 agentic 工作流。
-
-**为什么这个项目今日增速第一**：
-- **场景颠覆性**：这不是「用 AI 帮写简历」（已经是老需求），而是「用 Claude Code Agent 自动执行整个求职战略」——包括职位筛选、材料定制化、面试准备的完整闭环
-- **门槛极低**：Fork + 填简历 = 得到专属 AI 求职 Agent，复制成本近乎零
-- **时机精准**：全球 AI 就业市场正在重构，AI 工具大规模替代白领工作的叙事下，「用 AI 找 AI 时代的工作」具有极强的共鸣性
-
-**Claude Code 作为「生活 Agent」平台的趋势**：
-- 6月底：Claude Code 作为「编程助手」
-- 7月初：Claude Code 技能生态爆发（337 个技能）
-- **7月8日**：Claude Code 开始进入「职场 Agent」场景
-
-这是 Claude Code 使用场景的重要拓展——从「帮工程师写代码」扩展到「帮任何人管理职业发展」。Anthropic 设计 Claude Code 的初衷是编程工具，但社区正在把它变成通用 agentic 工作台。
-
-**系统提示词泄露加速**：`asgeirtj/system_prompts_leaks`（今日 **+1,691 星，总 53k**）继续以惊人速度增长——两天内从 49k 涨到 53k。Claude Code 的完整系统提示词现在已经公开可查，与此同时 `addyosmani/agent-skills`（今日 **+1,317 星，总 72k**）展示了社区正在将这些提示词知识系统化地转化为生产级 Agent 工程实践。
-
-**我的判断**：`ai-job-search` 是「Claude Code 场景破圈」的标志性时刻。当 Claude Code 开始被用于求职、营销、财务分析等非编程场景时，它就不再只是竞争对手 GitHub Copilot 的对手，而是开始挑战更广泛的「AI 助手 + 工作流自动化」市场。
-
----
-
-### 2. SwarmResearch 论文——多 Agent 编程研究的新范式
-
-**发生了什么**：今日 arXiv 发布论文 **SwarmResearch: Orchestrating Coding Agents for Open-Ended Discovery**，提出了一个多 Agent 编程研究框架，在开放式优化任务上超越了当前最先进的 LLM 引导进化和多 Agent 技术。
-
-**核心设计**：SwarmResearch 使用「牧羊人-搜索者」（Shepherd-Search）架构：
-- **Shepherd Agent**（协调者）：持有全局上下文，监控所有搜索方向，根据整体进展调整策略
-- **Search Agents**（执行者）：多个 Agent 并行工作，每个 Agent 在独立的 git branch 上运行，只持有本地上下文
-- 关键洞察：**避免单一 Agent 的上下文积累问题**——长时间运行的单 Agent 容易收敛到一个高层级方法，然后只做低层级微调，错过更优的整体方案
-
-**实验结果**：在 15 个开放式优化任务中，SwarmResearch 在 13/15 个任务上发现了比现有最优方案更好或相当的解——核心原因是「更高层级的探索多样性」。
-
-**为什么这篇论文值得关注**：
-- 直接解决了当前 Claude Code、Codex CLI 等 agentic 工具的核心痛点：长任务容易「路径依赖」，一旦选错高层架构就很难纠正
-- git branch 作为 Agent 隔离单元是个优雅的工程设计——与「The Log is the Agent」（本周早些时候的论文）形成呼应
-- 「协调者持有全局上下文、执行者持有本地]]></description>
-    <pubDate>2026-07-08</pubDate>
-    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-08.html</guid>
   </item>
 </channel>
 </rss>
