@@ -206,25 +206,31 @@ footer {
 
 <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
   <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-07-29</h2>
+  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-07-30</h2>
   <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-2026-07-29">AI 情报日报 · 2026-07-29</h1>
-<p><strong>发生了什么</strong>：Anthropic 发表研究成果——Claude 能够自主发现密码学漏洞；MCP 协议重大更新，传输层转向无状态架构；HuggingFace 发布 OpenAI/HuggingFace Agent 入侵事件完整技术时间线；500 美元 RL 微调的 9B 开源模型在目录审核任务上击败前沿模型；ACM 呼吁向 LLM 开放数字图书馆访问权限，正面回应"AI 销毁古籍"风波。</p>
+    <h1 id="ai-2026-07-30">AI 情报日报 · 2026-07-30</h1>
+<p><strong>发生了什么</strong>：OpenAI 正式发布 GPT-5.6，两项 API 设置使其在 ARC-AGI-3 上得分提升三倍；研究证明文档内嵌 AI 蠕虫可在 Copilot for Word 中自传播（346 分/263 评论）；arXiv 研究显示长篇政策文档无法可靠约束 AI Agent 行为；AI 顶级初创公司几乎不发表研究论文，Science 杂志发文批评；Google DeepMind 发布 Lyria 3.5 音乐生成模型。</p>
 <hr />
 <h2 id="_1">今日要闻</h2>
-<h3 id="1-anthropic-claude">1. Anthropic 研究：Claude 能自主发现密码学弱点</h3>
-<p>HN 评分 <strong>179 分 / 122 条评论</strong>，来源：Anthropic Research（7 月 29 日）。Anthropic 发表研究论文，证明 Claude（在受控条件下）能够自主识别密码学实现中的弱点，包括随机数生成缺陷、侧信道漏洞等传统上需要专家手动审计的问题。这是 Claude 在安全研究领域能力的首次系统性公开展示。</p>
-<p><strong>编辑点评</strong>：这篇研究的意义需要分两个层面理解。<strong>技术层面</strong>：Claude 能发现密码学漏洞，意味着它对底层数学结构和实现细节有足够深入的理解——这不只是"搜索已知漏洞模式"，而是涉及推理能力的实质性应用。<strong>战略层面</strong>：这篇论文发布在 Anthropic 刚刚就开源权重模型表明立场（"前沿模型需要安全评估"）之后一天，时机不是偶然的——它在用具体研究数据回答"为什么前沿模型需要谨慎"的问题。当 Claude 能自主发现密码学漏洞，同样的能力也能被滥用于攻击——这是 Anthropic 一贯安全叙事的技术基础。值得关注的是：这项能力对防御方（安全团队）同样极具价值，Claude 作为"AI 安全审计员"的商业前景不容小觑。</p>
-<hr />
-<h3 id="2-mcp-2026-07-28">2. MCP 2026-07-28 规范更新</h3>...
+<h3 id="1-openai-gpt-56-arc-agi-3">1. OpenAI 发布 GPT-5.6：两个设置让 ARC-AGI-3 得分提升三倍</h3>
+<p>来源：OpenAI 官方 RSS（7 月 29-30 日）。OpenAI 正式发布 <strong>GPT-5.6</strong>，定位为"前沿智能与前沿效率的融合"——在保持 GPT-5 系列推理能力的基础上大幅提升推理效率和 agent 工作流性能。配套研究博文披露：通过启用两项 API 设置（保留推理过程 + 启用 compaction），GPT-5.6 在 ARC-AGI-3 基准上的得分<strong>提升了三倍</strong>。</p>
+<p><strong>编辑点评</strong>：GPT-5.6 的发布时机极为精准——在 Claude Opus 5 发布五天后，Anthropic 因服务多次故障（本周已出现三次）正在承受用户信任压力的节点上，OpenAI 亮出了新旗帜。"ARC-AGI-3 得分提升三倍"是一个极度吸引眼球的声明，但需要理解背后的机制：保留推理过程允许模型在多轮中复用已完成的推理链，而 compaction 则压缩长对话上下文以节省 token——这两者结合实质上是给模型更好的"工作记忆"。这不是模型本身变强了三倍，而是<strong>任务设置的优化释放了已有能力</strong>。这对开发者的启示：你的应用是否充分利用了现有模型的全部推理能力？</p>...
   </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-07-29.html">Read full report →</a></p>
+  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-07-30.html">Read full report →</a></p>
 </div>
 
 <div class="container">
   <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
   <div class="card-grid">
     
+<a href="/AI-Intelligence-Hub/daily/2026-07-30.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-07-30</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-07-30</div>
+</div>
+</a>
 <a href="/AI-Intelligence-Hub/daily/2026-07-29.html" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Daily Intelligence</div>
@@ -263,14 +269,6 @@ footer {
   <h3>2026-07-25</h3>
   <p>AI Intelligence Daily Report</p>
   <div class="card-date">2026-07-25</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-07-24.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-07-24</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-07-24</div>
 </div>
 </a>
   </div>
