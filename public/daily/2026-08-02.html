@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:title" content="2026-08-02">
+<meta property="og:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:url" content="https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-02.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2026-08-02">
+<meta name="twitter:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<title>2026-08-02 | XinyMao AI Intelligence Hub</title>
+<link rel="alternate" type="application/rss+xml" title="XinyMao AI Intelligence Hub RSS" href="/feed.xml">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --bg2: #111111;
+  --bg3: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --text2: #888;
+  --accent: #6366f1;
+  --accent2: #818cf8;
+  --green: #34d399;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; color: var(--accent); }
+
+/* Nav */
+nav {
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(12px);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.nav-brand {
+  font-size: 0.95rem; font-weight: 600; color: var(--text);
+  letter-spacing: -0.02em;
+}
+.nav-brand span { color: var(--accent2); }
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+  color: var(--text2); font-size: 0.875rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+
+/* Main layout */
+.container {
+  max-width: 900px; margin: 0 auto; padding: 3rem 2rem;
+}
+.hero {
+  text-align: center; padding: 5rem 2rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700; letter-spacing: -0.04em;
+  line-height: 1.1; margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text2) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p {
+  color: var(--text2); font-size: 1.125rem; max-width: 600px; margin: 0 auto 2rem;
+}
+.badge {
+  display: inline-block; padding: 0.25rem 0.75rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 999px; font-size: 0.75rem; color: var(--text2);
+  font-family: var(--mono);
+}
+
+/* Cards */
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 2rem 0;
+}
+.card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--accent); transform: translateY(-2px);
+}
+.card-label {
+  font-size: 0.7rem; font-family: var(--mono); color: var(--accent2);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;
+}
+.card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--text); }
+.card p { font-size: 0.875rem; color: var(--text2); line-height: 1.5; }
+.card-date { font-size: 0.75rem; color: var(--text2); margin-top: 1rem; font-family: var(--mono); }
+
+/* Article content */
+.article-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.article-header h1 { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; }
+.article-meta { color: var(--text2); font-size: 0.875rem; margin-top: 1rem; font-family: var(--mono); }
+.article-content h2 {
+  font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text);
+  border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;
+}
+.article-content h3 { font-size: 1.125rem; margin: 2rem 0 0.75rem; color: var(--accent2); }
+.article-content p { margin-bottom: 1.25rem; }
+.article-content ul, .article-content ol { margin: 1rem 0 1rem 1.5rem; }
+.article-content li { margin-bottom: 0.5rem; }
+.article-content blockquote {
+  border-left: 3px solid var(--accent); padding-left: 1.5rem;
+  color: var(--text2); margin: 1.5rem 0; font-style: italic;
+}
+.article-content code {
+  background: var(--bg3); padding: 0.2em 0.4em; border-radius: 4px;
+  font-family: var(--mono); font-size: 0.875em; color: var(--accent2);
+}
+.article-content pre {
+  background: var(--bg3); padding: 1.5rem; border-radius: 8px;
+  overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--border);
+}
+.article-content pre code { background: none; padding: 0; color: var(--text); }
+.article-content hr {
+  border: none; border-top: 1px solid var(--border); margin: 2rem 0;
+}
+.article-content strong { color: var(--text); }
+.article-content table {
+  width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+}
+.article-content th {
+  background: var(--bg3); padding: 0.75rem 1rem; text-align: left;
+  border: 1px solid var(--border); font-size: 0.875rem;
+}
+.article-content td {
+  padding: 0.75rem 1rem; border: 1px solid var(--border); font-size: 0.875rem;
+}
+
+/* List page */
+.report-list { margin: 2rem 0; }
+.report-item {
+  display: flex; align-items: baseline; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--border);
+}
+.report-item:last-child { border-bottom: none; }
+.report-item-date {
+  font-size: 0.8rem; color: var(--text2); font-family: var(--mono);
+  min-width: 100px; flex-shrink: 0;
+}
+.report-item-title { font-size: 0.95rem; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border); padding: 2rem;
+  text-align: center; color: var(--text2); font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav { padding: 0 1rem; }
+  .nav-links { gap: 1rem; }
+  .container { padding: 2rem 1rem; }
+  .hero { padding: 3rem 1rem 2rem; }
+}
+
+/* Status indicator */
+.status-ok { color: var(--green); }
+.status-warn { color: #f59e0b; }
+.tag {
+  display: inline-block; padding: 0.2rem 0.6rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; font-size: 0.7rem; font-family: var(--mono);
+  color: var(--text2); margin-right: 0.3rem;
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-brand">XinyMao<span>.</span></div>
+  <div class="nav-links">
+    <a href="/AI-Intelligence-Hub/">Home</a>
+    <a href="/AI-Intelligence-Hub/daily/">Daily</a>
+    <a href="/AI-Intelligence-Hub/weekly/">Weekly</a>
+    <a href="/AI-Intelligence-Hub/monthly/">Monthly</a>
+    <a href="/AI-Intelligence-Hub/research/">Research</a>
+    <a href="/AI-Intelligence-Hub/trackers/">Trackers</a>
+  </div>
+</nav>
+
+<div class="container">
+  <article>
+    <div class="article-header">
+      <div class="card-label">DAILY</div>
+      <p class="article-meta">2026-08-02</p>
+    </div>
+    <div class="article-content">
+      <h1 id="ai-2026-08-02">AI 情报日报 · 2026-08-02</h1>
+<p><strong>发生了什么</strong>：OpenAI 宣布在数学和理论计算机科学领域取得十项重大进展，涵盖几何学、密码学和复杂性理论；MIT Sloan 研究发现 AI 理财建议出乎意料地好，尤其在你问对问题的情况下（HN 335 分/376 评论）；微软发布 Flint——专为 AI 时代设计的可视化语言，允许用自然语言指定图表（HN 270 分/68 评论）。</p>
+<hr />
+<h2 id="_1">今日要闻</h2>
+<h3 id="1-openai">1. OpenAI：在数学和理论计算机科学领域取得十项重大进展</h3>
+<p>来源：OpenAI 官方（8 月 1 日）。OpenAI 发布研究报告《Ten Advances in Mathematics and Theoretical Computer Science》，披露了 GPT 系列模型在以下领域取得的重大突破：几何学长期未解问题、密码学新构造、复杂性理论证明等。这是 OpenAI 迄今在基础数学研究方向上最集中的一次公开披露。</p>
+<p><strong>编辑点评</strong>：这是本周 AI 行业最具战略意义的发布之一，时机选择也颇为微妙——紧随 Quanta 杂志"AI 推理是否用错误理由得出正确结论"的质疑文章。OpenAI 的回应逻辑很清晰：不是反驳，而是用结果说话。数学是最容易验证的领域——一个几何定理要么成立要么不成立，没有歧义空间。如果 AI 在数学领域真正取得了可验证的突破，这是对"AI 推理可靠性"质疑的最有力回应。需要关注的是这十项进展的具体细节：是真正的新定理，还是对已知问题的新证明路径，还是在现有数学基础上的计算辅助？这个区别决定了这次发布的实际分量。</p>
+<hr />
+<h3 id="2-mit-sloanai">2. MIT Sloan：AI 理财建议出乎意料地好——如果你问对问题</h3>
+<p>HN 评分 <strong>335 分 / 376 条评论</strong>，来源：MIT Sloan（8 月 2 日）。MIT Sloan 管理学院发表研究，通过对照实验发现：在财务规划问题上，使用 AI（主要测试 GPT 系列）获得的建议质量，在某些维度上与人类理财顾问相当甚至更好——但关键在于<strong>提问方式</strong>：被动地问"我该怎么做"的效果远差于主动提供背景信息并明确目标的问法。</p>
+<p><strong>编辑点评</strong>：376 条评论，是今天 HN 最高讨论量。核心分歧在于：这是在说明 AI 很好，还是在说明现有人类理财顾问服务太差？两者可能都是真的。研究中"提问方式决定建议质量"这个发现，其实是一个更普遍的规律：AI 建议质量的上限很高，但它是否能达到上限，取决于用户提供的上下文质量。这对普通用户来说是一个隐患：最需要好建议的用户（往往是财务知识较少的人）恰恰最可能用糟糕的方式提问。<strong>AI 顾问的民主化效应可能是不均匀的</strong>：让善于提问的人如虎添翼，但未必能帮助最需要帮助的人。</p>
+<hr />
+<h3 id="3-microsoft-flint-ai">3. Microsoft Flint：为 AI 时代设计的可视化语言</h3>
+<p>HN 评分 <strong>270 分 / 68 条评论</strong>，来源：Microsoft（8 月 2 日）。微软开源了 <strong>Flint</strong>，一种专为 AI 时代设计的图表可视化语言。与现有图表库不同，Flint 允许用户用接近自然语言的方式描述可视化意图，然后由 AI 将其转化为具体的图表配置——定位为"让 AI 和人类都能轻松表达"的可视化 DSL。</p>
+<p><strong>编辑点评</strong>：Flint 触及了一个实际的痛点：当 AI 需要生成图表时，现有的图表库（D3、Vega、ECharts）对 AI 来说是"语言壁垒"——语法复杂、配置繁琐，导致 AI 生成图表的质量不稳定。Flint 的思路是设计一个"对 AI 友好"的可视化 DSL，降低 AI 到可视化输出的摩擦。这是一个有意思的设计方向：不是让 AI 适应人类已有的工具，而是<strong>重新设计工具以更好地与 AI 协作</strong>。如果 Flint 的生态发展顺利，它可能成为 AI agent 输出结构化可视化的标准接口之一。</p>
+<hr />
+<h3 id="4-k">4. 探索性建模：在 K 次猜测中训练最优解</h3>
+<p>HN 评分 <strong>108 分 / 26 条评论</strong>，来源：技术博客（8 月 2 日）。研究者提出"Explorative Modeling"方法：在训练时让模型生成 K 个候选解，只在最优解上进行反向传播——类似于强化学习中的"最优奖励采样"，但应用于监督学习场景。这种方法能显著提升模型在多解问题上的表现。</p>
+<p><strong>编辑点评</strong>：这是本周末难得的一篇有实质技术贡献的方法论文章。核心洞察是：标准的监督学习训练在"多解问题"（同一问题有多个正确答案）上是低效的——模型被迫拟合所有的正确路径，而不能专注于最优路径。"Train on the best of K guesses"这个思路与 GRPO、RLVR 等强化学习方法有异曲同工之妙，但计算开销更低。对于代码生成、数学解题、创意写作等任务，这类方法有直接的实用价值。</p>
+<hr />
+<h2 id="github">GitHub 趋势</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Stars</th>
+<th>今日新增</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>different-ai/openwork</td>
+<td>20,355</td>
+<td>+280</td>
+<td>Claude Cowork 开源替代（连续第三天上榜）</td>
+</tr>
+<tr>
+<td>antirez/ds4</td>
+<td>20,019</td>
+<td>+139</td>
+<td>Redis 创始人开发的 DeepSeek 4 本地推理引擎</td>
+</tr>
+<tr>
+<td>esengine/DeepSeek-Reasonix</td>
+<td>29,116</td>
+<td>+333</td>
+<td>面向终端的 DeepSeek 本地 AI 编程 Agent</td>
+</tr>
+<tr>
+<td>zhaoxuya520/reverse-skill</td>
+<td>13,634</td>
+<td>+1,141</td>
+<td>安全/逆向工程 Agent Skill 路由包（今日最大涨幅）</td>
+</tr>
+<tr>
+<td>mvanhorn/last30days-skill</td>
+<td>56,899</td>
+<td>+206</td>
+<td>多平台 AI 调研综合 Skill</td>
+</tr>
+</tbody>
+</table>
+<p><strong>今日最大亮点</strong>：</p>
+<p><strong>zhaoxuya520/reverse-skill</strong> 今日单日暴增 <strong>1,141 星</strong>（连续第二天高速增长，昨日 +335）。这个专为安全研究、逆向工程、授权渗透测试设计的 AI Skill 路由包正在安全社区迅速扩散。支持 Claude Code、Kiro、Cursor、Cline 等多个 AI 编程客户端，提供"按需自举工具链"和"自动进化经验库"能力——在 HuggingFace 入侵事件持续发酵的背景下，安全方向 AI 工具的需求明显升温。</p>
+<p><strong>antirez/ds4</strong> ——Redis 创始人 Salvatore Sanfilippo（antirez）开发了一款 DeepSeek 4 的本地推理引擎，支持 Metal（Mac）、CUDA 和 ROCm。Redis 创始人亲自动手做 LLM 推理引擎，说明本地 AI 推理已经吸引了足够多的顶级工程师关注。ds4 的特点是专注于 DeepSeek 4 的 Flash 和 PRO 变体，针对本地部署优化。</p>
+<hr />
+<h2 id="_2">编辑综述</h2>
+<p>今天的 AI 行业画面是一个难得的<strong>周末慢节奏思考日</strong>。没有重大产品发布，但有三个值得深入消化的信号：</p>
+<p><strong>OpenAI 的数学突破</strong>，是对过去一周"AI 推理可靠性"质疑的直接回应。真正的数学进展是可以独立验证的——如果 OpenAI 的披露经得起数学社区的审查，这将是 AI 科研能力的一个里程碑。</p>
+<p><strong>AI 理财建议的研究</strong>，提醒我们 AI 民主化的效果是不均匀的：好的提问者获益更大。这不只是关于理财，也是关于 AI 时代的"信息鸿沟"——提问能力本身成为了一种越来越重要的能力。</p>
+<p><strong>Flint 的出现</strong>，代表了一种新的设计哲学：不再只是"为人类设计工具"，而是"为 AI-人类协作设计工具"。这个方向会催生越来越多的"AI-native"工具，它们的设计逻辑与传统软件工具根本不同。</p>
+<hr />
+<p><em>数据来源：Hacker News · RSS Feeds · GitHub Trending · arXiv · 采集时间 2026-08-02 BJT</em></p>
+    </div>
+  </article>
+</div>
+<footer>
+  <p>© 2025 XinyMao AI Intelligence Hub · Built with Claude · <a href="/AI-Intelligence-Hub/feed.xml">RSS</a></p>
+  <p style="margin-top: 0.5rem;">Daily AI Intelligence for Developers, Researchers and Builders.</p>
+</footer>
+</body>
+</html>
