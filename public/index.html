@@ -206,26 +206,31 @@ footer {
 
 <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
   <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-08-03</h2>
+  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-08-04</h2>
   <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-2026-08-03">AI 情报日报 · 2026-08-03</h1>
-<p><strong>发生了什么</strong>：AI 生成海报赢得俄亥俄州博览会竞赛引发艺术界强烈争议（HN 114 分/127 评论）；"用 AI 生成哈布斯堡下巴青蛙 SVG"成为今年最流行的非正式 AI 基准测试；GitHub 今日 AI-For-Beginners 单日新增 2,629 星创新高，同日 antirez（Redis 创始人）的 DeepSeek 4 本地推理引擎和腾讯的团队级 Agent 记忆枢纽均强势上榜；Panniantong/Agent-Reach 让 AI Agent 无需 API 费用即可访问全互联网数据。</p>
+    <h1 id="ai-2026-08-04">AI 情报日报 · 2026-08-04</h1>
+<p><strong>发生了什么</strong>：JFrog 研究揭示 SQLite 数据库被提交了数十个 AI 生成的虚假严重漏洞（CVE），引发安全社区对 LLM 幻觉污染公共漏洞数据库的警报（HN 699 分/347 评论，今日最高）；研究博文提出"手动重打 LLM 生成代码"以防止认知债务，引发开发者社区强烈共鸣（HN 380 分/326 评论）；LLMs 对专家提问回答质量更高的研究（416 分/187 评论）；AI 行业隐性债务已达 1.65 万亿美元；OpenAI 发布 GPT-Live 实时语音系统技术详解。</p>
 <hr />
 <h2 id="_1">今日要闻</h2>
-<h3 id="1-ai">1. AI 海报赢得俄亥俄州博览会比赛：艺术界的新地雷</h3>
-<p>HN 评分 <strong>114 分 / 127 条评论</strong>，来源：Ohio State Fair（8 月 3 日）。一张 AI 生成的海报在俄亥俄州博览会的年度海报设计竞赛中获得冠军，引发艺术社区的强烈反应。主办方承认参赛规则中未明确禁止 AI 辅助工具，正在评估是否修改未来竞赛规则。</p>
-<p><strong>编辑点评</strong>：这是今年"AI 进入艺术竞赛"系列事件中的最新一章，但它揭示的问题比之前更为尖锐。争议的核心不是"AI 是否会画画"，而是<strong>竞赛本身的意义是什么</strong>：如果竞赛的目的是选出最好的视觉效果，AI 赢了是公平的；如果竞赛的目的是展示人类创意和技艺，AI 参赛就是类别错误。问题在于，大多数艺术竞赛的规则制定时，从未想象过这个问题——它们假设参赛作品当然是人类创作的。这不是孤立事件，而是一个正在全面展开的制度冲击：体育竞技用药物规则解决"人类增强"问题，耗费了数十年；艺术竞赛面对 AI，可能需要更快的制度响应。</p>
-<hr />
-<h3 id="2-ai">2. "哈布斯堡下巴青蛙"：当年度最流行 AI 基准测试来自网友异想</h3>
-<p>HN 评分 **104 分 / 47</p>...
+<h3 id="1-sqlite-ai-cve">1. SQLite 被 AI 生成虚假 CVE 淹没：安全数据库的新危机</h3>
+<p>HN 评分 <strong>699 分 / 347 条评论</strong>，来源：JFrog Research（8 月 4 日）。JFrog 安全研究团队发布报告：SQLite 项目被提交了大量 AI 生成的虚假安全漏洞报告，其中多个已进入官方 CVE 数据库并被标记为"严重"（Critical）级别。研究者逐一验证后发现这些漏洞根本不存在——它们是 LLM 幻觉的产物，具有完整的技术描述格式、合理的 CVSS 评分，但在代码中找不到对应的缺陷。</p>
+<p><strong>编辑点评</strong>：699 分是今天 HN 的最高分，也是近期讨论量最大的安全话题之一。这个事件的破坏性是系统性的：CVE 数据库是全球安全生态的基础设施，企业的漏洞扫描工具、合规检查、补丁优先级排序都依赖它——如果虚假 CVE 批量进入这个数据库，下游影响是巨大的。更深层的问题是：<strong>提交 CVE 的门槛本来就不高，而 AI 恰好擅长生成"看起来专业"的技术文档</strong>。LLM 可以一秒生成一份格式完整、术语正确的漏洞报告，但验证它需要真正理解代码的人花费数小时。这是一个典型的攻防不对称问题，而安全基础设</p>...
   </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-08-03.html">Read full report →</a></p>
+  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-08-04.html">Read full report →</a></p>
 </div>
 
 <div class="container">
   <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
   <div class="card-grid">
     
+<a href="/AI-Intelligence-Hub/daily/2026-08-04.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-08-04</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-08-04</div>
+</div>
+</a>
 <a href="/AI-Intelligence-Hub/daily/2026-08-03.html" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Daily Intelligence</div>
@@ -264,14 +269,6 @@ footer {
   <h3>2026-07-30</h3>
   <p>AI Intelligence Daily Report</p>
   <div class="card-date">2026-07-30</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-07-29.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-07-29</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-07-29</div>
 </div>
 </a>
   </div>
