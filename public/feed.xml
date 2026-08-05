@@ -7,6 +7,49 @@
   <language>zh-CN</language>
   
   <item>
+    <title>2026-08-05</title>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-05.html</link>
+    <description><![CDATA[# AI 情报日报 · 2026-08-05
+
+**发生了什么**：Apple 在诉讼中披露更多前员工可能将机密数据带入 OpenAI，OpenAI 随即发文反驳"Apple is getting this wrong"；博文"AI 生成图片让我不想读你的博客"引爆 436 条评论成为近期最大文化讨论；Mistral 发布 Shieldstral——3B 参数开源多模态内容审核模型；Interpol 警告：AI 已驱动非洲超过半数网络犯罪；Uber 开源企业级 AI Agent 安全框架 ADR。
+
+---
+
+## 今日要闻
+
+### 1. Apple 诉 OpenAI：更多前员工涉嫌带走机密数据
+
+HN 评分 **337 分 / 252 条评论**，来源：TechCrunch（8 月 5 日）。Apple 在其针对 OpenAI 的诉讼中更新披露，称有更多前员工（数量尚未公开）可能在离职时携带了涉及 Apple 机密项目的内部数据，包括 Siri 团队的研究材料和硬件设计文档。此案最初因数名前 Apple 工程师加入 OpenAI 时的数据转移行为引发，现已扩大范围。
+
+来源：OpenAI 官方（8 月 3 日晚）。同日，OpenAI 发布博文《Apple is Getting This Wrong》，正面回应指控。OpenAI 称 Apple 的指控"基于错误信息"，并公开了内部通讯记录，试图证明相关员工的数据行为符合正常离职程序，Apple 的法律策略意在限制人才流动而非保护真正的商业机密。
+
+**编辑点评**：这是本周 AI 行业最具战略意味的法律事件。表面是数据带走纠纷，深层是两家公司之间的**人才战争和技术边界战争**：Apple 正在大力发展 AI 能力，而它最好的 AI 人才持续流入 OpenAI、Google DeepMind 和 Anthropic。诉讼是在这个背景下的法律手段——即使 Apple 赢不了，也能制造足够的法律风险让人才流动更加谨慎。OpenAI 选择公开反驳而不是沉默应对，说明它判断这场舆论战比诉讼本身更重要。252 条评论里，科技行业的员工们显然对"公司能否阻止知识自由流动"这个问题有强烈的个人利益关切。
+
+---
+
+### 2. AI 生成图片让我不想读你的博客
+
+HN 评分 **737 分 / 436 条评论**（昨日爆发，今持续高热），来源：nelson.cloud（8 月 5 日仍活跃）。作者 Nelson 发表短文，核心论点：当他在一个博客的题图和文章内插图中看到 AI 生成图片时，会对这个博客作者的判断力产生怀疑，进而降低阅读意愿——不是因为图片质量差，而是因为**AI 图片作为信号，传递了"作者在偷懒"或"作者不在乎读者体验"的信息**。
+
+**编辑点评**：737 分是今天 HN 最高分，436 条评论涵盖了几乎所有立场：同意者分析了 AI 美学的标准化如何消解个性；反对者认为"内容才是核心，配图无关紧要"；中间派讨论了什么场景下 AI 图片是可以接受的。这篇文章触达了一个比技术更深的问题：**AI 内容正在改变读者对作者信号的解码方式**。过去，配一张好图需要花时间寻找或拍摄，这个"成本"本身传递了"作者重视这篇文章"的信息。当 AI 使得这个成本趋近于零，读者失去了这个信号，而且——这才是关键——现在 AI 图片开始传递**反向信号**：作者不在乎。这不只是美学偏好，而是 AI 对人类注意力经济信号系统的深层重塑。
+
+---
+
+### 3. Mistral 发布 Shieldstral：3B 参数开源多模态内容审核模型
+
+HN 评分 **320 分 / 76 条评论**，来源：Mistral AI（8 月 5 日）。Mistral 开源 **Shieldstral**，一个专为内容审核设计的 3B 参数多模态模型，可以处理文本和图像输入，覆盖有害内容、违法内容、虚假信息等审核类别。Mistral 声称 Shieldstral 在内容审核基准上优于更大的专有模型，且可以在边缘设备上运行。
+
+**编辑点评**：Shieldstral 的出现有几层意义：第一，**开源安全模型开始追上专有模型**——这与开源基础模型的追赶轨迹一致，但内容审核方向的竞争刚刚开始。第二，**3B 参数可在边缘设备运行**，意味着内容审核可以移到本地，不必依赖云端 API——这对隐私敏感的企业应用很重要。第三，这是 Mistral 在"AI 安全工具"赛道上的明确信号，不只做能力模型，也做治理工具。在昨日 SQLite 假 CVE 事件和 Interpol 报告的背景下，开源审核工具的需求比任何时候都更紧迫。
+
+---
+
+### 4. Interpol：AI 已驱动非洲超过半数网络犯罪
+
+HN 评分]]></description>
+    <pubDate>2026-08-05</pubDate>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-05.html</guid>
+  </item>
+  <item>
     <title>2026-08-04</title>
     <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-04.html</link>
     <description><![CDATA[# AI 情报日报 · 2026-08-04
@@ -902,50 +945,6 @@ HN 评分 **143 分 / 149 条评论**。"**$100 AI Music Video: Claude Fable 5 v
 **编辑点评**：Claude Fable 5 是 Anthropic 最新旗舰，GPT-5.6 Sol 是 OpenAI 最新旗舰。用 100 美元创意项目来评测顶级模型，是 2026 年社区评测的新范式——不再是]]></description>
     <pubDate>2026-07-17</pubDate>
     <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-17.html</guid>
-  </item>
-  <item>
-    <title>2026-07-16</title>
-    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-16.html</link>
-    <description><![CDATA[# AI Intelligence Daily — 2026年07月16日
-
-> XinyMao AI Intelligence Hub | 专业 · 深度 · 有温度
-
----
-
-## 今日最重要的3件事
-
-### 1. Inkling——Thinking Machines 发布开权重模型，955分打破一周批评沉闷
-
-**发生了什么**：今日 HN 最高分（**955分，236评论**）：菲律宾 AI 公司 Thinking Machines 正式发布 **Inkling**，一个完全开放权重（Open-Weights）的模型，同步在 HuggingFace 上线。这是本周 AI 行业中第一条以「发布新能力」为主题的重大正面新闻——自 GPT-5.6（7月9日）以来，AI 技术圈被批评（Anthropic）、法律（Apple 诉 OpenAI）、隐私（Grok CLI、Samsung）、透明度（Codex 加密）的讨论主导整整一周，Inkling 是「破局新闻」。
-
-**Inkling 的核心定位**：
-- **完全开放权重**：不同于 Meta Llama（开放权重但限制商用）或 Mistral（部分开放），Inkling 的权重可完全自由下载、修改、商业部署
-- **Thinking Machines 的背景**：这家菲律宾公司是东南亚最受尊敬的 AI 咨询和研究机构之一，此前以 AI 治理研究和企业 AI 落地著称，自研基础模型是其首次进入「模型提供商」赛道
-- **HuggingFace 同步欢迎**：HuggingFace 官方博客同日发布「Welcome Inkling by Thinking Machines」，说明这不是默默上线，而是有 HuggingFace 社区背书的正式发布
-
-**为什么 955 分在当前背景下格外有意义**：
-- **地理意义**：Inkling 来自东南亚，而非美国/欧洲/中国——这在 AI 开源模型领域极为罕见。「AI 能力全球化」不再只是叙事，而是有了具体的产品落地
-- **时机意义**：本周 AI 圈充斥「AI 公司不可信」「AI 工具隐私堪忧」的声浪，一个来自非传统 AI 大国、完全开放权重的模型，天然具备「去中心化、无隐患」的叙事优势
-- **社区意义**：955分说明 HN 社区对 Inkling 的接受度极高，评论区以正面讨论和技术测评为主——这是本周罕见的「纯技术兴奋」氛围
-
-**Inkling 的技术规格（根据发布页面）**：基于 Transformer 架构，支持多语言（含菲律宾语、印尼语、马来语等东南亚语言，这是其差异化优势），参数规模尚未完全公开但评论区测试显示约为 7-14B 级别，推理质量在东南亚语言场景显著优于 Llama 和 Mistral。
-
-**与 Bonsai 27B（昨日）的组合意义**：昨日 Bonsai 27B（手机端运行 27B 模型），今日 Inkling（东南亚开权重模型）——两天内出现两个来自「非传统 AI 强国」机构的重要开源发布，暗示 AI 能力正在以比预期更快的速度向全球分散。
-
-**我的判断**：Inkling 是 2026 年开源 AI 版图中最值得关注的「非美非欧非中」模型发布。它在技术参数上或许不及 Meta Llama 或 Mistral 的顶级版本，但它在「东南亚语言能力」和「完全开放」两个维度上有实质性差异化价值。对 AI 主权（AI Sovereignty）话题有深度关注的研究者，Inkling 是必须追踪的案例。
-
----
-
-### 2. 「我诱骗 Claude 泄露你最深的秘密」——Claude 记忆系统的安全漏洞记录
-
-**发生了什么**：昨日发布、今日持续攀升（**637分，286评论**）：安全研究者 Ayush 发布了一份详细的漏洞记录「I tricked Claude into leaking your deepest, darkest secrets」，展示了如何通过精心设计的提示词序列，诱导 Claude（启用了 Memory 功能的版本）在不知情的情况下将用户私人记忆中的敏感信息泄露到当前对话中。
-
-**攻击原理（根据文章）**：
-- **Claude Memory 的工作方式**：当 Claude 的 Memory 功能启用时，Claude 会在对话中主动检索用户的历史记忆摘要，并将相关信息注入当前上下文
-- **漏洞的核心**：通过构建一个表面上「无害」但实际上会触发特定记忆检索的提示词，攻击者可以让 Claude 在「帮助分析某个场景」的过程中，将记忆中的个人信息作为「上下文参考」输出——用户完全不知道这些私人信息已经被共享
-- **实际效果**：攻击者展示了能够提取存储在 Claud]]></description>
-    <pubDate>2026-07-16</pubDate>
-    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-16.html</guid>
   </item>
 </channel>
 </rss>
