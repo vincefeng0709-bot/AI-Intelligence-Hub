@@ -7,6 +7,47 @@
   <language>zh-CN</language>
   
   <item>
+    <title>2026-08-06</title>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-06.html</link>
+    <description><![CDATA[# AI 情报日报 · 2026-08-06
+
+**发生了什么**：Google DeepMind 宣布重大管理层变动：Demis Hassabis 升任主席，Jeff Dean 正式离职，开启 AI 领域权力格局重塑；Cloudflare 发布 Cloudflare OS——面向 Agent 时代的开放平台；Meta 被曝在广告系统中投放了含有 AI 生成 CSAM（儿童性虐待内容）的图像；"Born Against"记录了业余编程社区对 LLM 的集体抵制；Nashville 市议会通过土地征用权决议，阻止在动物园附近建设数据中心。
+
+---
+
+## 今日要闻
+
+### 1. Google DeepMind 大换帅：Demis 升主席、Jeff Dean 离职
+
+HN 评分 **658 分 / 712 条评论**，来源：Google CEO 桑达尔·皮查伊的内部信（8 月 6 日）。Google DeepMind 正式宣布：创始人兼 CEO Demis Hassabis 升任执行主席（Executive Chair），日常运营由 DeepMind 研究副总裁 Koray Kavukcuoglu 接任 CEO。与此同时，"AI 教父"级人物 Jeff Dean 正式卸任 Google Chief Scientist，离开 Google 后的去向尚未公开。
+
+**编辑点评**：712 条评论是今天 HN 全站第一，也是本周最大的行业事件。先拆解几个信号：
+
+**Demis 升任主席而非 CEO，是典型的"创始人荣升"套路**——给足荣誉，换来执行控制权。这通常意味着公司认为到了需要更聚焦执行的阶段，而不是继续依赖创始人的愿景型领导。在 DeepMind 连续发布 Gemini 系列、Robotics 2、AlphaFold 3 之后，Google 判断 DeepMind 已过了"需要用 Demis 的名字和魅力募集人才"的阶段，进入了大规模产品化阶段。
+
+**Jeff Dean 的离职是更大的信号**。Jeff Dean 不仅是 Google AI 研究的精神图腾，也是 TensorFlow、TPU、MapReduce 的直接推动者。他在 Google 工作了 26 年。他的离职标志着 Google AI 建设者一代的彻底交接——下一代 Google AI 将由产品经理和系统工程师主导，而不是研究科学家。
+
+这次换帅的背景是：Anthropic 和 OpenAI 凭借 Claude 和 GPT-5 系列在企业市场快速侵蚀 Google 的 AI 用户。Google 需要的是执行速度，不是更多的研究里程碑。
+
+---
+
+### 2. Cloudflare OS：为 Agent 时代构建的开放平台
+
+HN 评分 **561 分 / 268 条评论**，来源：Cloudflare 博客（8 月 6 日）。Cloudflare 正式发布 **Cloudflare OS**——一个面向 AI Agent 和应用的开放平台，核心能力包括：边缘 Agent 运行时（基于 Workers）、Agent 之间的通信协议、持久状态管理（Durable Objects）、内置安全沙箱。Cloudflare 明确定位这是"操作系统"级别的基础设施，而不是又一个 AI 工具。
+
+与此同时，GitHub 上 **cloudflare/computer**（"Give your agent a computer"）今日新增 891 星，是 Cloudflare OS 的配套项目——让 Agent 可以直接操控浏览器和桌面环境。
+
+**编辑点评**：Cloudflare OS 的出现是基础设施层竞争的关键节点。目前 AI Agent 的基础设施市场有几条竞争路线：AWS Lambda/Azure Functions（传统云厂商）、Vercel/Fly.io（边缘计算新秀）、专属 Agent 平台（如 E2B、Modal）。Cloudflare 的优势是：**遍布全球的边缘节点**（低延迟是 Agent 的关键需求）、**已有的 DDoS/安全能力**（Agent 安全是当前最大痛点之一）、**Workers 生态的开发者基础**。把"操作系统"这个概念附加到平台上，是一个清晰的心智占位：Cloudflare OS 想成为 Agent 运行的标准层，就像 Linux 是服务器运行的标准层一样。这个野心值得认真对待。
+
+---
+
+### 3. Meta 投放含 AI 生成 CSAM 图像的广告
+
+HN 评分 **297 分 / 228 条评论**，来源：Wired（8 月 6 日）。Wired 调查报道：Meta 的广告审核系统多次允许含有 AI 生成儿童性虐待]]></description>
+    <pubDate>2026-08-06</pubDate>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-06.html</guid>
+  </item>
+  <item>
     <title>2026-08-05</title>
     <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-05.html</link>
     <description><![CDATA[# AI 情报日报 · 2026-08-05
@@ -894,57 +935,6 @@ HN 评分 **136 分 / 116 条评论**。文章 "Claude Code: Anatomy of a Misfea
 来源：OpenAI 官方 RSS（7 月 17 日发布）。OpenAI CFO Sarah Friar 提出]]></description>
     <pubDate>2026-07-18</pubDate>
     <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-18.html</guid>
-  </item>
-  <item>
-    <title>2026-07-17</title>
-    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-17.html</link>
-    <description><![CDATA[# AI 情报日报 · 2026-07-17
-
-**发生了什么**：Google 将 NotebookLM 正式更名为 Gemini Notebook，HuggingFace 披露平台安全事件，德国 Soofi S 30B 开源模型登顶基准，Claude Fable 5 首次出现在社区对比测评中。
-
----
-
-## 今日要闻
-
-### 1. NotebookLM 更名为 Gemini Notebook —— Google 产品整合提速
-
-HN 评分 **249 分 / 128 条评论**。Google 将旗下 AI 笔记产品 NotebookLM 正式更名为 **Gemini Notebook**，品牌整合信号明显。NotebookLM 自 2023 年推出以来积累了大量忠实用户，此次改名引发社区两极分化：一方认为 Gemini 品牌能带来更多资源投入；另一方担忧这是被吸入 Google 产品黑洞的前兆，最终走向停运。
-
-**编辑点评**：Google 近年来产品更名和砍掉的案例屡见不鲜（Google+、Stadia、Inbox……），Gemini 品牌整合是否能真正为 NotebookLM 注入长期活力，还是只是前期铺垫，值得持续关注。对用户来说，短期功能不会变，但长期路径风险上升了。
-
----
-
-### 2. HuggingFace 安全事件披露 —— AI 基础设施的信任危机
-
-HuggingFace 官方 RSS 于 7 月 16 日发布 **"Security incident disclosure — July 2026"**，确认平台发生安全事件。细节尚待完整披露，但这一消息对整个 AI 开源生态影响深远：HuggingFace 是全球最大的模型托管平台，数十万个开源模型、数据集和 Spaces 应用托管于此，一旦供应链被污染，下游影响范围极广。
-
-**编辑点评**：这是 2026 年 AI 基础设施安全领域最重要的事件之一。过去两年 AI 模型被当作"可信黑盒"直接部署的惯性做法，需要被严肃审视。企业使用开源模型前做哈希校验、拉取固定版本 commit 而非 `main` 分支，已从"最佳实践"升格为"基本要求"。
-
----
-
-### 3. 德国 Soofi S 30B 开源模型登顶基准 —— 欧洲开源 AI 崛起
-
-HN 评分 **125 分**。**German AI Consortium** 发布 **Soofi S**，一个参数量 30B 的开放权重模型，在多项标准基准上超越同量级竞品。继两天前的 Inkling 模型之后，这是本周第二个来自非美非中机构的顶级开源模型。
-
-**编辑点评**：欧洲 AI 的"静默期"正在结束。过去三年欧洲在 AI 领域更多扮演监管者角色，但 Mistral、Soofi 等项目证明欧洲具备一流的模型研究能力。30B 参数在本地部署和成本控制上有明显优势，这类"欧洲制造"的开放模型对企业用户尤其有吸引力——既规避了中美数据安全顾虑，又享有完整开放权重的灵活性。
-
----
-
-### 4. LM Studio Bionic —— 开放模型的 AI Agent 平台
-
-HN 评分 **165 分 / 64 条评论**。LM Studio 推出 **Bionic**，定位为专为开放/本地模型设计的 AI agent 平台。LM Studio 一直是本地运行大模型最流行的工具之一，Bionic 将其从单纯的模型运行器扩展为可编排多步任务的 agent 框架。
-
-**编辑点评**：随着开放模型能力逼近闭源前沿，"本地 agent"赛道正式热起来。LM Studio Bionic 的意义在于降低了本地 agent 的部署门槛——不需要 Python 环境、不需要 API key、不需要数据上传云端。对隐私敏感的企业用户和个人开发者，这是一个值得认真评估的方向。
-
----
-
-### 5. Claude Fable 5 vs GPT-5.6 Sol —— 新一代模型首次社区对比
-
-HN 评分 **143 分 / 149 条评论**。"**$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol**" 是本周第一条将 Claude Fable 5 与 GPT-5.6 Sol 放在同一对比框架下的帖子，用 100 美元 AI 生成音乐视频作为测试载体。这是新一代旗舰模型的首次大众化创意对比，评论区对两款模型的输出质量、风格差异展开热议。
-
-**编辑点评**：Claude Fable 5 是 Anthropic 最新旗舰，GPT-5.6 Sol 是 OpenAI 最新旗舰。用 100 美元创意项目来评测顶级模型，是 2026 年社区评测的新范式——不再是]]></description>
-    <pubDate>2026-07-17</pubDate>
-    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-17.html</guid>
   </item>
 </channel>
 </rss>
