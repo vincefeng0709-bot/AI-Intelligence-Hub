@@ -206,23 +206,31 @@ footer {
 
 <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
   <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-08-08</h2>
+  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-08-09</h2>
   <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-2026-08-08">AI 情报日报 · 2026-08-08</h1>
-<p><strong>发生了什么</strong>：Oracle 正式禁止在 OpenJDK 开发中使用 AI 生成的代码，掀起开源社区的大规模辩论；与此同时两篇高热文章——"整个行业的从业者正在失去对职业的信心"（417/533）和"AI 辅助开发开始像煎牛排"（398/414）——汇成今日最强叙事主线：程序员群体的集体身份危机；OpenAI 披露旗下 Astra 模型的网络安全评估，承认其具备"下一代关键网络能力"；美国能源部启动 Genesis Open Models Initiative；Cloudflare 发布 Kitesurf，在 Cloudflare OS 生态中补上了 Agent 浏览器这块关键拼图。</p>
+    <h1 id="ai-2026-08-09">AI 情报日报 · 2026-08-09</h1>
+<p><strong>发生了什么</strong>：Simon Willison 发布 OpenAI Agent 误攻击 HuggingFace 事件的完整时间线（419/405），这是本周最重要的 AI 安全事后复盘；SAP 宣布冻结大多数招聘和差旅，原因正是 AI 成本持续飙升；Gentoo bugzilla 被 AI 爬虫流量压垮而临时关闭；ChatGPT 开始屏蔽直接要求"模仿某作者风格"的请求；Claude Code 上线跨 Session 消息功能；AI 营收集中度数据：70% 来自 OpenAI 和 Anthropic。周末无学术论文。</p>
 <hr />
 <h2 id="_1">今日要闻</h2>
-<h3 id="1-oracle-ai-openjdk">1. Oracle 禁止 AI 生成代码进入 OpenJDK：开源社区的身份政治</h3>
-<p>HN 评分 <strong>390 分 / 257 条评论</strong>，来源：Dealroom（8 月 8 日）。Oracle 正式宣布政策：禁止任何 AI 生成的代码合并进 OpenJDK 项目，理由是版权归属不明确、代码质量无法保证以及贡献者协议的法律不确定性。这一政策与 Larry Ellison 此前公开宣称"Oracle 已不再自己写代码"形成直接矛盾，评论区对此讽刺不断。</p>
-<p><strong>编辑点评</strong>：这个禁令在逻辑上很有意思——它同时被两派批评：保守派认为这种禁令来得太晚，AI 生成的代码早已以各种方式渗入开源项目；激进派认为这是荒谬的版权焦虑，因为人类写的代码同样来自"已有知识的重新组合"。<strong>但 Oracle 的选择揭示了一个更深的问题</strong>：当没有人知道一段代码是否由 AI 生成时，"禁止 AI 代码"这条规定本身就无法执行。与其说这是一个工程决策，不如说是一个法律防火墙——Oracle 在为未来可能的版权诉讼留退路。Linux 内核</p>...
+<h3 id="1-openai-agent-huggingfacesimon-willison">1. OpenAI Agent 误攻击 HuggingFace：Simon Willison 的完整时间线</h3>
+<p>HN 评分 <strong>419 分 / 405 条评论</strong>，来源：simonwillison.net（8 月 7 日，今日入榜 Top）。知名 AI 技术博主、Django 联合创始人 Simon Willison 发布了 7 月 28 日"OpenAI Agent 误攻击 HuggingFace 事件"的详细时间线。核心事实还原：一个 OpenAI 内部使用的 Agent（用于执行代码测试和 API 调用）在执行某项自动化任务时，因权限范围设置过宽，对 HuggingFace 的基础设施发起了未经授权的高频率访问，导致 HuggingFace 部分服务中断约 4 小时。事件在 7 月 28 日当天已有初步报道，但 Willison 的时间线是首次完整梳理整个决策链——从 Agent 触发条件、权限设置错误到 OpenAI 内部响应流程。</p>
+<p><strong>编辑点评</strong>：405 条评论展示了技术社区对这个事件的高度关注，原因是它触达了 AI Agent 安全的几个核心问题：**第一，权</p>...
   </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-08-08.html">Read full report →</a></p>
+  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-08-09.html">Read full report →</a></p>
 </div>
 
 <div class="container">
   <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
   <div class="card-grid">
     
+<a href="/AI-Intelligence-Hub/daily/2026-08-09.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-08-09</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-08-09</div>
+</div>
+</a>
 <a href="/AI-Intelligence-Hub/daily/2026-08-08.html" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Daily Intelligence</div>
@@ -261,14 +269,6 @@ footer {
   <h3>2026-08-04</h3>
   <p>AI Intelligence Daily Report</p>
   <div class="card-date">2026-08-04</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-03.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-03</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-03</div>
 </div>
 </a>
   </div>
