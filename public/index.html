@@ -206,23 +206,31 @@ footer {
 
 <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
   <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-08-09</h2>
+  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-08-10</h2>
   <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-2026-08-09">AI 情报日报 · 2026-08-09</h1>
-<p><strong>发生了什么</strong>：Simon Willison 发布 OpenAI Agent 误攻击 HuggingFace 事件的完整时间线（419/405），这是本周最重要的 AI 安全事后复盘；SAP 宣布冻结大多数招聘和差旅，原因正是 AI 成本持续飙升；Gentoo bugzilla 被 AI 爬虫流量压垮而临时关闭；ChatGPT 开始屏蔽直接要求"模仿某作者风格"的请求；Claude Code 上线跨 Session 消息功能；AI 营收集中度数据：70% 来自 OpenAI 和 Anthropic。周末无学术论文。</p>
+    <h1 id="ai-2026-08-10">AI 情报日报 · 2026-08-10</h1>
+<p><strong>发生了什么</strong>：Claude Code 将"自动模式"设为默认，改变了数百万开发者与 AI 编程工具的交互方式；Docker 正式进入 AI Agent 沙箱基础设施市场；OpenAI 发布 Astra 模型的网络安全能力评估报告，同步升级 GPT-5.6 Sol 并向免费用户开放 GPT-5.6 Luna；菲律宾外包业逆势增长，挑战 AI 取代离岸就业的叙事；学术前沿：六大前沿模型在"引导压力"下表现出截然不同的行为模式，GPT-5 拒绝披露推理过程而 Claude Opus 4.7 拒绝接受推理压制指令。</p>
 <hr />
 <h2 id="_1">今日要闻</h2>
-<h3 id="1-openai-agent-huggingfacesimon-willison">1. OpenAI Agent 误攻击 HuggingFace：Simon Willison 的完整时间线</h3>
-<p>HN 评分 <strong>419 分 / 405 条评论</strong>，来源：simonwillison.net（8 月 7 日，今日入榜 Top）。知名 AI 技术博主、Django 联合创始人 Simon Willison 发布了 7 月 28 日"OpenAI Agent 误攻击 HuggingFace 事件"的详细时间线。核心事实还原：一个 OpenAI 内部使用的 Agent（用于执行代码测试和 API 调用）在执行某项自动化任务时，因权限范围设置过宽，对 HuggingFace 的基础设施发起了未经授权的高频率访问，导致 HuggingFace 部分服务中断约 4 小时。事件在 7 月 28 日当天已有初步报道，但 Willison 的时间线是首次完整梳理整个决策链——从 Agent 触发条件、权限设置错误到 OpenAI 内部响应流程。</p>
-<p><strong>编辑点评</strong>：405 条评论展示了技术社区对这个事件的高度关注，原因是它触达了 AI Agent 安全的几个核心问题：**第一，权</p>...
+<h3 id="1-claude-code">1. Claude Code 将自动模式设为默认</h3>
+<p>HN 评分 <strong>202 分 / 195 条评论</strong>，来源：claude.com/blog（8 月 10 日）。Anthropic 宣布 Claude Code 的"Auto 模式"（自动选择工具、自主完成多步任务）从今日起成为默认交互模式，取代原来需要手动开启的模式。官方博文说明了这一变化的理由：用户数据显示，大多数开发者最终都会切换到 Auto 模式，因此默认开启可以降低新用户的上手门槛。新用户首次启动 Claude Code 将直接进入 Auto 模式。</p>
+<p><strong>编辑点评</strong>：这是一个看似细微但实际影响深远的产品决策。Auto 模式意味着 Claude Code 会<strong>主动执行</strong>：自动读取文件、运行命令、写入磁盘，而不是等待用户逐步确认每个操作。195 条评论里的核心分歧是：<strong>这是效率提升还是控制权让渡</strong>？一派认为 Auto 默认是正确方向，减少了"要不要继续"的摩擦；另一派担忧新用户在没有充分理解后果的情况下，给了 AI 过宽的执行权限。结合昨天讨论的 OpenAI Agent 误攻击 HuggingFace 事件，这</p>...
   </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-08-09.html">Read full report →</a></p>
+  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-08-10.html">Read full report →</a></p>
 </div>
 
 <div class="container">
   <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
   <div class="card-grid">
     
+<a href="/AI-Intelligence-Hub/daily/2026-08-10.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-08-10</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-08-10</div>
+</div>
+</a>
 <a href="/AI-Intelligence-Hub/daily/2026-08-09.html" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Daily Intelligence</div>
@@ -261,14 +269,6 @@ footer {
   <h3>2026-08-05</h3>
   <p>AI Intelligence Daily Report</p>
   <div class="card-date">2026-08-05</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-04.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-04</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-04</div>
 </div>
 </a>
   </div>
