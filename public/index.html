@@ -206,23 +206,31 @@ footer {
 
 <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
   <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-08-11</h2>
+  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-08-12</h2>
   <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-2026-08-11">AI 情报日报 · 2026-08-11</h1>
-<p><strong>发生了什么</strong>：Meta 发布 Muse Glimmer——一个 30B 参数、专为本地 Agent 工作流设计的开源多模态模型，获得 1025/572 的爆炸性 HN 反响；Zuckerberg 随即在 FT 发文公开攻击"封闭"AI 竞争对手，宣告 Meta 全面回归开源路线；与此同时，Kinney Drugs 连锁药店因 AI 电话客服遭数百名顾客投诉而被迫撤回，是迄今最典型的消费级 AI 部署失败案例；Anthropic 发布 Claude 在 Riemann Zeta 函数上的数学能力研究；OpenAI 推出 GPT-5.6 Cyber 专用网络安全模型。</p>
+    <h1 id="ai-2026-08-12">AI 情报日报 · 2026-08-12</h1>
+<p><strong>发生了什么</strong>：研究者发现可从 OpenAI、Anthropic 等 API 响应中窃取被隐藏的推理链（536/226），这是推理模型时代最严重的隐私漏洞之一；OpenAI 宣布开始在 ChatGPT 中测试广告，标志着其商业模式的重大转变；OpenAI 伦理主管在上任不足一年后离职，再次引发 AI 治理担忧；Google 发博文称 Go 是 AI 辅助编程的理想语言；Steerling-8B 论文证明可解释性可以随规模提升而非降低，挑战"能力与透明度必须权衡"的基本假设。</p>
 <hr />
 <h2 id="_1">今日要闻</h2>
-<h3 id="1-meta-muse-glimmer-30b-hnzuckerberg">1. Meta 全面回归开源：Muse Glimmer 30B 引爆 HN，Zuckerberg 公开开炮</h3>
-<p><strong>Muse Glimmer 发布</strong>：HN 评分 <strong>1025 分 / 572 条评论</strong>，来源：Meta AI Research（8 月 10 日发布，8 月 11 日占据 HN 前列）。Meta 发布 <strong>Muse Glimmer</strong>——一个 300 亿参数的开源多模态 Agent 模型，定位是"永远在线的本地 Agent 工作流"。核心设计原则：可在消费级 GPU 或高端手机上本地运行，支持多模态输入（文字、图像、语音），专为长时间自主任务优化（不是一问一答，而是持续执行背景任务）。Meta 将其与 llama.cpp 兼容，并在 HuggingFace 完全开放权重。</p>
-<p><strong>Zuckerberg FT 开炮</strong>：HN 评分 <strong>354 分 / 377 条评论</strong>，来源：Financial Times（8 月 11 日）。Zuckerberg 在 FT 发表公开信，以 Muse Glimmer 发布为契机，</p>...
+<h3 id="1-llm-api">1. 从专有 LLM API 中窃取推理链：一个被"隐藏"的秘密</h3>
+<p>HN 评分 <strong>536 分 / 226 条评论</strong>，来源：stolen-thoughts.com（8 月 12 日）。研究者发布了一个演示站点，展示如何从 OpenAI、Anthropic 等主流 AI 提供商的 API 响应中提取<strong>本应被隐藏的推理链（chain-of-thought tokens）</strong>。技术原理：当 API 返回流式响应时，推理模型的"内心独白"（extended thinking tokens）虽然在 UI 层被过滤，但在 HTTP 层仍以可解析的格式传输；通过拦截 TLS 流量（在客户端侧）或分析响应 delta，可以还原完整的推理过程。</p>
+<p><strong>编辑点评</strong>：226 条评论里，技术社区的反应分为两派。<strong>第一派认为这是"预期行为"</strong>——如果推理 token 在响应中传输，客户端技术上总能读到它；提供商从未承诺过"加密的思维过程"，只是"不在产品 UI 中显示"。<strong>第二派认为这是严重问题</strong>——AI 公司在营销推理模型时暗示了某种程度的"私密思考"，用户可能基于这种假设在系统提示中包含了敏感信息，期待推理过程不会泄露。</p>...
   </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-08-11.html">Read full report →</a></p>
+  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-08-12.html">Read full report →</a></p>
 </div>
 
 <div class="container">
   <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
   <div class="card-grid">
     
+<a href="/AI-Intelligence-Hub/daily/2026-08-12.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-08-12</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-08-12</div>
+</div>
+</a>
 <a href="/AI-Intelligence-Hub/daily/2026-08-11.html" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Daily Intelligence</div>
@@ -261,14 +269,6 @@ footer {
   <h3>2026-08-07</h3>
   <p>AI Intelligence Daily Report</p>
   <div class="card-date">2026-08-07</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-06.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-06</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-06</div>
 </div>
 </a>
   </div>

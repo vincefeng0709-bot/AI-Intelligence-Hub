@@ -7,6 +7,43 @@
   <language>zh-CN</language>
   
   <item>
+    <title>2026-08-12</title>
+    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-12.html</link>
+    <description><![CDATA[# AI 情报日报 · 2026-08-12
+
+**发生了什么**：研究者发现可从 OpenAI、Anthropic 等 API 响应中窃取被隐藏的推理链（536/226），这是推理模型时代最严重的隐私漏洞之一；OpenAI 宣布开始在 ChatGPT 中测试广告，标志着其商业模式的重大转变；OpenAI 伦理主管在上任不足一年后离职，再次引发 AI 治理担忧；Google 发博文称 Go 是 AI 辅助编程的理想语言；Steerling-8B 论文证明可解释性可以随规模提升而非降低，挑战"能力与透明度必须权衡"的基本假设。
+
+---
+
+## 今日要闻
+
+### 1. 从专有 LLM API 中窃取推理链：一个被"隐藏"的秘密
+
+HN 评分 **536 分 / 226 条评论**，来源：stolen-thoughts.com（8 月 12 日）。研究者发布了一个演示站点，展示如何从 OpenAI、Anthropic 等主流 AI 提供商的 API 响应中提取**本应被隐藏的推理链（chain-of-thought tokens）**。技术原理：当 API 返回流式响应时，推理模型的"内心独白"（extended thinking tokens）虽然在 UI 层被过滤，但在 HTTP 层仍以可解析的格式传输；通过拦截 TLS 流量（在客户端侧）或分析响应 delta，可以还原完整的推理过程。
+
+**编辑点评**：226 条评论里，技术社区的反应分为两派。**第一派认为这是"预期行为"**——如果推理 token 在响应中传输，客户端技术上总能读到它；提供商从未承诺过"加密的思维过程"，只是"不在产品 UI 中显示"。**第二派认为这是严重问题**——AI 公司在营销推理模型时暗示了某种程度的"私密思考"，用户可能基于这种假设在系统提示中包含了敏感信息，期待推理过程不会泄露。
+
+这个漏洞的核心不是技术漏洞，而是**预期管理的失败**。"隐藏推理链"在 API 级别从来不是安全承诺，它只是一个 UI 功能。但当 Anthropic 把 Claude 的"扩展思考"描述为一种"内心独白"，当 OpenAI 把 o 系列的推理过程描述为"思考"，它无意中创造了一种用户预期：AI 的"思考过程"是私密的。**AI 公司需要更清晰地在文档和营销材料中说明：在 API 层面，推理 token 没有任何额外的隐私保护**。这个教训对整个推理模型时代非常重要。
+
+---
+
+### 2. ChatGPT 开始测试广告
+
+来源：openai.com（8 月 11 日）。OpenAI 宣布开始在 ChatGPT 中**小范围测试广告**，面向免费用户，承诺：广告有明确标注、不影响 ChatGPT 的答案内容、有强隐私保护（不追踪对话内容投放）、用户可以选择退出。
+
+**编辑点评**：这是 OpenAI 商业模式演化的重要节点。**背景**：OpenAI 在免费层大幅扩展了 GPT-5.6 Luna 的访问，同时面临巨大的推理计算成本。免费层已经无法靠付费用户交叉补贴维持——广告是经典的"免费模式"货币化路径。**更深层含义**：这个转变意味着 OpenAI 正在向 Google 的商业模式靠拢，而 Google 恰恰是 OpenAI 在搜索和信息访问领域的主要竞争对手。当 ChatGPT 开始靠广告变现时，它与 Google Search 的商业模式差异将大幅缩小，而"搜索 vs 对话"的竞争将变成"同一商业逻辑下的体验竞争"。对用户而言，免费的 AI 不再是纯粹的工具，而是带有广告主立场的媒介——这与 Google 搜索面临的信任挑战完全相同。**Anthropic 的 Claude.ai 目前没有广告**，这可能成为一个差异化点，但也意味着 Anthropic 的免费层更受限于计算成本压力。
+
+---
+
+### 3. OpenAI 伦理主管不足一年离职
+
+HN 评分 **329 分 / 357 条评论**，来源：Financial Times（8 月 11 日）。OpenAI 首位正式任命的伦理主管（Head of Ethics）在就任不足一年后宣布离职。FT 的报道引用了知情人士的说法：该主管在内部倡导的多项 AI 安全和伦理审查流程"未能得到足够的决策支持"，并对部分模型部署决策提出了异议。
+
+**编辑点评**：357 条评论，这是今日 HN 评论数最高的讨论之一。讨论的核心是一个已经反复出现的问题：**AI 公司的伦理职位是真正的权力，还是公关装饰**？过去几年，多家 AI 公司的伦理/安全负责人以类似原因离职（Google Brain 伦理团队解散、Anthropic 早期团队分裂、Meta 离职高管的公开信）。模式惊人地相似：伦理职位设立]]></description>
+    <pubDate>2026-08-12</pubDate>
+    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-12.html</guid>
+  </item>
+  <item>
     <title>2026-08-11</title>
     <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-11.html</link>
     <description><![CDATA[# AI 情报日报 · 2026-08-11
@@ -790,57 +827,6 @@ HN 评分 **181 分 / 206 条评论**。DARPA 与美国空军宣布完成 AI 自
 **编辑点评**：战斗机自主飞行的技术挑战远超民用无人机：高速机动中的传感器融合、对抗性环境下的实时决策、系统故障时的安全降级——每一项都比消费级 AI 难度高出数个量级。DARPA ]]></description>
     <pubDate>2026-07-24</pubDate>
     <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-24.html</guid>
-  </item>
-  <item>
-    <title>2026-07-23</title>
-    <link>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-23.html</link>
-    <description><![CDATA[# AI 情报日报 · 2026-07-23
-
-**发生了什么**：陶哲轩亲自用 ChatGPT 验证雅可比猜想反例并公开对话记录，GigaToken 实现近 1000 倍 tokenization 加速，社区批评 AI 实验室"Pelicanmaxxing"（盲目追 benchmark），多数美国人反对 AI 数据中心落地自家附近，OpenAI 宣布与美国能源部合作推进国家科学项目。
-
----
-
-## 今日要闻
-
-### 1. 陶哲轩验证雅可比猜想反例 —— 数学史级对话公开
-
-HN 评分 **585 分 / 361 条评论**。菲尔兹奖得主、当代最伟大数学家之一陶哲轩（Terence Tao）公开了自己与 ChatGPT 就"Claude Fable 给出的雅可比猜想反例"进行的完整对话记录。这是陶哲轩首次以如此系统的方式公开与 AI 的数学协作过程。
-
-**编辑点评**：无论最终结论如何（雅可比猜想是否被真正推翻仍需数学社区完整验证），这个对话本身已经是历史性的文档。一位菲尔兹奖得主用最顶级的数学直觉和 AI 工具协同审查一个百年难题，这个过程的公开化，本身就重塑了"AI 如何参与数学研究"的公众认知。值得注意的是陶哲轩选择了 ChatGPT 而非 Claude 来验证 Claude Fable 的输出——跨模型交叉验证正在成为 AI 辅助数学研究的新规范。
-
----
-
-### 2. "AI 实验室在 Pelicanmaxxing" —— 对 benchmark 竞赛的系统性批判
-
-HN 评分 **386 分 / 153 条评论**。"Pelicanmaxxing"（源自一则关于鹈鹕为"高分"而做出荒谬行为的隐喻）被用来描述 AI 实验室为了在 benchmark 上取得高分而过度优化、牺牲真实能力的现象。文章提出：当前主流 benchmark 已经被"训练进去"，模型得分高不等于能力强。
-
-**编辑点评**：这个批评并不新鲜，但它正变得越来越有依据。在 Gemini 最新版本悄然废弃 temperature/top_p/top_k 参数（昨天 HN 127分）、OpenAI 不透明地削减 Codex 上下文的背景下，AI 实验室对"可见指标"的优化正在侵蚀对"真实能力"的投入。用户需要的不是更高的 MMLU 分数，而是更稳定、更可预测的实际表现。
-
----
-
-### 3. GigaToken：LLM Tokenization 提速近 1000 倍
-
-HN 评分 **359 分 / 72 条评论**。GigaToken 是一个新的 tokenization 库，通过算法创新和硬件优化，将 BPE tokenization 速度提升至传统实现的约 1000 倍。对于需要处理海量文本的训练和推理管道，这是直接影响成本结构的突破。
-
-**编辑点评**：Tokenization 是 LLM 管道中最被低估的性能瓶颈之一。在推理阶段，tokenization 的延迟在小模型或高并发场景下会成为显著瓶颈；在训练阶段，对数 TB 数据集的预处理时间会因此大幅压缩。1000 倍的数字需要具体场景对比，但即便实际提升是 10-100 倍，对大规模 AI 工程师来说也是极具价值的工具。
-
----
-
-### 4. 多数美国人：不要 AI 数据中心建在我家附近
-
-HN 评分 **129 分 / 280 条评论**，来源：Redfin。调查显示，多数美国人对 AI 数据中心持 NIMBY（Not In My Back Yard，"别在我家附近"）态度，主要顾虑包括：用电量激增导致电价上涨、噪音污染、水资源消耗、以及对房产价值的潜在影响。
-
-**编辑点评**：这是 AI 基础设施扩张遭遇"社会摩擦"的真实信号。OpenAI 今天同时宣布了在乔治亚州 Effingham County 建设 AI 基础设施（Project Camellia），这两条新闻并列，构成了一个尖锐的张力：AI 算力扩张对美国 AI 战略至关重要，但它的落地正在触发越来越大的民间阻力。能源消耗、环境影响、社区影响将成为未来 AI 数据中心选址的核心政治变量。
-
----
-
-### 5. OpenAI Presence：企业级 AI Agent 通话平台
-
-来源：OpenAI 官方 RSS（7 月 22 日）。OpenAI 正式发布 **OpenAI Presence**，一个面向企业的 AI Agent 平台，专注于语音和文字客服/内部工作流的自动化部署。定位为"经过验证的企业 AI Agent 解决方案"，强调安全合规和可定制性。
-
-**编辑点评**：OpenAI Presence 是 OpenAI 企业产品线的重要填补。Codex 负责代码，ChatGPT Work 负责知识]]></description>
-    <pubDate>2026-07-23</pubDate>
-    <guid>https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-07-23.html</guid>
   </item>
 </channel>
 </rss>

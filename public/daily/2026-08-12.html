@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:title" content="2026-08-12">
+<meta property="og:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<meta property="og:url" content="https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-12.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2026-08-12">
+<meta name="twitter:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
+<title>2026-08-12 | XinyMao AI Intelligence Hub</title>
+<link rel="alternate" type="application/rss+xml" title="XinyMao AI Intelligence Hub RSS" href="/feed.xml">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --bg2: #111111;
+  --bg3: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --text2: #888;
+  --accent: #6366f1;
+  --accent2: #818cf8;
+  --green: #34d399;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; color: var(--accent); }
+
+/* Nav */
+nav {
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(12px);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.nav-brand {
+  font-size: 0.95rem; font-weight: 600; color: var(--text);
+  letter-spacing: -0.02em;
+}
+.nav-brand span { color: var(--accent2); }
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+  color: var(--text2); font-size: 0.875rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+
+/* Main layout */
+.container {
+  max-width: 900px; margin: 0 auto; padding: 3rem 2rem;
+}
+.hero {
+  text-align: center; padding: 5rem 2rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700; letter-spacing: -0.04em;
+  line-height: 1.1; margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text2) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p {
+  color: var(--text2); font-size: 1.125rem; max-width: 600px; margin: 0 auto 2rem;
+}
+.badge {
+  display: inline-block; padding: 0.25rem 0.75rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 999px; font-size: 0.75rem; color: var(--text2);
+  font-family: var(--mono);
+}
+
+/* Cards */
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 2rem 0;
+}
+.card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--accent); transform: translateY(-2px);
+}
+.card-label {
+  font-size: 0.7rem; font-family: var(--mono); color: var(--accent2);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;
+}
+.card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--text); }
+.card p { font-size: 0.875rem; color: var(--text2); line-height: 1.5; }
+.card-date { font-size: 0.75rem; color: var(--text2); margin-top: 1rem; font-family: var(--mono); }
+
+/* Article content */
+.article-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.article-header h1 { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; }
+.article-meta { color: var(--text2); font-size: 0.875rem; margin-top: 1rem; font-family: var(--mono); }
+.article-content h2 {
+  font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text);
+  border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;
+}
+.article-content h3 { font-size: 1.125rem; margin: 2rem 0 0.75rem; color: var(--accent2); }
+.article-content p { margin-bottom: 1.25rem; }
+.article-content ul, .article-content ol { margin: 1rem 0 1rem 1.5rem; }
+.article-content li { margin-bottom: 0.5rem; }
+.article-content blockquote {
+  border-left: 3px solid var(--accent); padding-left: 1.5rem;
+  color: var(--text2); margin: 1.5rem 0; font-style: italic;
+}
+.article-content code {
+  background: var(--bg3); padding: 0.2em 0.4em; border-radius: 4px;
+  font-family: var(--mono); font-size: 0.875em; color: var(--accent2);
+}
+.article-content pre {
+  background: var(--bg3); padding: 1.5rem; border-radius: 8px;
+  overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--border);
+}
+.article-content pre code { background: none; padding: 0; color: var(--text); }
+.article-content hr {
+  border: none; border-top: 1px solid var(--border); margin: 2rem 0;
+}
+.article-content strong { color: var(--text); }
+.article-content table {
+  width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+}
+.article-content th {
+  background: var(--bg3); padding: 0.75rem 1rem; text-align: left;
+  border: 1px solid var(--border); font-size: 0.875rem;
+}
+.article-content td {
+  padding: 0.75rem 1rem; border: 1px solid var(--border); font-size: 0.875rem;
+}
+
+/* List page */
+.report-list { margin: 2rem 0; }
+.report-item {
+  display: flex; align-items: baseline; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--border);
+}
+.report-item:last-child { border-bottom: none; }
+.report-item-date {
+  font-size: 0.8rem; color: var(--text2); font-family: var(--mono);
+  min-width: 100px; flex-shrink: 0;
+}
+.report-item-title { font-size: 0.95rem; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border); padding: 2rem;
+  text-align: center; color: var(--text2); font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav { padding: 0 1rem; }
+  .nav-links { gap: 1rem; }
+  .container { padding: 2rem 1rem; }
+  .hero { padding: 3rem 1rem 2rem; }
+}
+
+/* Status indicator */
+.status-ok { color: var(--green); }
+.status-warn { color: #f59e0b; }
+.tag {
+  display: inline-block; padding: 0.2rem 0.6rem;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; font-size: 0.7rem; font-family: var(--mono);
+  color: var(--text2); margin-right: 0.3rem;
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-brand">XinyMao<span>.</span></div>
+  <div class="nav-links">
+    <a href="/AI-Intelligence-Hub/">Home</a>
+    <a href="/AI-Intelligence-Hub/daily/">Daily</a>
+    <a href="/AI-Intelligence-Hub/weekly/">Weekly</a>
+    <a href="/AI-Intelligence-Hub/monthly/">Monthly</a>
+    <a href="/AI-Intelligence-Hub/research/">Research</a>
+    <a href="/AI-Intelligence-Hub/trackers/">Trackers</a>
+  </div>
+</nav>
+
+<div class="container">
+  <article>
+    <div class="article-header">
+      <div class="card-label">DAILY</div>
+      <p class="article-meta">2026-08-12</p>
+    </div>
+    <div class="article-content">
+      <h1 id="ai-2026-08-12">AI 情报日报 · 2026-08-12</h1>
+<p><strong>发生了什么</strong>：研究者发现可从 OpenAI、Anthropic 等 API 响应中窃取被隐藏的推理链（536/226），这是推理模型时代最严重的隐私漏洞之一；OpenAI 宣布开始在 ChatGPT 中测试广告，标志着其商业模式的重大转变；OpenAI 伦理主管在上任不足一年后离职，再次引发 AI 治理担忧；Google 发博文称 Go 是 AI 辅助编程的理想语言；Steerling-8B 论文证明可解释性可以随规模提升而非降低，挑战"能力与透明度必须权衡"的基本假设。</p>
+<hr />
+<h2 id="_1">今日要闻</h2>
+<h3 id="1-llm-api">1. 从专有 LLM API 中窃取推理链：一个被"隐藏"的秘密</h3>
+<p>HN 评分 <strong>536 分 / 226 条评论</strong>，来源：stolen-thoughts.com（8 月 12 日）。研究者发布了一个演示站点，展示如何从 OpenAI、Anthropic 等主流 AI 提供商的 API 响应中提取<strong>本应被隐藏的推理链（chain-of-thought tokens）</strong>。技术原理：当 API 返回流式响应时，推理模型的"内心独白"（extended thinking tokens）虽然在 UI 层被过滤，但在 HTTP 层仍以可解析的格式传输；通过拦截 TLS 流量（在客户端侧）或分析响应 delta，可以还原完整的推理过程。</p>
+<p><strong>编辑点评</strong>：226 条评论里，技术社区的反应分为两派。<strong>第一派认为这是"预期行为"</strong>——如果推理 token 在响应中传输，客户端技术上总能读到它；提供商从未承诺过"加密的思维过程"，只是"不在产品 UI 中显示"。<strong>第二派认为这是严重问题</strong>——AI 公司在营销推理模型时暗示了某种程度的"私密思考"，用户可能基于这种假设在系统提示中包含了敏感信息，期待推理过程不会泄露。</p>
+<p>这个漏洞的核心不是技术漏洞，而是<strong>预期管理的失败</strong>。"隐藏推理链"在 API 级别从来不是安全承诺，它只是一个 UI 功能。但当 Anthropic 把 Claude 的"扩展思考"描述为一种"内心独白"，当 OpenAI 把 o 系列的推理过程描述为"思考"，它无意中创造了一种用户预期：AI 的"思考过程"是私密的。<strong>AI 公司需要更清晰地在文档和营销材料中说明：在 API 层面，推理 token 没有任何额外的隐私保护</strong>。这个教训对整个推理模型时代非常重要。</p>
+<hr />
+<h3 id="2-chatgpt">2. ChatGPT 开始测试广告</h3>
+<p>来源：openai.com（8 月 11 日）。OpenAI 宣布开始在 ChatGPT 中<strong>小范围测试广告</strong>，面向免费用户，承诺：广告有明确标注、不影响 ChatGPT 的答案内容、有强隐私保护（不追踪对话内容投放）、用户可以选择退出。</p>
+<p><strong>编辑点评</strong>：这是 OpenAI 商业模式演化的重要节点。<strong>背景</strong>：OpenAI 在免费层大幅扩展了 GPT-5.6 Luna 的访问，同时面临巨大的推理计算成本。免费层已经无法靠付费用户交叉补贴维持——广告是经典的"免费模式"货币化路径。<strong>更深层含义</strong>：这个转变意味着 OpenAI 正在向 Google 的商业模式靠拢，而 Google 恰恰是 OpenAI 在搜索和信息访问领域的主要竞争对手。当 ChatGPT 开始靠广告变现时，它与 Google Search 的商业模式差异将大幅缩小，而"搜索 vs 对话"的竞争将变成"同一商业逻辑下的体验竞争"。对用户而言，免费的 AI 不再是纯粹的工具，而是带有广告主立场的媒介——这与 Google 搜索面临的信任挑战完全相同。<strong>Anthropic 的 Claude.ai 目前没有广告</strong>，这可能成为一个差异化点，但也意味着 Anthropic 的免费层更受限于计算成本压力。</p>
+<hr />
+<h3 id="3-openai">3. OpenAI 伦理主管不足一年离职</h3>
+<p>HN 评分 <strong>329 分 / 357 条评论</strong>，来源：Financial Times（8 月 11 日）。OpenAI 首位正式任命的伦理主管（Head of Ethics）在就任不足一年后宣布离职。FT 的报道引用了知情人士的说法：该主管在内部倡导的多项 AI 安全和伦理审查流程"未能得到足够的决策支持"，并对部分模型部署决策提出了异议。</p>
+<p><strong>编辑点评</strong>：357 条评论，这是今日 HN 评论数最高的讨论之一。讨论的核心是一个已经反复出现的问题：<strong>AI 公司的伦理职位是真正的权力，还是公关装饰</strong>？过去几年，多家 AI 公司的伦理/安全负责人以类似原因离职（Google Brain 伦理团队解散、Anthropic 早期团队分裂、Meta 离职高管的公开信）。模式惊人地相似：伦理职位设立，受到外部好评，然后在内部影响力有限的情况下，关键人物离开。这不一定是 OpenAI 特有的问题，而是<strong>当商业压力与伦理约束发生冲突时，几乎所有以商业目标为主要驱动力的组织都面临的结构性张力</strong>。真正解决这个问题需要的不是伦理主管个人，而是把伦理审查嵌入决策流程（类似 CFO 在财务决策中的否决权）——目前没有一家主流 AI 公司做到了这一点。</p>
+<hr />
+<h3 id="4-googlego-ai">4. Google：Go 是 AI 辅助编程的理想语言</h3>
+<p>HN 评分 <strong>305 分 / 356 条评论</strong>，来源：Google Developers Blog（8 月 12 日）。Google 工程师发文论证 Go 语言在 AI 辅助编程（Vibe Coding / Coding Agents）时代的优势：Go 的显式性（没有隐式类型转换）减少了 LLM 生成代码时的歧义；Go 的标准工具链（gofmt, govet）让 AI 生成的代码更容易被验证；Go 的并发原语（goroutine + channel）对 Agent 并行任务天然友好；Go 的编译错误信息清晰，LLM 更容易根据错误自我修正。</p>
+<p><strong>编辑点评</strong>：356 条评论里，Go、Python、TypeScript 的支持者展开了一场热烈争论。但有几个数据点值得注意：<strong>一，Dan Luu 的研究</strong>（昨天 HN 250/180 的"编程语言与 Coding Agent"文章）从 token 效率角度分析，显示 Python 仍然是代码密度最高的语言，但 Go 在错误恢复和类型安全上优于 Python；<strong>二，Claude Code 的实际使用数据</strong>（来自 Anthropic 内部分享）显示，Go 项目的 Agent 编辑成功率高于 Python 项目，原因正是 Google 博文中提到的"显式性"；<strong>三，prime-agent 的技术博客</strong>提到他们的自我改进循环在 Go 项目上的收敛速度更快。这不是 Google 的简单广告——显式性和可验证性对 Agent 编程确实有系统性优势。</p>
+<hr />
+<h3 id="5-ai">5. "AI 正在吃掉互联网的集体记忆"——仍是本周最重要的文化议题</h3>
+<p>HN 评分 <strong>876 分 / 890 条评论</strong>（连续两日 Top）。The Walrus 的这篇长文继续主导讨论。新出现的讨论角度：<strong>Wayback Machine 的 CEO 接受采访</strong>表示，AI 爬虫对 archive.org 的影响已经非常显著——大量原始页面在被 AI 训练数据抓取之后消失，archive.org 正成为越来越多已消亡内容的"唯一幸存者"。890 条评论里，有工程师分享了他们亲眼目睹的案例：曾经在 Google 搜索第一页的个人博客、论坛讨论、技术教程，现在已经被 AI 生成的聚合内容完全淹没，原始来源即便存在也无法被发现。这个问题没有简单解决方案，但它提出了一个深刻的问题：<strong>如果互联网的集体记忆依赖于去中心化的原始内容，而 AI 同时在消费、聚合、并最终取代这些内容的流量来源，我们是否在经历一个单向的信息熵增过程</strong>？</p>
+<hr />
+<h3 id="6-apple-silicon-macos-vmllamacpp-gpu">6. Apple Silicon macOS VM：llama.cpp GPU 直通大幅提速</h3>
+<p>HN 评分 <strong>289 分 / 43 条评论</strong>，来源：GitHub（8 月 12 日）。cua 项目发布了一篇技术博文，展示如何在 macOS 虚拟机中实现 Apple Silicon GPU 直通，使 llama.cpp 在 VM 内部获得接近原生性能的推理速度。主要应用场景：允许在隔离的 macOS VM 中运行 LLM 推理，同时利用 M 系列芯片的 GPU 能力——这对于需要在隔离环境中运行 Agent（安全测试、多租户服务、Docker 容器化）的场景有直接价值。</p>
+<p><strong>编辑点评</strong>：这个技术发现和 Docker Sandboxes（本周另一个热点）形成了互补：一个提供云端隔离，一个解决 Apple Silicon 本地隔离推理的性能问题。对于正在构建本地 Agent 基础设施的开发者，这是一个实质性的能力提升——尤其是与 Meta Muse Glimmer 30B 结合，意味着 Mac 用户可以在安全隔离的环境中运行强力的本地 Agent。</p>
+<hr />
+<h2 id="_2">学术前沿</h2>
+<h3 id="steerling-8b">重点论文：可解释性可以随规模提升——Steerling-8B</h3>
+<p><strong>Scaling Inherently Interpretable Language Models</strong>（arXiv:2608.07594）</p>
+<p>Guide Labs 团队提出了一个挑战"能力-透明度权衡"基本假设的发现：<strong>可解释性不需要以能力为代价，而且可解释性随模型规模的提升而提升</strong>。他们的方法：把可解释性作为训练时的约束（而不是训练后的附加），与语言模型目标联合优化。在三个数量级的计算规模上，结果一致显示：模型表征在规模增大时变得<strong>更解耦（disentangled）</strong>、更对齐人类可理解的概念，而非更混沌。</p>
+<p>具体实现：<strong>Steerling-8B</strong>，一个带因果注意力掩码的扩散语言模型。对于任何生成的 token 组，Steerling-8B 可以把输出归因到相关的输入 token、人类可理解的概念、和训练数据。这使得"闭环干预"成为可能：通过概念归因诊断输出问题，检索相似训练数据，通过概念引导修正行为——无需重新训练。性能上，Steerling-8B 在仅使用同类模型 2-16 倍少的计算量的情况下，与开源同类模型保持竞争力。</p>
+<p><strong>编辑点评</strong>：这是本周最重要的论文。当前 AI 可解释性研究有两个主流方向：<strong>训练后解释</strong>（用 SAE、激活分析等技术事后理解模型）和<strong>本质可解释模型</strong>（从设计上让模型可解释，如线性模型、决策树）。Steerling-8B 的意义在于：它证明了存在第三条路——<strong>在 LLM 规模上从头设计可解释性，且不付出能力代价</strong>。如果这个结果能在更大规模上复现，它将改变整个 AI 安全和治理领域的基本假设。"越强的 AI 越不透明"一直是 AI 对齐领域最令人担忧的前提之一；Steerling-8B 提供了它可能是错误的证据。</p>
+<hr />
+<h3 id="_3">其他值得关注的论文</h3>
+<p><strong>"Stealing Reasoning Traces from Proprietary LLM APIs"</strong>（stolen-thoughts.com）已在 HN 引起广泛讨论，见今日要闻第 1 条。</p>
+<p><strong>DocAtlas: Long-Document Understanding as Mutable-State Interaction</strong>（arXiv:2608.07527）：把长文档理解建模为可变状态的信息检索过程，配合 GPT-5.4 在 MMLongBench-Doc 上达到 71.4%，<strong>超越人类专家参考值（65.8%）</strong>。一个 Qwen3.5-4B 小模型通过 RL 训练后也能达到 63.7%（基线 54.4%），说明架构设计对长文档任务的重要性超过模型规模。</p>
+<p><strong>MetaSpace: Metamorphic Testing for Spatial Cognition in Embodied Agents</strong>（arXiv:2608.07533）：在三个具身任务场景中发现了 90,422 个空间认知错误，所有 SOTA Agent 的空间认知分数在 0.44-0.52 之间，而<strong>人类基准是 0.96</strong>。这个差距再次提醒：当前 LLM 在真实物理空间的认知能力与语言能力严重不匹配。</p>
+<hr />
+<h2 id="github">GitHub 趋势</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Stars</th>
+<th>今日新增</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>anthropics/skills</td>
+<td>168,229</td>
+<td>+485</td>
+<td>Anthropic 官方 Agent Skills 公共仓库（16.8 万星，新入榜）</td>
+</tr>
+<tr>
+<td>msitarzewski/agency-agents</td>
+<td>143,526</td>
+<td>+958</td>
+<td>完整 AI 代理团队技能包（第五天）</td>
+</tr>
+<tr>
+<td>semantica-agi/semantica</td>
+<td>5,036</td>
+<td>+893</td>
+<td>图原生 AI 上下文与责任基础设施（第二天）</td>
+</tr>
+<tr>
+<td>stablyai/orca</td>
+<td>42,954</td>
+<td>+875</td>
+<td>并行 Agent 开发环境，支持 desktop/mobile/VPS（新入榜）</td>
+</tr>
+<tr>
+<td>HKUDS/DeepTutor</td>
+<td>34,846</td>
+<td>+812</td>
+<td>终身个性化 AI 辅导系统（新入榜）</td>
+</tr>
+<tr>
+<td>paperclipai/paperclip</td>
+<td>77,254</td>
+<td>+748</td>
+<td>企业 Agent 管理开源应用（第二天）</td>
+</tr>
+<tr>
+<td>PrimeIntellect-ai/prime-agent</td>
+<td>14,260</td>
+<td>+1,138</td>
+<td>自我改进 RLM 编程 Agent（第五天，增速放缓）</td>
+</tr>
+<tr>
+<td>calesthio/OpenMontage</td>
+<td>47,456</td>
+<td>+458</td>
+<td>开源 AI 视频生产系统（新入榜）</td>
+</tr>
+<tr>
+<td>addyosmani/agent-skills</td>
+<td>86,300</td>
+<td>+578</td>
+<td>生产级 AI 编程 Agent 技能库</td>
+</tr>
+<tr>
+<td>vitali87/code-graph-rag</td>
+<td>3,883</td>
+<td>+341</td>
+<td>单体仓库 RAG + 知识图谱查询</td>
+</tr>
+</tbody>
+</table>
+<p><strong>今日深度解读</strong>：</p>
+<p><strong>anthropics/skills 以 16.8 万星首次入榜</strong>（+485）：Anthropic 官方 Agent Skills 公共仓库拥有 168,229 颗星——比 addyosmani/agent-skills（8.6 万）和 google/skills（1.7 万）加起来还多。这说明 Anthropic 在 GitHub 上已有庞大的开发者社区，而这个仓库今天首次出现在 Trending，意味着有新内容被推送或社区重新关注。</p>
+<p><strong>stablyai/orca 新入榜</strong>（42,954，+875）：定位为"并行 Agent 舰队的 ADE（Agentic Development Environment）"，支持桌面、移动端和 VPS 上运行 coding agent 舰队，并允许用户自带订阅（BYOS - Bring Your Own Subscription）。这直接对标 Claude Code 和 Cursor，但强调"并行舰队"而非"单 Agent"。结合 prime-agent、Claude Code 跨 session 消息，"并行多 Agent 编程"正在成为 2026 年第三季度的核心产品趋势。</p>
+<p><strong>calesthio/OpenMontage 新入榜</strong>（47,456，+458）：世界首个开源 AI 视频生产系统——12 个生产 pipeline、100+ 工具、700+ Agent 技能文件。将 AI coding assistant 变成完整的视频制作工作室。这个项目的 4.7 万星说明它有一定积累，今天入榜是因为有新功能或新推广。</p>
+<p><strong>prime-agent 第五天增速从 2,642 降至 1,138</strong>：正常的病毒传播衰减曲线，但 1,138 的单日新增仍然是强劲表现。五天累计从 6,600 升至 14,260，增加了 7,660 颗星。</p>
+<hr />
+<p><em>数据来源：Hacker News · RSS Feeds · GitHub Trending · arXiv cs.AI / cs.CL · 采集时间 2026-08-12 BJT</em></p>
+    </div>
+  </article>
+</div>
+<footer>
+  <p>© 2025 XinyMao AI Intelligence Hub · Built with Claude · <a href="/AI-Intelligence-Hub/feed.xml">RSS</a></p>
+  <p style="margin-top: 0.5rem;">Daily AI Intelligence for Developers, Researchers and Builders.</p>
+</footer>
+</body>
+</html>
