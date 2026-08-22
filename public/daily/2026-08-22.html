@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
-<meta property="og:title" content="XinyMao AI Intelligence Hub">
+<meta property="og:title" content="2026-08-22">
 <meta property="og:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
-<meta property="og:url" content="https://vincefeng0709-bot.github.io/AI-Intelligence-Hub">
+<meta property="og:url" content="https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-08-22.html">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="XinyMao AI Intelligence Hub">
+<meta name="twitter:title" content="2026-08-22">
 <meta name="twitter:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
-<title>XinyMao AI Intelligence Hub | XinyMao AI Intelligence Hub</title>
+<title>2026-08-22 | XinyMao AI Intelligence Hub</title>
 <link rel="alternate" type="application/rss+xml" title="XinyMao AI Intelligence Hub RSS" href="/feed.xml">
 <style>
 :root {
@@ -198,17 +198,14 @@ footer {
   </div>
 </nav>
 
-<div class="hero">
-  <div class="badge">LIVE · Daily AI Intelligence</div>
-  <h1>XinyMao AI<br>Intelligence Hub</h1>
-  <p>Daily AI Intelligence for Developers, Researchers and Builders.</p>
-</div>
-
-<div class="container" style="padding-top: 2rem; padding-bottom: 0;">
-  <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-08-22</h2>
-  <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-2026-08-22">AI 情报日报 · 2026-08-22</h1>
+<div class="container">
+  <article>
+    <div class="article-header">
+      <div class="card-label">DAILY</div>
+      <p class="article-meta">2026-08-22</p>
+    </div>
+    <div class="article-content">
+      <h1 id="ai-2026-08-22">AI 情报日报 · 2026-08-22</h1>
 <p><strong>发生了什么</strong>：一篇"我正在变成 AI 盲人"的反思文章（267 点 / 279 评）引发大量认同——AI 生成内容泛滥让人失去辨别和感知能力；"Claudette"工具出现，专门让 Claude 停止像 BuzzFeed 一样说话（203 点 / 143 评）；工程师发表一周使用 Codex 超过 Claude 的感受报告（80 点 / 84 评）；mattpocock/skills 今日 +3,362 stars 持续爆炸（229K+ stars），Agent 技能生态成为本周 GitHub 最强主题；OpenAI 发布"AI Futures"新博客栏目，探讨 AI 对权力和治理的影响。</p>
 <hr />
 <h2 id="_1">今日要闻</h2>
@@ -218,69 +215,91 @@ footer {
 - "我现在对 LinkedIn 帖子完全免疫了，但同时对真实的工程经验分享也开始怀疑。"<br />
 - "我在评论区看到了曾经的文章里根本没有的活力——评论是 AI 最难伪造的东西。"<br />
 - "这不是盲目，是防御机制。"</p>
-<p><strong>编辑点评</strong>：这篇文章描述的现象有一个准确的名字：<strong>AI 信噪比崩塌引发的认知防御</strong>。当信号（真实内容）和噪声（AI 生成内容）的比例倒置，人类的认知系统开始执行"一律怀疑"的默</p>...
-  </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-08-22.html">Read full report →</a></p>
+<p><strong>编辑点评</strong>：这篇文章描述的现象有一个准确的名字：<strong>AI 信噪比崩塌引发的认知防御</strong>。当信号（真实内容）和噪声（AI 生成内容）的比例倒置，人类的认知系统开始执行"一律怀疑"的默认策略——这对真实内容创作者的伤害，和对 AI 生成内容本身的伤害一样大。</p>
+<p>更深层的影响：<strong>信任是互联网人类互动的底层协议</strong>。"AI 盲"不只是个人体验，而是这个协议正在被侵蚀的症状。我们可能正在进入一个新均衡：<strong>评论、手写截图、视频通话、实时语音，成为"证明人类在场"的稀缺证书</strong>，而静态文字内容的默认信任度趋向于零。</p>
+<hr />
+<h3 id="2-claudette-claude-buzzfeed">2. Claudette：让 Claude 停止说话像 BuzzFeed 文章</h3>
+<p>来源：GitHub + HN（1787322712，203 点 / 143 评，8 月 22 日）。"Claudette"是一个 system prompt 工具包，通过精心设计的指令让 Claude（及其他 LLM）去除：开场白（"当然！"、"很好的问题！"）、感叹号滥用、空洞的过渡性语言（"此外，值得注意的是…"）、最后的总结段落、不必要的免责声明。项目 README 的第一句话：<em>"让 Claude 停止听起来像一个 BuzzFeed 文章。"</em></p>
+<p>143 条评论中，大量开发者分享了他们自己的 prompt 工程技巧，并讨论为什么 RLHF 会导致这种"奉承性输出风格"——模型被训练成让人感觉好，而"当然！"和感叹号是低成本的正面情感信号。</p>
+<p><strong>编辑点评</strong>：Claudette 和昨天的 Vomit 工具在两天内先后出现，反映了同一个社区现象：<strong>模型的输出风格问题已经产生了专属的"修复工具"生态</strong>。这是用户体验摩擦到达阈值的信号——当摩擦足够大，工具会自然涌现。对模型提供商来说，这两个工具的出现是一个清晰的产品 backlog 条目：<strong>默认输出风格需要重新调校，"有帮助的 AI"不等于"讨好用户的 AI"</strong>。值得注意的是，Claudette 提到这个问题在 Claude 5 中比 Claude Sonnet 4.6 更突出，暗示能力提升可能伴随了输出风格的退化。</p>
+<hr />
+<h3 id="3-codex">3. 工程师报告：用 Codex 一周的感受</h3>
+<p>来源：allaboutcoding.ghinda.com + HN（1787341908，80 点 / 84 评，8 月 22 日）。一位工程师记录了将主要 AI 编码工具从 Claude 切换到 OpenAI Codex CLI 一周的使用感受。核心对比：<strong>Codex 在大型代码库的上下文理解上更快但"理解深度浅"</strong>；Claude 在理解复杂业务逻辑上明显更好，但偶尔的长输出和冗余解释降低了效率；两者在实际完成任务的成功率上相近，但"使用体验"和"对话自然度"差异显著。</p>
+<p><strong>编辑点评</strong>：这类个人使用报告是市场中最真实的竞争情报。工程师不在意基准测试——他们在意的是"我的具体工作流下，哪个工具让我更顺"。Claude vs Codex 的核心差异被描述为"深度 vs 速度"，这与两个产品的设计哲学高度一致。值得关注的是 84 条评论中对"切换成本"的讨论——大量工程师表示已经在不同任务上混用多个 AI 工具，单一工具忠诚度正在下降。</p>
+<hr />
+<h3 id="4-sub-50ms-ai">4. sub-50ms 文字转语音：实时 AI 语音的新基准</h3>
+<p>来源：nari-labs.com + HN（1787327470，105 点 / 28 评，8 月 22 日）。Nari Labs 工程博客介绍如何将 Qwen3 TTS 模型的推理延迟压缩至 sub-50ms：使用流式解码（streaming decode）而非批处理；模型蒸馏将参数量降低 80% 同时保持音质；针对 Apple Silicon 的优化使用了 Metal Performance Shaders。延迟从原始的 800ms 降至 47ms。</p>
+<p><strong>编辑点评</strong>：47ms 是一个心理学上有意义的数字——<strong>人类感知"即时"的延迟阈值约为 100ms</strong>，47ms 进入了人类无法感知延迟的区域。这对实时语音 AI（电话 AI 助手、实时翻译、听障辅助工具）意味着从"可用"进入"自然"。结合本周早些时候的 OpenAI Ultrafast（750 tokens/秒）和 Gemini 3.7 Flash 的低延迟推进，<strong>推理速度正在全线逼近"无感知延迟"的临界值</strong>。</p>
+<hr />
+<h3 id="5-agent">5. 构建完全自托管、沙盒化的 Agent 软件工厂</h3>
+<p>来源：blog.jakesaunders.dev + HN（1787329672，85 点 / 50 评，8 月 22 日）。工程师 Jake Saunders 详细记录了他如何构建一个几乎完全自托管的 Agent 开发环境：本地部署 Ollama 模型（避免云 API 成本）、Docker 沙盒隔离 Agent 执行环境、git-based 工作流追踪 Agent 提交历史、人工审批门控防止自动部署到生产环境。</p>
+<p><strong>编辑点评</strong>：这篇文章是"Agent 工程民主化"的典型代表——一个独立工程师用开源工具构建了大公司才有资源做的东西。更重要的是，文章中的<strong>安全设计原则</strong>（沙盒隔离、人工审批门控、每步可审计）与 Anthropic、OpenAI 推荐的 Agent 安全最佳实践高度一致，说明社区已经开始内化这些原则并付诸实践。</p>
+<hr />
+<h2 id="openai-ai-futures">OpenAI 发布"AI Futures"新博客栏目</h2>
+<p>来源：OpenAI Blog（RSS，8 月 20 日）。OpenAI 宣布"AI Futures"——一个专门探讨"变革性 AI 如何重塑权力、治理、经济和个人自由"的新博客栏目。这是继 OpenAI 发布系统卡、安全指南后，在 <strong>AI 社会影响公开讨论</strong> 方向的新布局。</p>
+<p><strong>编辑点评</strong>：在 Anthropic 正陷入水印透明度争议的同时，OpenAI 开设了一个关于"AI 与权力"的公开讨论栏目——这是一种叙事竞争。无论动机如何，让 AI 顶级实验室公开讨论"AI 对权力结构的影响"，本身就是一个值得鼓励的透明度信号。</p>
+<hr />
+<h2 id="github-agent">GitHub 趋势：Agent 技能生态第三天</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Stars</th>
+<th>今日增量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mattpocock/skills</td>
+<td>229,576</td>
+<td>+3,362 🔥🔥</td>
+<td>工程师技能库，连续三日爆发</td>
+</tr>
+<tr>
+<td>obra/superpowers</td>
+<td>275,670</td>
+<td>+790</td>
+<td>Agent 技能框架（274K stars！）</td>
+</tr>
+<tr>
+<td>santifer/career-ops</td>
+<td>67,465</td>
+<td>+921</td>
+<td>AI 求职工具</td>
+</tr>
+<tr>
+<td>affaan-m/ECC</td>
+<td>241,807</td>
+<td>+357</td>
+<td>Agent 工具链性能优化</td>
+</tr>
+<tr>
+<td>PostHog/posthog</td>
+<td>38,300</td>
+<td>+335</td>
+<td>AI 可观测性平台</td>
+</tr>
+<tr>
+<td>harry0703/MoneyPrinterTurbo</td>
+<td>113,957</td>
+<td>+1,201</td>
+<td>AI 视频生成（持续高增长）</td>
+</tr>
+<tr>
+<td>apache/maka</td>
+<td>2,033</td>
+<td>+148</td>
+<td>Apache 孵化 local-first Agent 工作区</td>
+</tr>
+</tbody>
+</table>
+<p>mattpocock/skills 三日累计增加约 <strong>6,150 stars</strong>，这是 GitHub Trending 中少见的持续高增长态势。Skills/Agent 技能格式化正在成为 2026 年下半年工程师工具链的核心标准之一。</p>
+<hr />
+<p><em>数据来源：Hacker News · GitHub Trending · OpenAI Blog · 采集时间 2026-08-22 BJT</em></p>
+    </div>
+  </article>
 </div>
-
-<div class="container">
-  <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
-  <div class="card-grid">
-    
-<a href="/AI-Intelligence-Hub/daily/2026-08-22.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-22</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-22</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-21.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-21</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-21</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-20.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-20</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-20</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-19.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-19</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-19</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-18.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-18</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-18</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-17.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-17</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-17</div>
-</div>
-</a>
-  </div>
-  <p style="margin-top: 1.5rem; text-align: center;">
-    <a href="/AI-Intelligence-Hub/daily/">View all daily reports →</a>
-  </p>
-</div>
-
 <footer>
   <p>© 2025 XinyMao AI Intelligence Hub · Built with Claude · <a href="/AI-Intelligence-Hub/feed.xml">RSS</a></p>
   <p style="margin-top: 0.5rem;">Daily AI Intelligence for Developers, Researchers and Builders.</p>
