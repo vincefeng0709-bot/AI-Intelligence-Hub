@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
-<meta property="og:title" content="XinyMao AI Intelligence Hub">
+<meta property="og:title" content="2026-09-01">
 <meta property="og:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
-<meta property="og:url" content="https://vincefeng0709-bot.github.io/AI-Intelligence-Hub">
+<meta property="og:url" content="https://vincefeng0709-bot.github.io/AI-Intelligence-Hub/daily/2026-09-01.html">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="XinyMao AI Intelligence Hub">
+<meta name="twitter:title" content="2026-09-01">
 <meta name="twitter:description" content="Daily AI Intelligence for Developers, Researchers and Builders.">
-<title>XinyMao AI Intelligence Hub | XinyMao AI Intelligence Hub</title>
+<title>2026-09-01 | XinyMao AI Intelligence Hub</title>
 <link rel="alternate" type="application/rss+xml" title="XinyMao AI Intelligence Hub RSS" href="/feed.xml">
 <style>
 :root {
@@ -198,17 +198,14 @@ footer {
   </div>
 </nav>
 
-<div class="hero">
-  <div class="badge">LIVE · Daily AI Intelligence</div>
-  <h1>XinyMao AI<br>Intelligence Hub</h1>
-  <p>Daily AI Intelligence for Developers, Researchers and Builders.</p>
-</div>
-
-<div class="container" style="padding-top: 2rem; padding-bottom: 0;">
-  <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-09-01</h2>
-  <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-2026-09-01">AI 情报日报 · 2026-09-01</h1>
+<div class="container">
+  <article>
+    <div class="article-header">
+      <div class="card-label">DAILY</div>
+      <p class="article-meta">2026-09-01</p>
+    </div>
+    <div class="article-content">
+      <h1 id="ai-2026-09-01">AI 情报日报 · 2026-09-01</h1>
 <p><strong>发生了什么</strong>：本周最具哲学深度的讨论："AI 时代最安全的职业可能是写作"（100 点 / 137 评），引发对知识工作未来的系统性反思；arXiv 重要论文：用 41 年 Jeopardy! 题目（529,939 道）测试 LLM——Claude Opus 4.8 对截止日期后的题目仍能保持 95% 准确率；GitHub 今日出现全新黑马：THU-MAIC 的开源多 Agent 互动课堂系统（+2,824 今日新增）；"Rating the Raters"用 Rasch 测量理论系统性挑战 LLM 评估方法的可信度；AI 工作流工具 ChatGPT Work 参考手册成为开发者今日热门。</p>
 <hr />
 <h2 id="_1">今日要闻</h2>
@@ -217,69 +214,92 @@ footer {
 <p>作者援引的论据：AI 可以写出流畅的文字，但无法替代"确定自己真正想说什么"这个认知过程；读者阅读一篇文章，部分是为了获取信息，部分是为了接触一个真实的思维过程——后者 AI 无法伪造；与此形成对比的是编程、分析、数据处理等工作，这些工作有明确的输出规格，AI 可以完整承担。</p>
 <p>137 条评论远超点数，说明这个话题引发的讨论热度高于共识热度——人们对此有强烈但分歧的观点。</p>
 <p><strong>编辑点评</strong>：这个论点触及了一个更根本的问题：<strong>什么样的工作是因为"过程"有价值，什么样的工作是因为"结果"有价值</strong>？</p>
-<p>大多数 AI 替</p>...
-  </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-09-01.html">Read full report →</a></p>
+<p>大多数 AI 替代讨论聚焦于结果：AI 能产出相同质量的代码、相同质量的报告吗？但这篇文章指出，写作的特殊性在于<strong>过程本身就是产品</strong>——一个管理者写季度报告，不只是为了让别人读到结论，也是为了通过写作厘清自己的思考；一个工程师写设计文档，不只是记录决策，也是在写作中发现决策的漏洞。</p>
+<p>这个框架如果成立，意味着 AI 工具的正确使用方式，是用它处理"结果驱动"的工作，而把"过程驱动"的工作留给自己做。两者的边界，是值得每个知识工作者认真思考的问题。</p>
+<hr />
+<h3 id="2-41-jeopardy-529939-llm">2. 41 年 Jeopardy!：用 529,939 道题目测试 LLM 的知识时间胶囊</h3>
+<p>来源：arXiv:2608.27459（Mon, 31 Aug 2026）。研究者 David Noever 和 Forrest McKee 将完整的 Jeopardy! 题库（1984-2025 年全 41 个播出季，529,939 道题目）用于评测 LLM，这是首次对该完整语料库进行系统性测试。</p>
+<p>主要发现：<br />
+- <strong>Qwen2.5-14B（4-bit 量化，9GB）</strong>在严格强制回答协议下，正确回答 <strong>67%</strong> 的全量题目，在知识类题目上超过 85%<br />
+- <strong>Claude Opus 4.8</strong> 在训练截止日期之后播出的题目上，仍然保持 <strong>95%</strong> 的准确率（Qwen2.5-14B 为 65%）<br />
+- Watson（IBM，2011 年）在训练截止日期后的题目上得分<strong>为零</strong>——因为它无法处理训练语料库之外的任何内容<br />
+- 关键结论：现代 LLM 展示出真正的泛化能力，而非 Watson 式的语料库检索</p>
+<p><strong>编辑摘注</strong>：这个实验设计非常优雅——41 年的 Jeopardy! 题库是一个<strong>有验证答案的人类知识时间胶囊</strong>，覆盖范围从古代历史到现代流行文化，从死语言到前沿科学。用它来测试 LLM，既避免了"训练集污染"的争议（可以区分截止日期前后的题目），又提供了一个真实的、有难度梯度的知识评测场景。</p>
+<p>Claude Opus 4.8 在截止日期后题目上的 95% 正确率，是对"LLM 只是记忆训练数据"这个批评的有力反驳：<strong>泛化推理能力是真实的，不只是检索</strong>。</p>
+<hr />
+<h3 id="3-arxiv-rasch-llm">3. 今日 arXiv：评估者评估——用 Rasch 理论审视 LLM 评测的可信度</h3>
+<p>来源：arXiv:2608.27463（Mon, 31 Aug 2026）。研究者 Pratik Sachdeva 和 Nathan Boudol 将 Rasch 测量理论（教育测量领域的经典方法）应用于 LLM 评估问题，分析了九个 LLM 在仇恨言论标注任务上与人类评分者的系统性差异。</p>
+<p>核心发现：LLM 在以下维度上与人类评分者存在可测量的系统性差异：<br />
+- <strong>评分严厉度</strong>（severity）：不同模型一致性地偏高或偏低<br />
+- <strong>题目校准</strong>（item-level calibration）：某些类型的内容，LLM 的评分方差异常高<br />
+- <strong>问题顺序鲁棒性</strong>：评分结果受问题呈现顺序的影响程度<br />
+- <strong>目标身份敏感性</strong>：对不同群体的偏见方向和程度不同</p>
+<p><strong>编辑摘注</strong>：这篇论文的贡献是把"LLM 作为评分者"这个日益普遍的实践，放到了严格的测量科学框架下审视。当 LLM 被用于标注数据集、评估其他 AI 输出、或作为奖励模型参与 RLHF 时，<strong>它的系统性偏差会以乘法方式传播</strong>——一个评分者的偏差影响的不是单一输出，而是整个训练数据的方向。Rasch 理论提供了一套检测和量化这种偏差的严格工具，这对负责任地使用 LLM 评分是重要的方法论贡献。</p>
+<hr />
+<h3 id="4-chatgpt-work-ai">4. ChatGPT Work 参考手册 + "AI 写的代码还是你的代码"</h3>
+<p><strong>ChatGPT Work 工具参考手册</strong>（HN 1788185235，181 点 / 51 评，9 月 1 日）。Simon Willison 整理并发布了一个 ChatGPT Work 的工具调用参考手册，涵盖所有可用工具的签名、参数、预期行为和边界条件。在昨日（8/31）他发表深度分析之后，今天的参考手册是一个工程师可以直接使用的配套资源。</p>
+<p><strong>"AI 写的代码还是你的代码"</strong>（HN 1788178105，54 点 / 89 评，9 月 1 日）。来自 martiansoftware.com 的一篇短文，核心论点：AI 写的代码就像使用 Stack Overflow 找到的答案——你有责任理解它、审查它、对它负责。89 条评论（高于 54 点）表明这个话题引发了强烈的共鸣，许多开发者分享了"AI 生成的代码在生产中出问题但我没有真正理解它"的真实经历。</p>
+<hr />
+<h2 id="_2">今日论文精选</h2>
+<p><strong>用于 PDE 发现的 HER-PDE 科学 Agent 框架</strong>（arXiv:2608.27475）</p>
+<p>研究团队提出 Hypothesize, Evaluate, Refine（HER-PDE）框架，一个用于在异质媒介中发现偏微分方程（PDE）的科学 Agent 系统。核心创新：Agent 在两条由不同激励生成的嘈杂轨迹上运行，提出完整的表达树假设，并通过双向交叉激励迁移对候选结构进行评分。在五个二维系统的测试中，Agent 在 5% 高斯噪声条件下，成功恢复了全部五个系统的生成算子，九个未知系数场的中位 Pearson 相关系数达到约 0.85。</p>
+<p><strong>编辑摘注</strong>：HER-PDE 延续了 8 月 29 日 arXiv CARL（人工实验家）的研究主题：<strong>AI Agent 作为科学发现的主动参与者，而非被动工具</strong>。CARL 处理的是元胞自动机中的自组织现象，HER-PDE 处理的是物理系统中的方程结构。两者都在展示：当 Agent 能够主动提出假设、设计测试并迭代，它所能触及的科学发现边界远超传统数值方法。</p>
+<hr />
+<h2 id="github">GitHub 趋势</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Stars</th>
+<th>今日增量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tt-a1i/archify</td>
+<td>38,800</td>
+<td>+3,991 🔥🔥</td>
+<td>自生成架构图 Agent 技能，六日连续高增长</td>
+</tr>
+<tr>
+<td>THU-MAIC/OpenMAIC</td>
+<td>27,131</td>
+<td>+2,824 🔥</td>
+<td>清华多 Agent 互动课堂系统，今日黑马</td>
+</tr>
+<tr>
+<td>K-Dense-AI/scientific-agent-skills</td>
+<td>40,749</td>
+<td>+1,980 🔥</td>
+<td>AI 科学家技能库，190K 科学家在用</td>
+</tr>
+<tr>
+<td>zhaoxuya520/reverse-skill</td>
+<td>33,166</td>
+<td>+1,401</td>
+<td>逆向/渗透安全技能路由包（AI 自动路由）</td>
+</tr>
+<tr>
+<td>affaan-m/ECC</td>
+<td>245,260</td>
+<td>+512</td>
+<td>Agent 性能优化系统（突破 245K stars）</td>
+</tr>
+<tr>
+<td>jingyaogong/minimind</td>
+<td>56,142</td>
+<td>+495</td>
+<td>2 小时从头训练 64M LLM</td>
+</tr>
+</tbody>
+</table>
+<p><strong>今日亮点</strong>：<code>THU-MAIC/OpenMAIC</code> 今日新进榜单即获 +2,824，成为今日最大黑马。这是清华大学 MAIC 实验室开源的多 Agent 互动课堂系统——一键获得多个 AI Agent 联合讲解的沉浸式学习体验。项目的快速增长，反映了教育 × 多 Agent 这一赛道的真实市场需求。<code>tt-a1i/archify</code> 已连续六日保持超过 3,000/天的增长，累计超过 20,000 stars，正在确立"架构可视化 Agent 技能"这一细分品类的标准项目地位。</p>
+<hr />
+<p><em>数据来源：Hacker News · arXiv · OpenAI Blog · GitHub Trending · 采集时间 2026-09-01 BJT</em></p>
+    </div>
+  </article>
 </div>
-
-<div class="container">
-  <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
-  <div class="card-grid">
-    
-<a href="/AI-Intelligence-Hub/daily/2026-09-01.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-09-01</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-09-01</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-31.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-31</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-31</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-30.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-30</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-30</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-29.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-29</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-29</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-28.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-28</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-28</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-08-27.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-08-27</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-08-27</div>
-</div>
-</a>
-  </div>
-  <p style="margin-top: 1.5rem; text-align: center;">
-    <a href="/AI-Intelligence-Hub/daily/">View all daily reports →</a>
-  </p>
-</div>
-
 <footer>
   <p>© 2025 XinyMao AI Intelligence Hub · Built with Claude · <a href="/AI-Intelligence-Hub/feed.xml">RSS</a></p>
   <p style="margin-top: 0.5rem;">Daily AI Intelligence for Developers, Researchers and Builders.</p>
