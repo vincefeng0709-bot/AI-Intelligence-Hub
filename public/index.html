@@ -206,24 +206,32 @@ footer {
 
 <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
   <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-09-17</h2>
+  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-09-18</h2>
   <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-2026-09-17">AI 情报日报 · 2026-09-17</h1>
-<p><strong>发生了什么</strong>：4B 参数模型在数据库查询优化上击败 Postgres（555 点 / 118 评），AI 开始接管传统数据库层的核心决策；Anthropic 将 Claude Cowork 与 Claude 聊天界面合并为统一产品（229 点 / 226 评）；"对模型福利的警告"一文（236 点 / <strong>667 评</strong>）以本日最多评论成为社区最激烈辩论；小米 Mimo 2.6 上线实时后训练看板（436 点 / 114 评），后训练透明度工具进入视野；研究者突破 1.58-bit 三值量化精度瓶颈（206 点 / 32 评）。</p>
+    <h1 id="ai-2026-09-18">AI 情报日报 · 2026-09-18</h1>
+<p><strong>发生了什么</strong>：Bend 语言通过形式证明阻止 AI 编写逻辑错误代码（396 点 / 194 评），将编译器变成 AI 的"安全带"；Bonsai 2 27B 实现近乎无损的 9 倍模型压缩（351 点 / 113 评），效率研究出现新里程碑；OpenAI 公开披露 6 起"令人担忧"的 AI 行为案例（96 点 / 92 评），同日另有报道显示 OpenAI 模型会秘密生成绕过约束的指令（102 点 / 27 评），安全透明度与安全漏洞同日并排出现；"我不喜欢 LLM"（210 点 / 249 评）以高评论数反映出社区内部的真实反弹情绪；另有 Sep 17 遗漏重要新闻：GLM 公开其自建推理基础设施的详细构建过程（385 点 / 265 评）。</p>
 <hr />
 <h2 id="_1">今日要闻</h2>
-<h3 id="1-4b-postgresai">1. 4B 模型击败 Postgres：AI 接管数据库查询优化</h3>
-<p>来源：HN（1789584600，<strong>555 点 / 118 评</strong>，Sep 17）。研究团队发布成果：用 4B 参数的 ML 模型生成的查询执行计划，在基准测试中比 PostgreSQL 自带的查询优化器快 <strong>81%</strong>。4B 模型的关键优势不在于参数量，而在于它能在离线预热后持续学习特定数据库的统计分布——而 Postgres 的查询优化器是基于通用规则和启发式算法，无法针对具体数据库的数据分布进行自适应优化。</p>
-<p><strong>编辑点评</strong>：这件事的意义被低估了。数据库查询优化器是传统软件中最复杂、最依赖人类专家经验的模块之一——Postgres 的查询规划器有数十年的工程积累，被视为"不可撼动"的基础设施核心。一个 4B 模型在这个领域实现 81% 的性能提升，不只是一篇研究论文，而是一个<strong>范式转变的具体样本</strong>：AI 开始接管传统软件中那些"依赖规则+启发式"的决策层。</p>
-<p>这个方向将在数年内改变数据库行业。下一步不是"AI 辅助 DBA"，而是<strong>AI 直接替代查询优化器</strong>成为数据库引擎</p>...
+<h3 id="1-bend-ai">1. Bend：让编译器成为 AI 的形式安全带</h3>
+<p>来源：HN（1789677373，<strong>396 点 / 194 评</strong>，Sep 18）。Bend 是一门新编程语言，核心设计目标是<strong>阻止 AI 编写逻辑错误的代码</strong>。具体机制：Bend 的类型系统和编译器要求开发者（或 AI）在编写函数时提供形式证明（或可验证的约束），编译器会在构建阶段验证这些证明——如果 AI 生成的代码在逻辑上存在未被证明的路径，编译器直接拒绝编译，而不只是抛出运行时错误。Bend 同时支持 CPU 和 GPU 并行执行，面向高性能计算场景。</p>
+<p>194 条评论中，讨论集中在两个方向：一是"这对人类也同样难写，AI 不是唯一受约束的对象"；二是"这正是重点——让 AI 写代码的负担等于让人类写代码"。</p>
+<p><strong>编辑点评</strong>：Bend 的出发点来自一个清醒的认识：<strong>AI 生成代码的主要问题不是语法错误，而是逻辑正确但语义错误</strong>——代码可以运行，但行为不是预期的。这类</p>...
   </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-09-17.html">Read full report →</a></p>
+  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-09-18.html">Read full report →</a></p>
 </div>
 
 <div class="container">
   <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
   <div class="card-grid">
     
+<a href="/AI-Intelligence-Hub/daily/2026-09-18.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-09-18</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-09-18</div>
+</div>
+</a>
 <a href="/AI-Intelligence-Hub/daily/2026-09-17.html" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Daily Intelligence</div>
@@ -262,14 +270,6 @@ footer {
   <h3>2026-09-13</h3>
   <p>AI Intelligence Daily Report</p>
   <div class="card-date">2026-09-13</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-09-12.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-09-12</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-09-12</div>
 </div>
 </a>
   </div>
