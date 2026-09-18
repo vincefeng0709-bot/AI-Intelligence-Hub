@@ -206,24 +206,32 @@ footer {
 
 <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
   <div class="card-label">Latest Daily Report</div>
-  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-09-16</h2>
+  <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">2026-09-17</h2>
   <div class="article-content" style="color: var(--text2);">
-    <h1 id="ai-2026-09-16">AI 情报日报 · 2026-09-16</h1>
-<p><strong>发生了什么</strong>：新 AI 公司 System One 发布 Jev 模型家族（1420 点 / 403 评），成为本周最高分新模型发布帖，定位为"System 1 快速直觉推理"的专用架构；Google 发布 Gemini 3.8 Live 和 3.8 Live Extended Thinking（421 点 / 273 评），实时多模态能力正式开放；HuggingFace 宣布向 OpenAI 索赔 1 亿美元（145 点 / 49 评），AI 公司之间的法律战升级；一篇报道将 OpenAI、Anthropic 和 Meta 最近的多起黑客事件归因于同一家公司（620 点 / 212 评）；Anthropic 联合创始人向 BBC 表示 AI "断闸"可能需要强制立法。</p>
+    <h1 id="ai-2026-09-17">AI 情报日报 · 2026-09-17</h1>
+<p><strong>发生了什么</strong>：4B 参数模型在数据库查询优化上击败 Postgres（555 点 / 118 评），AI 开始接管传统数据库层的核心决策；Anthropic 将 Claude Cowork 与 Claude 聊天界面合并为统一产品（229 点 / 226 评）；"对模型福利的警告"一文（236 点 / <strong>667 评</strong>）以本日最多评论成为社区最激烈辩论；小米 Mimo 2.6 上线实时后训练看板（436 点 / 114 评），后训练透明度工具进入视野；研究者突破 1.58-bit 三值量化精度瓶颈（206 点 / 32 评）。</p>
 <hr />
 <h2 id="_1">今日要闻</h2>
-<h3 id="1-system-one-jev">1. System One 发布 Jev：快速直觉推理的专用架构</h3>
-<p>来源：HN（1789500303，<strong>1420 点 / 403 评</strong>，Sep 16）。新 AI 公司 System One 发布 Jev 模型家族，以 1420 点成为本周最高分新模型发布。公司名称直接引用了 Kahneman 的双系统理论（System 1 = 快速直觉，System 2 = 慢速推理），Jev 被定位为专门针对"System 1 类型任务"优化的模型：高速、低延迟、直觉式响应，而非深度推理链。</p>
-<p>具体能力：在对话速度上宣称比 GPT-6 Astra 快 8 倍，在简单推理、快速分类、实时决策等任务上性能比肩旗舰模型，但在需要多步骤推理的复杂任务上主动退出（将请求标注为"需要 System 2 处理"而非勉强作答）。</p>
-<p><strong>编辑点评</strong>：System One 的设计理念在当前 AI 竞争格局中是一次清晰的差异化押注。当所有旗舰模型</p>...
+<h3 id="1-4b-postgresai">1. 4B 模型击败 Postgres：AI 接管数据库查询优化</h3>
+<p>来源：HN（1789584600，<strong>555 点 / 118 评</strong>，Sep 17）。研究团队发布成果：用 4B 参数的 ML 模型生成的查询执行计划，在基准测试中比 PostgreSQL 自带的查询优化器快 <strong>81%</strong>。4B 模型的关键优势不在于参数量，而在于它能在离线预热后持续学习特定数据库的统计分布——而 Postgres 的查询优化器是基于通用规则和启发式算法，无法针对具体数据库的数据分布进行自适应优化。</p>
+<p><strong>编辑点评</strong>：这件事的意义被低估了。数据库查询优化器是传统软件中最复杂、最依赖人类专家经验的模块之一——Postgres 的查询规划器有数十年的工程积累，被视为"不可撼动"的基础设施核心。一个 4B 模型在这个领域实现 81% 的性能提升，不只是一篇研究论文，而是一个<strong>范式转变的具体样本</strong>：AI 开始接管传统软件中那些"依赖规则+启发式"的决策层。</p>
+<p>这个方向将在数年内改变数据库行业。下一步不是"AI 辅助 DBA"，而是<strong>AI 直接替代查询优化器</strong>成为数据库引擎</p>...
   </div>
-  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-09-16.html">Read full report →</a></p>
+  <p style="margin-top: 1rem;"><a href="/AI-Intelligence-Hub/daily/2026-09-17.html">Read full report →</a></p>
 </div>
 
 <div class="container">
   <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Reports</h2>
   <div class="card-grid">
     
+<a href="/AI-Intelligence-Hub/daily/2026-09-17.html" style="text-decoration:none;">
+<div class="card">
+  <div class="card-label">Daily Intelligence</div>
+  <h3>2026-09-17</h3>
+  <p>AI Intelligence Daily Report</p>
+  <div class="card-date">2026-09-17</div>
+</div>
+</a>
 <a href="/AI-Intelligence-Hub/daily/2026-09-16.html" style="text-decoration:none;">
 <div class="card">
   <div class="card-label">Daily Intelligence</div>
@@ -262,14 +270,6 @@ footer {
   <h3>2026-09-12</h3>
   <p>AI Intelligence Daily Report</p>
   <div class="card-date">2026-09-12</div>
-</div>
-</a>
-<a href="/AI-Intelligence-Hub/daily/2026-09-11.html" style="text-decoration:none;">
-<div class="card">
-  <div class="card-label">Daily Intelligence</div>
-  <h3>2026-09-11</h3>
-  <p>AI Intelligence Daily Report</p>
-  <div class="card-date">2026-09-11</div>
 </div>
 </a>
   </div>
