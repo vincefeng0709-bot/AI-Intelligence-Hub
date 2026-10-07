@@ -1,0 +1,17 @@
+{
+  "article_title_and_coverage": "passed",
+  "home_and_daily_links": "passed",
+  "rss_latest_item": "passed",
+  "sitemap_article": "passed",
+  "all_38_source_links_rendered": "passed",
+  "existing_source_and_old_articles_preserved": "passed",
+  "original_files_changed": [
+    "public/daily/index.html",
+    "public/feed.xml",
+    "public/index.html",
+    "public/sitemap.xml"
+  ],
+  "html_total": 106,
+  "publication": "local build only; no Git push or Pages deployment",
+  "known_preexisting_rss_issue": "RSS pubDate format and discovery base path unchanged in this content-only update"
+}

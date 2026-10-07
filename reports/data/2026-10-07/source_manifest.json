@@ -1,0 +1,124 @@
+{
+  "report": "reports/daily/2026-10-07.md",
+  "report_sha256": "1b07705d7914d2f5401d2260a9cb033418382e9fbc9fac456bf396cac34218d6",
+  "created_at_bjt": "2026-10-07T12:22:10.495635+08:00",
+  "coverage_start_bjt": "2026-09-27T00:00:00+08:00",
+  "collection_cutoff_bjt": "2026-10-07T12:17:24.172161+08:00",
+  "verification": "Official announcement pages, author repositories, and arXiv abstract/submission history pages inspected; not full independent replication.",
+  "date_notes": [
+    "RSS timestamp is not necessarily the displayed announcement date.",
+    "arXiv RSS dates denote announcement, not first submission. Selected papers use checked v1 dates.",
+    "HN post dates and points refer to posting and collection, not original event date.",
+    "ThinkingBox and ProvenanceGuard are in-period blog introductions of earlier papers.",
+    "Mistral Large 4 remains a public preview; promised end-of-month weights were not downloaded."
+  ],
+  "selected_papers": [
+    {
+      "id": "2610.03894",
+      "v1_utc": "2026-10-02T18:09:00Z"
+    },
+    {
+      "id": "2610.03984",
+      "v1_utc": "2026-10-02T19:47:19Z"
+    },
+    {
+      "id": "2610.04008",
+      "v1_utc": "2026-10-02T20:10:12Z"
+    },
+    {
+      "id": "2609.37312",
+      "v1_date_utc": "2026-09-29"
+    },
+    {
+      "id": "2610.03010",
+      "v1_date_utc": "2026-10-02"
+    }
+  ],
+  "sources_in_report": [
+    "https://ai.google.dev/gemma/docs/embeddinggemma/model_card_2",
+    "https://arxiv.org/abs/2609.37312",
+    "https://arxiv.org/abs/2610.03010",
+    "https://arxiv.org/abs/2610.03894",
+    "https://arxiv.org/abs/2610.03984",
+    "https://arxiv.org/abs/2610.04008",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+    "https://deepmind.google/blog/introducing-synthid-bio/",
+    "https://github.com/FeSens/openTPU",
+    "https://github.com/Niko1221/Strata",
+    "https://github.com/firelex/jeff",
+    "https://huggingface.co/blog/Hcompany/holo4",
+    "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+    "https://huggingface.co/blog/allenai/astabrief",
+    "https://huggingface.co/blog/microsoft/thinkingbox",
+    "https://huggingface.co/blog/rl-environments",
+    "https://mistral.ai/news/mistral-large-4/",
+    "https://news.ycombinator.com/item?id=49863864",
+    "https://news.ycombinator.com/item?id=49883844",
+    "https://news.ycombinator.com/item?id=49896586",
+    "https://news.ycombinator.com/item?id=49896604",
+    "https://news.ycombinator.com/item?id=49906637",
+    "https://news.ycombinator.com/item?id=49913571",
+    "https://news.ycombinator.com/item?id=49953495",
+    "https://news.ycombinator.com/item?id=49977979",
+    "https://news.ycombinator.com/item?id=49980715",
+    "https://openai.com/index/atlassian-partnership/",
+    "https://openai.com/index/devday-2026-recap/",
+    "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+    "https://openai.com/index/introducing-dots/",
+    "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
+    "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+    "https://www.anthropic.com/claude-sonnet-5-5",
+    "https://www.anthropic.com/news/barclays-scales-claude",
+    "https://www.anthropic.com/news/claude-frontier-academy",
+    "https://www.anthropic.com/news/cyber-verification-program"
+  ],
+  "raw_files": [
+    {
+      "path": "arxiv_ai.xml",
+      "bytes": 1874185,
+      "sha256": "9a5da0fe40ab5d4ca464efe19310ffdb01eea257058b4d21f60c3fa9dc309f07"
+    },
+    {
+      "path": "arxiv_cl.xml",
+      "bytes": 479817,
+      "sha256": "79029af50c2f17832ca8719646b9af445cb11c8d6abc46988bb787eea5ea252e"
+    },
+    {
+      "path": "arxiv_lg.xml",
+      "bytes": 1134671,
+      "sha256": "872be28c4872dec52f92bb1a7f1d8dbb58169c8c2dfc32c3f4226068934d70f8"
+    },
+    {
+      "path": "collection.json",
+      "bytes": 3191461,
+      "sha256": "9c8ee0285631646f140e7800d9601f981a40fba50b58c81cc26fe15bf080a6e2"
+    },
+    {
+      "path": "google_ai.xml",
+      "bytes": 30369,
+      "sha256": "fca3fc1a0ca3db3b84c9f1f218860304cbea4597c8810b3d557694ebba6d9dd9"
+    },
+    {
+      "path": "google_deepmind.xml",
+      "bytes": 69500,
+      "sha256": "8fa3d4103e115786957f0e0667bba6bf58516e55baa013910af5fd24f9975823"
+    },
+    {
+      "path": "hn_raw.json",
+      "bytes": 834131,
+      "sha256": "06abfbc4e1701f52efc6be40f84161bc8bfb4494e432a2494f644383100271f5"
+    },
+    {
+      "path": "huggingface.xml",
+      "bytes": 263611,
+      "sha256": "7494deb5a7c6fd95e3ec1308d5314d8dfcc8c079f4ea05e11185d398aff45b36"
+    },
+    {
+      "path": "openai.xml",
+      "bytes": 773056,
+      "sha256": "6422073507ba74c6baef90ea2c88259a9212c35ed0a3157fdd20e63832403088"
+    }
+  ]
+}
